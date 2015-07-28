@@ -1,0 +1,27 @@
+---
+title: "Chapter 1"
+author: "Alan Arnholt"
+date: "7/28/2015"
+output: html_document
+---
+
+### An Introduction
+#### Overview
+
+This statistics course is presented in the service of a project of your choosing and will offer you an intensive hands-on experience in the quantitative research process. You will develop skills in 1) generating testable hypotheses; 2) understanding large data sets; 3) formatting and managing data; 4) conducting descriptive and inferential statistical analyses; and 5) presenting results for expert and novice audiences. It is designed for students who are interested in developing skills that are useful for working with data and using statistical tools to analyze them. No prior experience with data or statistics is required. 
+
+Our approach is “statistics in the service of questions.” As such, the research question that you choose (from data sets made available to you) is of paramount importance to your learning experience. **It must interest you enough that you will be willing to spend many hours thinking about it and analyzing data having to do with it.**
+
+#### Resources
+
+This course is unlike any you have likely encountered in that you will be driving the content and direction of your own learning. In many ways we will be asking more from you than any other introductory course ever has. To support you in this challenge, there are a number of useful resources.
+
+**This Book:** This book integrates the applied steps of a research project with the basic knowledge needed to meaningfully engage in quantitative research. Much of the background on descriptive and inferential statistics has been drawn from the [Open Learning Initiative](http://oli.cmu.edu/), a not-for-profit educational project aimed at transforming instruction and improving learning outcomes for students.
+
+**Empowerment Through Statistical Computing:** While there is widespread argument that introductory students need to learn statistical programming, opinions differ widely both within and across disciplines about the specific statistical software program that should be used. While many introductory statistics courses cover the practical aspects of using a single software package, our focus will be more generally on computing as a skill that will expand your capacity for statistical application and for engaging in deeper levels of quantitative reasoning. Instead of providing “canned” exercises for you to repeat, you will be provided with flexible syntax for achieving a host
+of data management and analytic tasks in the pursuit of answers to questions of greatest interest to you. Most importantly, syntax for four major packages (**R**, SAS, Stata, and SPSS) will be presented in the context of each step of the research process. While you will work in only one package, these resources were developed to help you move more easily between and among statistical software packages as you continue to conduct quantitative research in the future.
+
+**Loads of Support:** Through the in-class workshop sessions and peer group exchanges, a great deal of individualized support will be available to you. Taking advantage of this large amount of support means that you are succeeding in making the most of your experience in this course.
+
+**GitHub Repository:** To provide reliable backup of your work, you will use a private GitHub repository. While you will have read/write access to your own repository, you will also have read access to all respositories in the organization (Course). Aside from providing a centralized way to share files, GitHub is meant to function as a resource in support of collaboration. Put simply, our hope is that you work together!
+
