@@ -1,0 +1,26 @@
+---
+title: "Passion Driven Statistics (Light Weight)"
+author: "Alan T. Arnholt modified from materials compiled by Lisa Dierker"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r, label = "SETUP", echo = FALSE, results= 'hide', message = FALSE, warning = FALSE}
+library(knitr)
+knitr::opts_chunk$set(comment = NA, fig.show = 'as.is',  fig.height = 4, fig.width = 4, prompt = TRUE, highlight = TRUE, tidy = FALSE, warning = FALSE, message = FALSE, tidy.opts=list(blank = TRUE, width.cutoff= 75, cache = TRUE))
+```
+
+```{r, label = "chapter01", child = "./chapters/chapter01.Rmd", eval = TRUE, message = FALSE}
+```
+
+```{r, label = "chapter02", child = "./chapters/chapter02.Rmd", eval = TRUE, message = FALSE}
+```
+
+```{r, label = "chapter03", child = "./chapters/chapter03.Rmd", eval = TRUE, message = FALSE}
+```
+
+```{r, label = "chapter04", child = "./chapters/chapter04.Rmd", eval = TRUE, message = FALSE}
+```
+
+```{r, label = "chapter05", child = "./chapters/chapter05.Rmd", eval = TRUE, message = FALSE}
+```
