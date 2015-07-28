@@ -10,7 +10,7 @@ output: html_document
 
 **What do we really mean by data?**
 
-Data are pieces of information about individuals or observa- tions organized into variables. By an *individual* or *observation*, we mean a particular person or object. By a *variable*, we mean a particular characteristic of the individual or observation.
+Data are pieces of information about individuals or observations organized into variables. By an *individual* or *observation*, we mean a particular person or object. By a *variable*, we mean a particular characteristic of the individual or observation.
 
 A dataset is a collection of information, usually presented in tabular form. Each column represents a particular *variable*. Each row corresponds to a given individual (or *observation*) within the dataset.
 

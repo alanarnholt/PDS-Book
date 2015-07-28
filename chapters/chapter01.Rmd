@@ -24,7 +24,7 @@ of data management and analytic tasks in the pursuit of answers to questions of 
 
 **Loads of Support:** Through the in-class workshop sessions and peer group exchanges, a great deal of individualized support will be available to you. Taking advantage of this large amount of support means that you are succeeding in making the most of your experience in this course.
 
-**GitHub Repository:** To provide reliable backup of your work, you will use a private GitHub repository. While you will have read/write access to your own repository, you will also have read access to all respositories in the organization (Course). Aside from providing a centralized way to share files, GitHub is meant to function as a resource in support of collaboration. Put simply, our hope is that you work together!
+**GitHub Repository:** To provide reliable backup of your work, you will use a private GitHub repository. While you will have read/write access to your own repository, you will also have read access to all public respositories in the organization (Course). Aside from providing a centralized way to share files, GitHub is meant to function as a resource in support of collaboration. Put simply, our hope is that you work together!
 
 ### An Introduction to Statistics
 ![producingdata](./graphics/producingdata.jpg)
@@ -43,7 +43,7 @@ The process of statistics starts when we identify what group we want to study or
 
 Population, then, is the entire group that is the target of our interest.  In most cases, the population is so large that as much as we want to, there is absolutely no way that we can study all of it (imagine trying to get opinions of all U.S. adults about the death penalty...). 
 
-A more practical approach would be to examine and collect data only from a sub-group of the population, which we call a sample. We call this first step, which involves choosing a sample and collecting data from it, Producing Data.
+A more practical approach would be to examine and collect data only from a sub-group of the population, which we call a sample. We call this first step, which involves choosing a sample and collecting data from it, *Producing Data*.
 
 Since, for practical reasons, we need to compromise and examine only a sub-group of the population rather than the whole population, we should make an effort to choose a sample in such a way that it will represent the population as well. 
 
