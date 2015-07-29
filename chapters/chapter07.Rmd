@@ -41,7 +41,7 @@ Please watch the [DATA MANAGEMENT video](https://www.youtube.com/watch?v=thGk4CU
 
 During the class session, we will begin to work through how to make decisions about data management and how to put those decisions into action.
 
-An understanding of basic operations to be used with your statistical software is a good place to start.  In `R`, logical operators include `!` (not), `&` and `&&` (logical AND), `|` and `||` (logical OR).  Relational operators in `R` include `<` (less than), `>` (greater than), `<=` (thes than or equal), `==` (vector equality), and `!=` (not equal).
+An understanding of basic operations to be used with your statistical software is a good place to start.  In `R`, logical operators include `!` (not), `&` and `&&` (logical AND), `|` and `||` (logical OR).  Relational operators in `R` include `<` (less than), `>` (greater than), `<=` (less than or equal), `==` (vector equality), and `!=` (not equal).
 
 *Examples:*
 

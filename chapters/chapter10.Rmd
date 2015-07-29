@@ -27,7 +27,7 @@ Let's analyze this example using the 4 steps: Specifying the null ($H_0$) and al
 There are two opposing hypotheses for this question:
 
 * There is no difference in smoking quantity between people with and without depression.
-* There is a difference in smoking quantity between peo- ple with and without depression.
+* There is a difference in smoking quantity between people with and without depression.
 
 The first hypothesis (aka null hypothesis) basically says nothing special is going on between smoking and depression. In other words, that they are unrelated to one another. The second hypothesis (aka the alternate hypothesis) says that there is a relationship and allows that the difference in smoking be- tween those individuals with and without depression could be in either direction (i.e. individuals with depression may smoke more than individuals without depression or they may smoke less).
 

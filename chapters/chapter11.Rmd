@@ -19,7 +19,7 @@ Say that our variable of interest is the GPA of college students in the United S
 $X$: year in college (1 = freshmen, 2 = sophomore, 3 = junior, 4 = senior) and
 $Y$: GPA
 
-In other words, we want to explore whether GPA is related to year in college. The way to think about this is that the population of U.S. college students is now broken into 4 subpopulations: freshmen, sophomores, juniors, and seniors. Within each of these four groups, we are interested in the GPA.
+In other words, we want to explore whether GPA is related to year in college. The way to think about this is that the population of U.S. college students is now broken into 4 sub-populations: freshmen, sophomores, juniors, and seniors. Within each of these four groups, we are interested in the GPA.
 
 
 The inference must therefore involve the 4 sub-population means:
@@ -144,7 +144,7 @@ Consider the following generic situation:
 
 ![anova5](./graphics/anova5.jpg)
 
-wehre we're testing:
+where we're testing:
 
 $H_0: \mu_1 = \mu_2 = \mu_3$ versus $H_a:\mu_i \neq \mu_j$ for some $i,j$ or not all $\mu$'s are equal.
 
