@@ -24,3 +24,9 @@ knitr::opts_chunk$set(comment = NA, fig.show = 'as.is',  fig.height = 4, fig.wid
 
 ```{r, label = "chapter05", child = "./chapters/chapter05.Rmd", eval = TRUE, message = FALSE}
 ```
+
+```{r, label = "chapter06", child = "./chapters/chapter06.Rmd", eval = TRUE, message = FALSE}
+```
+
+```{r, label = "chapter07", child = "./chapters/chapter07.Rmd", eval = TRUE, message = FALSE}
+```

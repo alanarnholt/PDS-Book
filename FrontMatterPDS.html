@@ -10,7 +10,7 @@
 
 <meta name="author" content="Alan T. Arnholt modified from materials compiled by Lisa Dierker" />
 
-<meta name="date" content="2015-07-28" />
+<meta name="date" content="2015-07-29" />
 
 <title>Passion Driven Statistics (Light Weight)</title>
 
@@ -64,7 +64,7 @@ img {
 <div id="header">
 <h1 class="title">Passion Driven Statistics (Light Weight)</h1>
 <h4 class="author"><em>Alan T. Arnholt modified from materials compiled by Lisa Dierker</em></h4>
-<h4 class="date"><em>2015-07-28</em></h4>
+<h4 class="date"><em>2015-07-29</em></h4>
 </div>
 
 
@@ -327,6 +327,125 @@ img {
 <div id="research-plan-assignment" class="section level4">
 <h4>Research Plan Assignment</h4>
 <p>You will spend the next three weeks writing your research plan. This plan should include the following: Title, Author’s name (this will be blank for CrowdGrader submissions to ensure double blind reviewing), Introduction, Method, Implications, and References. The paper should be 4 to 5 pages double-spaced (including a page for references). In preparation for writing the introduction section, you should have found and read at least 25 primary source articles, although only those that help provide important background and allow you to make an argument in support of your proposed research should be cited. This assignment will be graded A-F and will act as the basis for your final poster. Your paper should be submitted through <a href="http://www.crowdgrader.org" class="uri">http://www.crowdgrader.org</a> AND pushed to your private repository. More detailed directions can be found on the course repository.</p>
+</div>
+</div>
+</div>
+<div id="chapter-6" class="section level1">
+<h1>Chapter 6</h1>
+<div id="working-with-data" class="section level3">
+<h3>Working with Data</h3>
+<p>Now that you have a research question, it is time to look at the data. Raw data consist of long lists of numbers and/or labels that are not very informative. Exploratory Data Analysis (EDA) is how we make sense of the data by converting them from their raw form to a more informative one. In particular, EDA consists of:</p>
+<ul>
+<li>Organizing and summarizing the raw data,</li>
+<li>Discovering important features and patterns in the data and any striking deviations from those patterns, and then</li>
+<li>Interpreting our findings in the context of the problem</li>
+</ul>
+<p>We begin EDA by looking at one variable at a time (also known as <em>univariate analysis</em>). In order to convert raw data into useful information we need to summarize and then examine the distribution of any variables of interest. By distribution of a variable, we mean:</p>
+<ul>
+<li>What values the variable takes, and</li>
+<li>How often the variable takes those values</li>
+</ul>
+<p><strong>Statistical Software</strong></p>
+<p>When working with data with more than just a few observations and/or variables requires specialized software. The use of syntax (or formal code) in the context of statistical software is a central skill that we will be teaching you in this course. We believe that it will greatly expand your capacity not only for statistical application but also for engaging in deeper levels of quantitative reasoning about data.</p>
+<p><strong>Writing Your First Program</strong></p>
+<p>Empirical research is all about making decisions (the best ones possible with the information at hand). Please watch the video WORKING WITH DATA (SAS, R, Stata, SPSS). This will get you thinking about some of the earliest decisions you will need to make when working with your data (i.e. selecting columns and possibly rows).</p>
+<div id="working-with-data-lab" class="section level4">
+<h4>Working with Data Lab</h4>
+<p>This week, you will learn how to call in a dataset, select the columns (i.e. variables), and possibly rows (i.e. observations), of interest, and run frequency distributions for your chosen variables. Read the <code>PDS</code> vignette to see examples of subsetting your data, renaming variables, coding missing values, collapsing categories, creating a factor from a numeric vector, aggregating variables using <code>ifelse</code>, creating a new variable with <code>mutate</code>, etc. <a href="https://www.rstudio.com/">RStudio</a> has several cheat sheets available at <a href="https://www.rstudio.com/resources/cheatsheets/" class="uri">https://www.rstudio.com/resources/cheatsheets/</a>. You may find the <a href="https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf">data wrangling cheat sheet</a> and the <a href="https://www.rstudio.com/wp-content/uploads/2015/05/ggplot2-cheatsheet.pdf">data visualization cheat sheet</a> useful for the working with data assignment.</p>
+</div>
+<div id="working-with-data-assignment" class="section level4">
+<h4>Working with Data Assignment</h4>
+<p>Create an R Markdown file and push the file to GitHub showing:</p>
+<ol style="list-style-type: decimal">
+<li>Your program</li>
+<li>The output that displays three of your categorical variables in frequency tables</li>
+<li>A few sentences describing the frequency tables.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="chapter-7" class="section level1">
+<h1>Chapter 7</h1>
+<div id="data-management" class="section level3">
+<h3>Data Management</h3>
+<p>Examining frequency distributions for each of your variables is the key to further guiding the decision making involved in quantitative research.</p>
+<p><strong>EXAMPLE:</strong></p>
+<p>A random sample of 1,200 U.S. college students were asked the following questions as part of a larger survey: “What is your perception of your own body? Do you feel that you are overweight, underweight, or about right?” The following table shows part of the data (5 of the 1200 observations);</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">STUDENT</th>
+<th align="center">BODY IMAGE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Student 25</td>
+<td align="center">Overweight</td>
+</tr>
+<tr class="even">
+<td align="center">Student 26</td>
+<td align="center">About Right</td>
+</tr>
+<tr class="odd">
+<td align="center">Student 27</td>
+<td align="center">Underweight</td>
+</tr>
+<tr class="even">
+<td align="center">Student 28</td>
+<td align="center">About Right</td>
+</tr>
+<tr class="odd">
+<td align="center">Student 29</td>
+<td align="center">About Right</td>
+</tr>
+</tbody>
+</table>
+<p>Here is some information that would be interesting to get from these data:</p>
+<ul>
+<li>What percentage of the sampled students fall into each category?</li>
+<li>How are students divided across the three body image categories?</li>
+</ul>
+<p>Are they equally divided? If not, do the percentages follow some other kind of pattern?</p>
+<p>There is no way that we can answer these questions by looking at the raw data, which are in the form of a long list of 1,200 responses and thus not very useful. However, both these questions will be easily answered once we summarize and look at the frequency distribution of the variable <code>BodyImage</code> (i.e., once we summarize how often each of the categories occurs).</p>
+<p>In order to summarize the distribution of a categorical variable, we ask our statistical software program to create a table of the different values (categories) the variable takes, how many times each value occurs (count), and, more importantly, how often each value occurs (percentages). Here is the table (i.e. frequency distribution) for our example:</p>
+<table>
+<caption>Body Image Distribution</caption>
+<thead>
+<tr class="header">
+<th align="center">CATEGORY</th>
+<th align="center">COUNT</th>
+<th align="center">PERCENTAGE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">About Right</td>
+<td align="center">855</td>
+<td align="center">71.3%</td>
+</tr>
+<tr class="even">
+<td align="center">Overweight</td>
+<td align="center">235</td>
+<td align="center">19.6%</td>
+</tr>
+<tr class="odd">
+<td align="center">Underweight</td>
+<td align="center">110</td>
+<td align="center">9.2%</td>
+</tr>
+<tr class="even">
+<td align="center">Total</td>
+<td align="center">1200</td>
+<td align="center">100%</td>
+</tr>
+</tbody>
+</table>
+<p>Please watch the <a href="https://www.youtube.com/watch?v=thGk4CUEXQ8&amp;index=53&amp;list=PLDEF0B9CBD27AD37E">DATA MANAGEMENT video</a>.</p>
+<div id="data-management-1" class="section level4">
+<h4>Data Management</h4>
+<p>During the class session, we will begin to work through how to make decisions about data management and how to put those decisions into action.</p>
+<p>An understanding of basic operations to be used with your statistical software is a good place to start.</p>
 </div>
 </div>
 </div>

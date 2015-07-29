@@ -1,0 +1,46 @@
+---
+title: "Data Management"
+author: "Alan Arnholt"
+date: "7/29/2015"
+output: html_document
+---
+
+# Chapter 7
+### Data Management
+
+Examining frequency distributions for each of your variables is the key to further guiding the decision making involved in quantitative research.
+
+**EXAMPLE:**
+
+A random sample of 1,200 U.S. college students were asked the following questions as part of a larger survey: “What is your perception of your own body? Do you feel that you are overweight, underweight, or about right?”  The following table shows part of the data (5 of the 1200 observations);
+
+```{r, echo = FALSE}
+DF <- data.frame(STUDENT = c("Student 25", "Student 26", "Student 27", "Student 28", "Student 29"), BodyImage = c("Overweight", "About Right", "Underweight", "About Right", "About Right"))
+knitr::kable(DF, col.names = c("STUDENT", "BODY IMAGE"), align = c("c","c"))
+```
+
+Here is some information that would be interesting to get from these data:
+
+* What percentage of the sampled students fall into each category?
+* How are students divided across the three body image categories?
+
+Are they equally divided? If not, do the percentages follow some other kind of pattern?
+
+There is no way that we can answer these questions by looking at the raw data, which are in the form of a long list of 1,200 responses and thus not very useful. However, both these questions will be easily answered once we summarize and look at the frequency distribution of the variable `BodyImage` (i.e., once we summarize how often each of the categories occurs).
+
+In order to summarize the distribution of a categorical variable, we ask our statistical software program to create a table of the different values (categories) the variable takes, how many times each value occurs (count), and, more importantly, how often each value occurs (percentages). Here is the table (i.e. frequency distribution) for our example:
+
+```{r, echo = FALSE}
+DF2 <- data.frame(CATEGORY =c("About Right", "Overweight", "Underweight", "Total"), COUNT = c(855, 235, 110, 1200), PERCENTAGE = c("71.3%", "19.6%", "9.2%", "100%"))
+knitr::kable(DF2, align = c("c", "c", "c"), caption = "Body Image Distribution")
+```
+
+Please watch the [DATA MANAGEMENT video](https://www.youtube.com/watch?v=thGk4CUEXQ8&index=53&list=PLDEF0B9CBD27AD37E).
+
+#### Data Management
+
+During the class session, we will begin to work through how to make decisions about data management and how to put those decisions into action.
+
+An understanding of basic operations to be used with your statistical software is a good place to start.
+
+
