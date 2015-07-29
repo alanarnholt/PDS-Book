@@ -7,7 +7,7 @@ output: html_document
 
 ```{r, label = "SETUP", echo = FALSE, results= 'hide', message = FALSE, warning = FALSE}
 library(knitr)
-knitr::opts_chunk$set(comment = NA, fig.show = 'as.is',  fig.height = 4, fig.width = 4, prompt = TRUE, highlight = TRUE, tidy = FALSE, warning = FALSE, message = FALSE, tidy.opts=list(blank = TRUE, width.cutoff= 75, cache = TRUE))
+knitr::opts_chunk$set(fig.align = "center", comment = NA, fig.show = 'as.is',  fig.height = 4, fig.width = 4, prompt = TRUE, highlight = TRUE, tidy = FALSE, warning = FALSE, message = FALSE, tidy.opts=list(blank = TRUE, width.cutoff= 75, cache = TRUE))
 ```
 
 ```{r, label = "chapter01", child = "./chapters/chapter01.Rmd", eval = TRUE, message = FALSE}
@@ -29,4 +29,10 @@ knitr::opts_chunk$set(comment = NA, fig.show = 'as.is',  fig.height = 4, fig.wid
 ```
 
 ```{r, label = "chapter07", child = "./chapters/chapter07.Rmd", eval = TRUE, message = FALSE}
+```
+
+```{r, label = "chapter08", child = "./chapters/chapter08.Rmd", eval = TRUE, message = FALSE}
+```
+
+```{r, label = "chapter09", child = "./chapters/chapter09.Rmd", eval = TRUE, message = FALSE}
 ```

@@ -41,6 +41,80 @@ Please watch the [DATA MANAGEMENT video](https://www.youtube.com/watch?v=thGk4CU
 
 During the class session, we will begin to work through how to make decisions about data management and how to put those decisions into action.
 
-An understanding of basic operations to be used with your statistical software is a good place to start.
+An understanding of basic operations to be used with your statistical software is a good place to start.  In `R`, logical operators include `!` (not), `&` and `&&` (logical AND), `|` and `||` (logical OR).  Relational operators in `R` include `<` (less than), `>` (greater than), `<=` (thes than or equal), `==` (vector equality), and `!=` (not equal).
 
+*Examples:*
 
+*1. Need to identify missing data*
+
+Often, you must define the response categories that represent missing data. For example, if the number 9 is used to represent a missing value, you must either designate in your program that this value represents missingness or else you must recode the variable into a missing data character that your statistical software recognizes. If you do not, the 9 will be treated as a real/meaningful value and will be included in each of your analyses.
+
+```{r, eval = FALSE, prompt = TRUE}
+title_of_data_set$VAR1[title_of_data_set$VAR1 == 9] <- NA
+```
+
+*2. Need to recode responses to “no” based on skip patterns*
+
+There are a number of skip outs in some data sets. For example, if we ask someone whether or not they have ever used marijuana, and they say “no”, it would not make sense to ask them more detailed questions about their marijuana use (e.g. quantity, frequency, onset, ￼￼impairment, etc.). When analyzing more detailed questions regarding marijuana (e.g. have you ever smoked marijuana daily for a month or more?), those individuals that never used the substance may show up as missing data. Since they have never used marijuana, we can assume that their answer is “no”, they have never smoked marijuana daily. This would need to be explicitly recoded. Note that we commonly code a no as 0 and a yes as 1.
+
+```{r, eval = FALSE, prompt = TRUE}
+title_of_data_set$VAR1[is.na(title_of_data_set$VAR1)] <- 0
+```
+
+*3. Need to collapse response categories*
+
+If a variable has many response categories, it can be difficult to interpret the statistical analyses in which it is used. Alternatively, there may be too few subjects or observations identified by one or more response categories to allow for a successful analysis. In these cases, you would need to collapse across categories. Consider the variable `S1Q6A` from the data frame `NESARC` which has 14 levels that record the highest level of education of the participant. To collapse the categories into a dichotomous variable that indicates the presence of a high school degree, use the `ifelse` function. The levels `1`, `2`, `3`, `4`, `5`, `6`, and `7` of the variable `S1Q6A` correspond to education levels less than completing high school.
+
+```{r, prompt = TRUE}
+library(PDS)
+NESARC$HS_DEGREE <- factor(ifelse(NESARC$S1Q6A %in% c("1", "2", "3", "4", "5", "6", "7"), "No", "Yes"))
+summary(NESARC$HS_DEGREE)
+```
+
+*4. Need to aggregate variables*
+
+In many cases, you will want to combine multiple variables into one. Consider creating create a new variable `DepressLife` which is `Yes` if the variable `MAJORLIFE` or `DYSLIFE` is a 1 (data frame `NESARC`).
+
+```{r, prompt = TRUE}
+NESARC$DepressLife <- factor(ifelse( (NESARC$MAJORDEPLIFE == 1 | NESARC$DYSLIFE == 1), "Yes", "No"))
+summary(NESARC$DepressLife)
+```
+
+*5. Need to create continuous variables*
+
+If you are working with a number of items that represent a single construct, it may be useful to create a composite variable/score. For example, I want to use a list of nicotine dependence symptoms meant to address the presence or absence of nicotine dependence (e.g. tolerance, withdrawal, craving, etc.). Rather than using a dichotomous variable (i.e. nicotine dependence present/absent), I want to examine the construct as a dimensional scale (i.e. number of nicotine dependence symptoms). In this case, I would want to recode each symptom variable so that `yes=1` and `no=0` and then sum the items so that they represent one composite score.
+
+```{r, prompt = TRUE, eval = FALSE}
+nd_sum <- title_of_data_set$nd_symptom1 + title_of_data_set$nd_symptom2 + title_of_data_set$nd_symptom3
+title_of_data_set$nd_sum <- nd_sum
+```
+
+*6. Labeling variable responses/values*
+
+Given that nominal and ordinal variables have, or are given numeric response values (i.e. dummy codes), it can be useful to label those values so that the labels are displayed in your output.
+
+```{r, prompt = TRUE, eval = FALSE}
+levels(title_of_data_set$VARIABLE) <- c("value", "value")
+```
+
+*7. Need to further subset the sample*
+
+When using large data sets, it is often necessary to subset the data so that you are including only those observations that can assist in answering your particular research question. In these cases, you may want to select your own sample from within the survey’s sampling frame. For example, if you are interested in identifying demographic predictors of depression among Type II diabetes patients, you would plan to subset the data to subjects endorsing Type II Diabetes.
+
+```{r, prompt = TRUE, eval = FALSE}
+title_of_subsetted_data <- title_of_data_set["diabetes2" == 1, ]
+# OR using dplyr
+library(dplyr)
+title_of_subsetted_data <- filter(title_of_data_set, "diabetes2" == 1)
+```
+
+See the `PDS` vignette for additional examples.
+
+**NOTE:** Often, you will need to create groups or sub-samples from the data set for the purpose of making comparisons. It is important to be certain that the groups that you would like to compare are of adequate size and number. For example, if you were interested in comparing complications of depression in parents who had lost a child through miscarriage vs. parents who had lost a child in the first year of life, it would be important to have large enough groups of each. It would not be appropriate to attempt to compare 5000 observations in the miscarriage group to only 9 observations in the first year group.
+
+#### Data Management Assignment
+
+Push to your private repository on GitHub: 
+
+1. A program that manages your data.
+2. Output that displays 3 of your secondary (i.e. data managed) variables as frequency tables.
