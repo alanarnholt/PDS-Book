@@ -52,6 +52,7 @@ Using medical records for 5 patients seeking treatment in a hospital emergency r
 7. Push the Excel spreadsheet to your private GitHub repository.
 
 **Model:**
+
 ![exexcel](./graphics/exexcel.jpg)
 
 #### Personal Code Book (AKA Researh Question) Assignment
