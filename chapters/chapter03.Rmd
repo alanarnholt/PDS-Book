@@ -55,7 +55,7 @@ Using medical records for 5 patients seeking treatment in a hospital emergency r
 
 ![exexcel](./graphics/exexcel.jpg)
 
-#### Personal Code Book (AKA Researh Question) Assignment
+#### Personal Code Book (AKA Research Question) Assignment
 
 One of the simplest research questions that can be asked is whether two constructs are associated. For example:
 a) Is medical treatment seeking associated with socio-economic status?
@@ -65,6 +65,7 @@ b) Is water fluorination associated with number of cavities during dentist visit
 c) Is humidity associated with caterpillar reproduction?
 
 **Example:**
+
 *After looking through the codebook for the NESARC study, I have decided that I am particularly interested in nicotine dependence. I am not sure which variables I will use regarding nicotine dependence (e.g. symptoms or diagnosis) so for now I will include all of the relevant variables in my personal codebook.*
 
 At this point, you should continue to explore the code book for the data set you have selected.
@@ -76,6 +77,7 @@ After choosing a data set, you should:
 2. Prepare a codebook of your own (i.e., print individual pages (or copy screen and paste into a new document) from the larger codebook that includes the questions/items/variables that measure your selected topics.)
 
 **Example:**
+
 *While nicotine dependence is a good starting point, I need to determine what it is about nicotine dependence that I am interested in. It strikes me that friends and acquaintances that I have known through the years that became hooked on cigarettes did so across very different periods of time. Some seemed to be dependent soon after their first few experiences with smoking and others after many years of generally irregular smoking behavior. I decide that I am most interested in exploring the association between level of smoking and nicotine dependence. I add to my codebook variables reflecting smoking levels (e.g. smoking quantity and frequency).*
 
 During a second review of the codebook for the dataset that you have selected, you should:

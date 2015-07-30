@@ -108,6 +108,8 @@ library(dplyr)
 title_of_subsetted_data <- filter(title_of_data_set, "diabetes2" == 1)
 ```
 
+#### Alan-add code for creating composite variable HERE
+
 See the `PDS` vignette for additional examples.
 
 **NOTE:** Often, you will need to create groups or sub-samples from the data set for the purpose of making comparisons. It is important to be certain that the groups that you would like to compare are of adequate size and number. For example, if you were interested in comparing complications of depression in parents who had lost a child through miscarriage vs. parents who had lost a child in the first year of life, it would be important to have large enough groups of each. It would not be appropriate to attempt to compare 5000 observations in the miscarriage group to only 9 observations in the first year group.

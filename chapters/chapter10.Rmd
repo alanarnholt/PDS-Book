@@ -37,9 +37,7 @@ I chose the NESARC, a representative sample of 43,093 non-institutionalized adul
 
 ```{r}
 # See Chapter 9 for the creation of nesarc
-head(nesarc)
-# Note S3AQ3C1 is wehther person is a daily smoker; MAJORDEPLIFE is major depression
-# S3AQ3C1 represents quantity when cigarettes smoked
+summary(nesarc)
 tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), mean, na.rm = TRUE)
 tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), sd, na.rm = TRUE)
 ```

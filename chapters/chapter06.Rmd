@@ -25,7 +25,7 @@ When working with data with more than just a few observations and/or variables r
 
 **Writing Your First Program**
 
-Empirical research is all about making decisions (the best ones possible with the information at hand). Please watch the video WORKING WITH DATA (SAS, R, Stata, SPSS). This will get you thinking about some of the earliest decisions you will need to make when working with your data (i.e. selecting columns and possibly rows).
+Empirical research is all about making decisions (the best ones possible with the information at hand). Please watch the video [WORKING WITH DATA](https://www.youtube.com/watch?v=d9TgAspq9bA&index=52&list=PLDEF0B9CBD27AD37E). This will get you thinking about some of the earliest decisions you will need to make when working with your data (i.e. selecting columns and possibly rows).
 
 #### Working with Data Lab
 

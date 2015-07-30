@@ -66,7 +66,8 @@ nesarc <- tbl_df(NESARC) %>%
   select(Ethnicity, Age, MajorDepression, TobaccoDependence, DailyCigsSmoked, Sex)
 nesarc <- data.frame(nesarc, NumberNicotineSymptoms = DF2$NumberNicotineSymptoms)
 nesarc <- tbl_df(nesarc)
-#########
+# Code 99 properly
+nesarc$DailyCigsSmoked[nesarc$DailyCigsSmoked == 99] <- NA
 # Label stuff
 nesarc$Ethnicity <- factor(nesarc$Ethnicity, 
                            labels = c("Caucasian", "African American", 

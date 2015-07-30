@@ -193,6 +193,7 @@ The mean is 575 / 232 = 2.478448.
 This way of calculating a mean is sometimes referred to as a weighted average, since each value is "weighted" by its frequency.
 
 ```{r}
+library(PASWR2)
 FT <- xtabs(~goals, data = SOCCER)
 FT
 pgoal <- FT/575
@@ -285,15 +286,16 @@ We will therefore use $\bar{x}$ as a measure of center for symmetric distributio
 So far we have learned about different ways to quantify the center of a distribution. A measure of center by itself is not enough, though, to describe a distribution. Consider the following two distributions of exam scores. Both distributions are centered around 70 (the mean and median of both distributions is approximately 70), but the distributions are quite different. The first distribution has a much larger variability in scores compared to the second one.
 
 ```{r, echo = FALSE}
+opar <- par(no.readonly = TRUE)
+par(mar = c(4.1, 2.1, 0, 2.1), mfrow = c(2, 1))
 set.seed(2)
 x <- runif(1000, 20, 120)
 y <- rnorm(1000, 70, 5)
-par(mfrow = c(2, 1))
 hist(x, xlab = "", ylab = "", main = "", xlim = c(20, 120), axes = FALSE)
 axis(side = 1)
 hist(y, xlab = "", ylab = "", main = "", xlim = c(20, 120), axes = FALSE)
 axis(side = 1)
-par(mfrow = c(1, 1))
+par(opar)
 ```
 
 In order to describe the distribution, we therefore need to supplement the graphical display not only with a measure of center, but also with a measure of the variability (or spread) of the distribution.

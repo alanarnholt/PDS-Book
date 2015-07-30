@@ -54,7 +54,7 @@ The main sources used in an empirical paper are **primary sources** such as jour
 
 The methods section describes how the research was conducted. It comprises discussions of your sample, measures, and procedures.
 
-*Sample.* Identify who or what was studied (people, animals, etc.). Identify the level of analysis studied (individual, group, or aggregate). Describe observations vividly so your reader can distinguish them clearly. If you group observations, use meaningful names (“Low-Income Women”) rather than abbreviations (“PPM100”) or labels (“Control Group”). The following is successful section of a sample description:
+*Sample.* Identify who or what was studied (people, animals, etc.). Identify the level of analysis studied (individual, group, or aggregate). Describe observations vividly so your reader can distinguish them clearly. If you group observations, use meaningful names (`Low-Income Women`) rather than abbreviations (`PPM100`) or labels (`Control Group`). The following is successful section of a sample description:
 
 The sample of 1,203 pregnant women was drawn from two public prenatal clinics in Texas and Maryland. The ethnic composition was African American ($n = 414, 34.4$%), Hispanic, primarily Mexican American ($n = 412, 34.2$%), and White ($n = 377, 31.3$%). Most women were between the ages of 20 and 29 years; 30% were teenagers. All were urban residents, and most (94%) had incomes below the poverty level as defined using each state’s criteria for Women, Infants, and Children (WIC) eligibility.
 
