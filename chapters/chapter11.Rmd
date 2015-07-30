@@ -259,7 +259,7 @@ When examining the association between current number of cigarettes smoked (quan
 **Example of how to write post hoc ANOVA results:**
 
 ```{r, fig.width = 8}
-nesarc$DCScat <- cut(nesarc$DailyCigsSmoked, breaks = c(0, 5, 10, 15, 20, 98), include.lowest = TRUE)
+nesarc$DCScat <- cut(nesarc$DailyCigsSmoked, breaks = c(0, 5, 10, 15, 20, 98), include.lowest = FALSE)
 mod <- aov(NumberNicotineSymptoms ~ DCScat, data = nesarc)
 RES <- summary(mod)
 RES
