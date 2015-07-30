@@ -29,43 +29,41 @@ There are two opposing hypotheses for this question:
 * There is no difference in smoking quantity between people with and without depression.
 * There is a difference in smoking quantity between people with and without depression.
 
-The first hypothesis (aka null hypothesis) basically says nothing special is going on between smoking and depression. In other words, that they are unrelated to one another. The second hypothesis (aka the alternate hypothesis) says that there is a relationship and allows that the difference in smoking be- tween those individuals with and without depression could be in either direction (i.e. individuals with depression may smoke more than individuals without depression or they may smoke less).
+The first hypothesis (aka null hypothesis) basically says nothing special is going on between smoking and depression. In other words, that they are unrelated to one another. The second hypothesis (aka the alternate hypothesis) says that there is a relationship and allows that the difference in smoking between those individuals with and without depression could be in either direction (i.e. individuals with depression may smoke more than individuals without depression or they may smoke less).
 
 *1. Choosing a Sample:*
 
 I chose the NESARC, a representative sample of 43,093 non-institutionalized adults in the U.S. As I am interested in evaluating these hypotheses only among individuals who are smokers and who are younger (rather than older) adults, I subset the NESARC data to individuals that are 1) current daily smokers (i.e. smoked in the past year `CHECK321 ==1`, smoked over 100 cigarettes `S3AQ1A ==1`, typically smoked every day `S3AQ3B1 == 1`) are 2) between the ages 18 and 25. This sample ($n=1320$) showed the following:
 
 ```{r}
-library(PDS)
-library(dplyr)
-nesarc1 <- tbl_df(NESARC) %>%
-  filter(S3AQ1A == 1 & CHECK321 == 1 & S3AQ3B1 == 1 & AGE <= 25) %>% 
-  select(S3AQ1A, S3AQ3B1, MAJORDEPLIFE, S3AQ3C1)
-dim(nesarc1)
+# See Chapter 9 for the creation of nesarc
+head(nesarc)
 # Note S3AQ3C1 is wehther person is a daily smoker; MAJORDEPLIFE is major depression
 # S3AQ3C1 represents quantity when cigarettes smoked
-tapply(nesarc1$S3AQ3C1, list(nesarc1$MAJORDEPLIFE), mean, na.rm = TRUE)
-tapply(nesarc1$S3AQ3C1, list(nesarc1$MAJORDEPLIFE), sd, na.rm = TRUE)
+tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), mean, na.rm = TRUE)
+tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), sd, na.rm = TRUE)
 ```
 
-* Young adult, daily smokers with depression smoked an average of `r round(tapply(nesarc1$S3AQ3C1, list(nesarc1$MAJORDEPLIFE), mean, na.rm = TRUE)[2], 1)` cigarettes per day (SD = `r round(tapply(nesarc1$S3AQ3C1, list(nesarc1$MAJORDEPLIFE), sd, na.rm = TRUE)[2], 1)`).
+* Young adult, daily smokers with depression smoked an average of `r round(tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), mean, na.rm = TRUE)[2], 1)` cigarettes per day (SD = `r round(tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), sd, na.rm = TRUE)[2], 1)`).
 
-* Young adult, daily smokers without depression smoked an average of `r round(tapply(nesarc1$S3AQ3C1, list(nesarc1$MAJORDEPLIFE), mean, na.rm = TRUE)[1], 1)` cigarettes per day (SD = `r round(tapply(nesarc1$S3AQ3C1, list(nesarc1$MAJORDEPLIFE), sd, na.rm = TRUE)[1], 1)`).
+* Young adult, daily smokers without depression smoked an average of `r round(tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), mean, na.rm = TRUE)[1], 1)` cigarettes per day (SD = `r round(tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), sd, na.rm = TRUE)[1], 1)`).
 
-While it is true that `r round(tapply(nesarc1$S3AQ3C1, list(nesarc1$MAJORDEPLIFE), mean, na.rm = TRUE)[2], 1)` cigarettes per day are more than `r round(tapply(nesarc1$S3AQ3C1, list(nesarc1$MAJORDEPLIFE), mean, na.rm = TRUE)[1], 1)` cigarettes per day, it is not at all clear that this is a large enough difference to reject the null hypothesis.
+While it is true that `r round(tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), mean, na.rm = TRUE)[2], 1)` cigarettes per day are more than `r round(tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), mean, na.rm = TRUE)[1], 1)` cigarettes per day, it is not at all clear that this is a large enough difference to reject the null hypothesis.
 
 *2. Assessing the Evidence:*
 
-In order to assess whether the data provide strong enough evidence against the null hypothesis (i.e. against the claim that there is no relationship between smoking and depression), we need to ask ourselves: How surprising is it to get a difference of `r diff(tapply(nesarc1$S3AQ3C1, list(nesarc1$MAJORDEPLIFE), mean, na.rm = TRUE))` cigarettes smoked per day between our two groups (de- pression vs. no depression) assuming that the null hypothesis is true (i.e. there is no relationship between smoking and depression).
+In order to assess whether the data provide strong enough evidence against the null hypothesis (i.e. against the claim that there is no relationship between smoking and depression), we need to ask ourselves: How surprising is it to get a difference of `r diff(tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), mean, na.rm = TRUE))` cigarettes smoked per day between our two groups (depression vs. no depression) assuming that the null hypothesis is true (i.e. there is no relationship between smoking and depression).
 
 This is the step where we calculate how likely it is to get data like that observed when $H_0$ is true. In a sense, this is the heart of the process, since we draw our conclusions based on this probability.
 
-It turns out that the probability that we'll get a difference of this size in the mean number of cigarettes smoked in a random sample of 1320 participants is `r t.test(nesarc1$S3AQ3C1~nesarc1$MAJORDEPLIFE)$p.value` (do not worry about how this was calculated at this point).
+It turns out that the probability that we'll get a difference of this size in the mean number of cigarettes smoked in a random sample of 1320 participants is `r t.test(nesarc$DailyCigsSmoked ~ nesarc$MajorDepression, var.equal = TRUE)$p.value` (do not worry about how this was calculated at this point).
 
 ```{r}
-t.test(nesarc1$S3AQ3C1 ~ nesarc1$MAJORDEPLIFE)
-pvalue <- t.test(nesarc1$S3AQ3C1 ~ nesarc1$MAJORDEPLIFE)$p.value
+t.test(nesarc$DailyCigsSmoked ~ nesarc$MajorDepression, var.equal = TRUE)
+pvalue <- t.test(nesarc$DailyCigsSmoked ~ nesarc$MajorDepression, var.equal = TRUE)$p.value
 pvalue
+# Or
+summary(aov(DailyCigsSmoked ~ MajorDepression, data = nesarc))
 ```
 
 Well, we found that if the null hypothesis were true (i.e. there is no association) there is a probability of `r pvalue` of observing data like that observed.
@@ -84,6 +82,7 @@ The reason for using an inferential test is to get a **p-value**. The p-value de
 If this probability is very small, then that means that it would be very surprising to get data like that observed if the null hypothesis were true. The fact that we did not observe such data is therefore evidence supporting the null hypothesis, and we should accept it. On the other hand, if this probability were very small, this means that observing data like that observed is surprising if the null hypothesis were true, so the fact that we observed such data provides evidence against the null hypothesis (i.e. suggests that there is an association between smoking and depression). This crucial probability, therefore, has a special name. It is called the p-value of the test.
 
 In our examples, the p-value was given to you (and you were reassured that you didn't need to worry about how these were derived):
+
 * P-Value = `r pvalue`
 
 Obviously, the smaller the p-value, the more surprising it is to get data like ours when the null hypothesis is true, and therefore the stronger the evidence the data provide against the null. Looking at the p-value in our example we see that there is not adequate evidence to reject the null hypothesis. **In other words, we fail to reject the null hypothesis that there is no association between smoking and depression.**

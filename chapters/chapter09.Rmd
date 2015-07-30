@@ -47,21 +47,31 @@ When graphing your data, it is important that each graph provides clear and accu
 (C $\rightarrow$ C) Prevalence of Nicotine Dependence (C) by Depression Status (C) (among current, daily, young adult smokers)
 
 ```{r, fig.width = 8, fig.height = 4}
+library(ggplot2)
 library(PDS)
 library(dplyr)
 nesarc <- tbl_df(NESARC) %>%
   filter(S3AQ1A ==1 & S3AQ3B1 == 1 & CHECK321 == 1 & AGE <= 25) %>% 
-rename(Ethnicity = ETHRACE2A, Age = AGE, MajorDepression = MAJORDEPLIFE, Sex = SEX, TobaccoDependence = TAB12MDX, DailyCigsSmoked = S3AQ3C1) %>% 
-   select(Ethnicity, Age, MajorDepression, TobaccoDependence, DailyCigsSmoked, Sex)
+  rename(Ethnicity = ETHRACE2A, Age = AGE, MajorDepression = MAJORDEPLIFE, 
+         Sex = SEX, TobaccoDependence = TAB12MDX, DailyCigsSmoked = S3AQ3C1) %>% 
+  select(Ethnicity, Age, MajorDepression, TobaccoDependence, DailyCigsSmoked, Sex)
+#
+nesarc$DailyCigsSmoked[nesarc$DailyCigsSmoked == 99] <- NA  # coding missing values
 # Label stuff
-nesarc$Ethnicity <- factor(nesarc$Ethnicity, labels = c("Caucasian", "African American", "Native American", "Asian", "Hispanic"))
-nesarc$TobaccoDependence <- factor(nesarc$TobaccoDependence, labels = c("No Nicotine Dependence", "Nicotine Dependence"))
+nesarc$Ethnicity <- factor(nesarc$Ethnicity, 
+                           labels = c("Caucasian", "African American", 
+                                      "Native American", "Asian", "Hispanic"))
+nesarc$TobaccoDependence <- factor(nesarc$TobaccoDependence, 
+                                   labels = c("No Nicotine Dependence", 
+                                              "Nicotine Dependence"))
 nesarc$Sex <- factor(nesarc$Sex, labels =c("Female", "Male"))
-nesarc$MajorDepression <- factor(nesarc$MajorDepression, labels =c("No Depression", "Yes Depression"))
+nesarc$MajorDepression <- factor(nesarc$MajorDepression, 
+                                 labels =c("No Depression", "Yes Depression"))
 ggplot(data = nesarc, aes(x = MajorDepression, fill = TobaccoDependence)) + 
   geom_bar(position = "fill") +
   theme_bw() + 
-  labs(x = "", y = "Fraction", title = "Fraction of young adult daily smokers\nwith and without nicotine addiction\nby depression status") + 
+  labs(x = "", y = "Fraction", 
+       title = "Fraction of young adult daily smokers\nwith and without nicotine addiction\nby depression status") + 
   scale_fill_manual(values = c("green", "red"), name = "Tobacco Addiction Status")
 ```
 
@@ -81,6 +91,7 @@ facet_grid(Sex ~ .)
 (Q $\rightarrow$ Q)
 
 ```{r}
+library(PASWR2)
 ggplot(data = GRADES, aes(x = sat, y = gpa)) + 
   geom_point(color = "lightblue") + 
   theme_bw() +

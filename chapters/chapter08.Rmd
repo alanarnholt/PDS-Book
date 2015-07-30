@@ -227,8 +227,9 @@ To get a deeper understanding of the differences between these two measures of c
 
 Here are two datasets:
 
-Data set A $\rightarrow$ 64 65 66 68 70 71 73
-Data set B $\rightarrow$ 64 65 66 68 70 71 730
+Data set A $\rightarrow$ (64, 65, 66, 68, 70, 71, 73)
+
+Data set B $\rightarrow$ (64, 65, 66, 68, 70, 71, 730)
 
 ```{r}
 DataA <- c(64, 65, 66, 68, 70, 71, 73)
