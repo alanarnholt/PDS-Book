@@ -256,13 +256,19 @@ RES
 When examining the association between current number of cigarettes smoked (quantitative response) and past year nicotine dependence (categorical explanatory), an Analysis of Variance (ANOVA) revealed that among daily, young adult smokers (my sample), those with nicotine dependence reported smoking significantly more cigarettes per day (Mean = `r round(MEANS[2],1)`, s.d. $\pm$ `r round(SD[2],1)`) compared to those without nicotine dependence (Mean = `r round(MEANS[1],1)`, s.d. $\pm$ `r round(SD[1],1)`), F(`r RES[[1]][1,1]`, `r RES[[1]][2, 1]`) = `r round(RES[[1]][1,4],1)`, p < 0.0001.
 
 
-### Note to Alan ---- show code to collapse quantity smoked, and number of nicotine dependence symptoms---then check answers below---ie make it reproducible
-
 **Example of how to write post hoc ANOVA results:**
 
-```{r}
+```{r, fig.width = 8}
 nesarc$DCScat <- cut(nesarc$DailyCigsSmoked, breaks = c(0, 5, 10, 15, 20, 98), include.lowest = TRUE)
-# Next---number of nicotine dependence symptoms
+mod <- aov(NumberNicotineSymptoms ~ DCScat, data = nesarc)
+RES <- summary(mod)
+RES
+tapply(nesarc$NumberNicotineSymptoms, nesarc$DCScat, mean)
+TukeyHSD(mod)
+opar <- par(no.readonly = TRUE)
+par(mar = c(5.1, 8.1, 4.1, 2.1), las = 1) # Enlarge left margin
+plot(TukeyHSD(mod))
+par(opar)
 ```
 
-ANOVA revealed that among daily, young adult smokers (my sample), number of cigarettes smoked per day (collapsed into 5 ordered categories, which is the categorical explanatory variable) and number of nicotine dependence symptoms (quantitative response variable) were significantly associated, F (4, 1308) = 11.79, p < 0.0001. Post hoc comparisons of mean number of nicotine dependence symptoms by pairs of cigarettes per day categories revealed that those individuals smoking more than 10 cigarettes per day (i.e. 11 to 15, 16 to 20 and >20) reported significantly more nicotine dependence symptoms compared to those smoking 10 or fewer cigarettes per day (i.e. 1 to 5 and 6 to 10 cigarettes per day).
+ANOVA revealed that among daily, young adult smokers (my sample), number of cigarettes smoked per day (collapsed into 5 ordered categories, which is the categorical explanatory variable) and number of nicotine dependence symptoms (quantitative response variable) were significantly associated, F (`r RES[[1]][1,1]`, `r RES[[1]][2,1]`) = `r round(RES[[1]][1,4],2)`, p < 0.0001. Post hoc comparisons of mean number of nicotine dependence symptoms by pairs of cigarettes per day categories revealed that those individuals smoking more than 10 cigarettes per day (i.e. 11 to 15, 16 to 20 and >20) reported significantly more nicotine dependence symptoms compared to those smoking 10 or fewer cigarettes per day (i.e. 1 to 5 and 6 to 10 cigarettes per day).
