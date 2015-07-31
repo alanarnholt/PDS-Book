@@ -118,3 +118,6 @@ Graphs that seem to provide important information can in fact be erroneous. Plea
 Post a graph showing the association between your explanatory and response variables (bivariate graph) on your private GitHub repository. Include a second graph of your bivariate graph by a third variable (multivariate graph). Write a few sentences describing what your graphs show.
 
 #### Note to Alan --- Augment the graphs and code shown here.
+
+
+-------------------------

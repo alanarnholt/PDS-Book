@@ -192,3 +192,6 @@ r <- cor(nesarc$DailyCigsSmoked, nesarc$NumberNicotineSymptoms, use = "complete.
 r
 r^2
 ```
+
+
+--------------------

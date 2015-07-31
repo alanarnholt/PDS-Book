@@ -87,3 +87,5 @@ During a second review of the codebook for the dataset that you have selected, y
 2. Add questions/items/variables documenting this second topic to your personal codebook.
 
 Following completion of the steps described above, show your instructor and peer mentor (in class) a hard copy of your personal codebook. **Keep this in a folder or binder for your own use throughout the course.**
+
+------------------------

@@ -105,3 +105,5 @@ Although you will **always be interpreting the p-value** for a statistical test,
 A **sampling distribution** is a distribution of all possible samples (of a given size) that could be drawn from the population. If you have a sampling distribution meant to estimate a mean (e.g. the average number of cigarettes smoked in a population), this would be represented as a distribution of frequencies of mean number of cigarettes for consecutive samples drawn from the population. Although we ultimately rely on only one sample, if that sample is representative of the larger population, inferential statistical tests allow us to estimate (with different levels of certainty) a mean (or other parameter such as a standard deviation, proportion, etc.) for the entire population. This idea is the foundation for each of the inferential tools that you will be using this semester.
 
 Please watch two videos focused on [The Big Idea Behind Inference (Video 1 (9:46)](https://www.youtube.com/watch?v=h0KR-0Qryb4&list=PLDEF0B9CBD27AD37E&index=18) and [Video 2 (13:42))](https://www.youtube.com/watch?v=ghndGDAau3g&list=PLDEF0B9CBD27AD37E&index=17).
+
+---------------------------

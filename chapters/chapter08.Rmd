@@ -377,3 +377,5 @@ Recall that the [data visualization cheat sheet](https://www.rstudio.com/wp-cont
 #### Univariate Graphing Assignment
 
 Post univariate graphs of your two main constructs to your private GitHub repository (i.e. data managed variables). Write a few sentences describing what your graphs reveal in terms of shape, spread, and center.
+
+---------------------

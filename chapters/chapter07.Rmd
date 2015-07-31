@@ -120,3 +120,6 @@ Push to your private repository on GitHub:
 
 1. A program that manages your data.
 2. Output that displays 3 of your secondary (i.e. data managed) variables as frequency tables.
+
+
+------------------------------

@@ -140,3 +140,5 @@ The Writing Program at Appalachian State University offers a variety of excellen
 
 #### Research Plan Assignment
 You will spend the next three weeks writing your research plan. This plan should include the following: Title, Author’s name (this will be blank for CrowdGrader submissions to ensure double blind reviewing), Introduction, Method, Implications, and References. The paper should be 4 to 5 pages double-spaced (including a page for references).  In preparation for writing the introduction section, you should have found and read at least 25 primary source articles, although only those that help provide important background and allow you to make an argument in support of your proposed research should be cited.  This assignment will be graded A-F and will act as the basis for your final poster. Your paper should be submitted through <http://www.crowdgrader.org> AND pushed to your private repository. More detailed directions can be found on the course repository.
+
+--------------------------

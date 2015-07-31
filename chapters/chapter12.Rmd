@@ -255,3 +255,5 @@ chisq.test(T3[,3:4], correct = FALSE)
 chisq.test(T3[,3:5], correct = FALSE)
 chisq.test(T3[,4:5], correct = FALSE)
 ```
+
+-------------------------

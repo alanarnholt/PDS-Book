@@ -66,3 +66,5 @@ I add relevant depression questions/items/variables to my personal codebook as w
 
 #### Citation Assignment
 Describe the association that you have decided to examine and key words you found helpful in your search. List at least 5 of the more appropriate references that you have found and read (TO RECEIVE CREDIT, YOU MUST USE ZOTERO FOR THIS ASSIGNMENT). Describe findings and interesting themes that you have uncovered and list a tentative research question or two that you hope to pursue. Be brief and use bullets to cover these details. **The example above is a model for this assignment.**  See the [LiteratureReview directory](https://github.com/STT2810-ASU/STT2810ClassRepo/tree/master/LiteratureReview) for an example of the **Citation Assignment** done in R Markdown.
+
+------------------------

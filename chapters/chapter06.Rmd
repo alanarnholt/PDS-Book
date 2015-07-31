@@ -40,3 +40,6 @@ Create an R Markdown file and push the file to GitHub showing:
 1. Your program
 2. The output that displays three of your categorical variables in frequency tables
 3. A few sentences describing the frequency tables.
+
+
+-----------------------
