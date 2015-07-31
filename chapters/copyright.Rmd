@@ -1,0 +1,12 @@
+---
+title: "CopyRight.Rmd"
+author: "Alan Arnholt"
+date: "7/31/2015"
+output: html_document
+---
+
+![CCLI](./graphics/CCLIlogo.png)  
+
+Copyright Information:
+
+Passion Drive Statistics (Light Weight) by Alan Arnholt under the [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.](http://creativecommons.org/licenses/by-nc-sa/3.0/)

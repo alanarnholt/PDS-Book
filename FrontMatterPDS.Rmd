@@ -5,6 +5,11 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
+
+```{r, label = "copyright", child = "./chapters/copyright.Rmd", eval = TRUE, message = FALSE}
+```
+
+
 ```{r, label = "SETUP", echo = FALSE, results= 'hide', message = FALSE, warning = FALSE}
 library(knitr)
 knitr::opts_chunk$set(fig.align = "center", comment = NA, fig.show = 'as.is',  fig.height = 4, fig.width = 4, prompt = TRUE, highlight = TRUE, tidy = FALSE, warning = FALSE, message = FALSE, tidy.opts=list(blank = TRUE, width.cutoff= 75, cache = TRUE))
@@ -45,3 +50,12 @@ knitr::opts_chunk$set(fig.align = "center", comment = NA, fig.show = 'as.is',  f
 
 ```{r, label = "chapter12", child = "./chapters/chapter12.Rmd", eval = TRUE, message = FALSE}
 ```
+
+```{r, label = "chapter13", child = "./chapters/chapter13.Rmd", eval = TRUE, message = FALSE}
+```
+
+
+
+
+
+
