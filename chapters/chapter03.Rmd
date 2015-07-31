@@ -6,7 +6,7 @@ output: html_document
 ---
 
 # Chapter 3
-### Data Architecture
+## Data Architecture
 
 **What do we really mean by data?**
 
@@ -16,7 +16,7 @@ A dataset is a collection of information, usually presented in tabular form. Eac
 
 Relying on datasets, statistics pulls all of the behavioral, physical and social sciences together. It’s arguably the one language that we all have in common. While you may think that data is very, very different from discipline to discipline, it is not. What you measure is different, and your research question is obviously dramatically different; whom you observe and whom you collect data from -- or what you collect data from -- can be very different, but once you have the data, approaches to analyzing it statistically are quite similar regardless of individual discipline.
 
-#### Example: Medical Recordings
+### Example: Medical Recordings
 The following dataset shows medical records from a particular survey:
 
 ![exmedicalrecords](./graphics/exmedicalrecords.jpg)

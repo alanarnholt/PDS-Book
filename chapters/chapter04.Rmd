@@ -6,7 +6,7 @@ output: html_document
 ---
 
 # Chapter 4
-### Conducting a Literature Review
+## Conducting a Literature Review
 
 At this point you have (1) generated a personal codebook reflecting variables of interest to you from your data set; and (2) selected an association that you would like to test. You are now ready to conduct a literature review using **primary source** journal articles (i.e. those reporting original research findings).
 
@@ -20,7 +20,7 @@ It is important to identify and review primary sources either through your on-li
 
 Note that as you read the literature, there should be an exchange between your research question and what you are learning. **The literature review may cause you to add to the complexity of your research question, further focus that question, or even abandon the question for another.**
 
-#### Literature Review
+### Literature Review
 During your literature review, you should:
 
 1. Identify primary source articles that address the association that you have decided to examine

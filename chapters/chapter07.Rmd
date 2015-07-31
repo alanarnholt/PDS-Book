@@ -6,7 +6,7 @@ output: html_document
 ---
 
 # Chapter 7
-### Data Management
+## Data Management
 
 Examining frequency distributions for each of your variables is the key to further guiding the decision making involved in quantitative research.
 
@@ -37,7 +37,7 @@ knitr::kable(DF2, align = c("c", "c", "c"), caption = "Body Image Distribution")
 
 Please watch the [DATA MANAGEMENT video](https://www.youtube.com/watch?v=thGk4CUEXQ8&index=53&list=PLDEF0B9CBD27AD37E).
 
-#### Data Management
+### Data Management
 
 During the class session, we will begin to work through how to make decisions about data management and how to put those decisions into action.
 

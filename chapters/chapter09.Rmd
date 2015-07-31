@@ -6,7 +6,7 @@ output: html_document
 ---
 
 # Chapter 9
-### Graphing Relationships
+##  Graphing Relationships
 
 So far we have dealt with data obtained from one variable (either categorical or quantitative) and learned how to describe the distribution of the variable using the appropriate visual displays and numerical measures. In this section, examining relationships, we will look at two variables at a time and, as the title suggests, explore the relationship between them using (as before) visual displays and numerical summaries.
 
@@ -42,7 +42,7 @@ At this point, we will be asking you to **“impose” a causal model** on your 
 When graphing your data, it is important that each graph provides clear and accurate summaries of the data that do not mislead. Please watch [GRAPHING RULES video](https://www.youtube.com/watch?v=JVq2VKib0vw&index=21&list=PLDEF0B9CBD27AD37E) for a few basic graphing guidelines to help you accomplish this goal.
 
 
-#### Bivariate Graphing
+### Bivariate Graphing
 
 (C $\rightarrow$ C) Prevalence of Nicotine Dependence (C) by Depression Status (C) (among current, daily, young adult smokers)
 
@@ -87,7 +87,7 @@ ggplot(data = nesarc, aes(x = MajorDepression, fill = TobaccoDependence)) +
   scale_fill_manual(values = c("green", "red"), name = "Tobacco Addiction Status")
 ```
 
-#### Multivariate Graphing
+### Multivariate Graphing
 
 ```{r, fig.width = 8, fig.height = 4}
 ggplot(data = nesarc, aes(x = MajorDepression, fill = TobaccoDependence)) + 
@@ -98,7 +98,7 @@ ggplot(data = nesarc, aes(x = MajorDepression, fill = TobaccoDependence)) +
 facet_grid(Sex ~ .)
 ```
 
-#### Bivariate Graphing 
+### Bivariate Graphing 
 
 (Q $\rightarrow$ Q)
 
