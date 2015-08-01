@@ -38,7 +38,7 @@ To create a scatterplot, each pair of values is plotted, so that the value of th
 ```{r}
 library(ggplot2)
 ggplot(data = signdist, aes(x = Age, y = Distance)) + 
-  geom_point() +
+  geom_point(color = "purple") +
   theme_bw()
 ```
 
@@ -98,7 +98,7 @@ Let's go back now to our example, and use the scatterplot to examine the relatio
 ```{r}
 library(ggplot2)
 ggplot(data = signdist, aes(x = Age, y = Distance)) + 
-  geom_point() +
+  geom_point(color = "purple") +
   theme_bw() + 
   labs(x = "Drivers Age (years)", y = "Sign Legibility Distance (feet)")
 ```
@@ -107,7 +107,7 @@ The direction of the relationship is negative, which makes sense in context, sin
 
 ```{r}
 ggplot(data = signdist, aes(x = Age, y = Distance)) + 
-  geom_point() +
+  geom_point(color = "purple") +
   theme_bw() + 
   labs(x = "Drivers Age (years)", y = "Sign Legibility Distance (feet)") +
   stat_smooth(method = lm)
@@ -152,7 +152,7 @@ Earlier, we used the scatterplot below to find a negative linear relationship be
 cor(signdist$Age, signdist$Distance)
 cor.test(signdist$Age, signdist$Distance)
 ggplot(data = signdist, aes(x = Age, y = Distance)) + 
-  geom_point() +
+  geom_point(color = "purple") +
   theme_bw() + 
   labs(x = "Drivers Age (years)", y = "Sign Legibility Distance (feet)") +
   stat_smooth(method = lm)

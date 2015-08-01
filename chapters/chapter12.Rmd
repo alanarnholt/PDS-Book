@@ -37,7 +37,7 @@ TMAT <- as.table(MAT)
 DFTMAT <- as.data.frame(TMAT) # convert to data frame
 DF <- vcdExtra::expand.dft(DFTMAT)
 TX <- addmargins(xtabs(~Gender + DroveDrunk, data = DF))
-print(xtable(TX, caption = "Table showing drinking status during the last two hours and gender"), type = "html")
+print(xtable(TX, caption = "Table showing drinking status during the last two hours and gender"), type = "html", caption.placement = "top")
 ```
 
 The following code shows how to read the data into a matrix, then convert the matrix to a table, then to a data frame named `DF`.
@@ -239,11 +239,15 @@ T3 <- xtabs(~TobaccoDependence + DCScat, data = nesarc)
 T3
 prop.table(T3, 2)
 library(ggplot2)
-ggplot(data = nesarc, aes(x = DCScat, fill = TobaccoDependence)) + 
+ggplot(data = nesarc[(!is.na(nesarc$TobaccoDependence) & 
+                        !is.na(nesarc$DCScat)), ], 
+       aes(x = DCScat, fill = TobaccoDependence)) + 
   geom_bar(position = "fill") +
   theme_bw() +
-  labs(x= "Daily Smoking Frequency", y = "Fraction")
+  labs(x= "Daily Smoking Frequency", y = "Fraction") +
+  guides(fill = guide_legend(reverse = TRUE))
 chisq.test(T3, correct = FALSE)
+# Post hoc tests
 chisq.test(T3[,1:2], correct = FALSE)
 chisq.test(T3[,1:3], correct = FALSE)
 chisq.test(T3[,1:4], correct = FALSE)

@@ -84,7 +84,8 @@ ggplot(data = nesarc, aes(x = MajorDepression, fill = TobaccoDependence)) +
   theme_bw() + 
   labs(x = "", y = "Fraction", 
        title = "Fraction of young adult daily smokers\nwith and without nicotine addiction\nby depression status") + 
-  scale_fill_manual(values = c("green", "red"), name = "Tobacco Addiction Status")
+  scale_fill_manual(values = c("green", "red"), name = "Tobacco Addiction Status") + 
+  guides(fill = guide_legend(reverse = TRUE))
 ```
 
 ### Multivariate Graphing
@@ -95,7 +96,8 @@ ggplot(data = nesarc, aes(x = MajorDepression, fill = TobaccoDependence)) +
   theme_bw() + 
   labs(x = "", y = "Fraction", title = "Fraction of young adult daily smokers\nwith and without nicotine addiction\nby depression status") + 
   scale_fill_manual(values = c("green", "red"), name = "Tobacco Addiction Status") +
-facet_grid(Sex ~ .)
+  facet_grid(Sex ~ .) +
+  guides(fill = guide_legend(reverse = TRUE))
 ```
 
 ### Bivariate Graphing 

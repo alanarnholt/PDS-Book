@@ -1,0 +1,26 @@
+---
+title: "Moderation"
+author: "Alan Arnholt"
+date: "7/31/2015"
+output: html_document
+---
+
+# Chapter 14
+## Moderation
+
+```{r, fig.width=8}
+library(ggplot2)
+ggplot(data = nesarc[(!is.na(nesarc$TobaccoDependence) & 
+                        !is.na(nesarc$DCScat)), ], 
+       aes(x = DCScat, fill = TobaccoDependence)) + 
+  geom_bar(position = "fill") +
+  theme_bw() +
+  labs(x= "Daily Smoking Frequency", y = "Fraction") +
+  guides(fill = guide_legend(reverse = TRUE)) +
+  facet_grid(MajorDepression ~ .)
+# Models
+mod.aov <- aov(DailyCigsSmoked ~ TobaccoDependence + MajorDepression + TobaccoDependence:MajorDepression, data = nesarc)
+summary(mod.aov)
+mod2.aov <- aov(DailyCigsSmoked ~ MajorDepression, data = nesarc)
+summary(mod2.aov)
+```
