@@ -12,7 +12,7 @@ $Q \rightarrow Q$ is different in the sense that both variables (in particular t
 
 **Example**
 
-**Highway Signs**
+**Highway Signs**^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b85a180020ca600863541d4c89219]
 
 A Pennsylvania research firm conducted a study in which 30 drivers (of ages 18 to 82 years old) were sampled, and for each one, the maximum distance (in feet) at which he/she could read a newly designed sign was determined. The goal of this study was to explore the relationship between a driver's age and the maximum distance at which signs were legible, and then use the study's findings to improve safety for older drivers. (Reference: Utts and Heckard, Mind on Statistics (2002). Originally source: Data collected by Last Resource, Inc, Bellfonte, PA.)
 

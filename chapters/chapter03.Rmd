@@ -6,7 +6,7 @@ output: html_document
 ---
 
 # Chapter 3
-## Data Architecture
+## Data Architecture^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b846d80020ca60084af88b54dce2b]
 
 **What do we really mean by data?**
 

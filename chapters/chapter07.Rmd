@@ -6,7 +6,7 @@ output: html_document
 ---
 
 # Chapter 7
-## Data Management
+## Data Management^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b847680020ca600310bf43153f582]
 
 Examining frequency distributions for each of your variables is the key to further guiding the decision making involved in quantitative research.
 

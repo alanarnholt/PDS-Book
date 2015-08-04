@@ -7,7 +7,7 @@ output: html_document
 
 
 # Chapter 12
-## Chi-Square Test of Independence $C \rightarrow C$
+## Chi-Square Test of Independence $C \rightarrow C$^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b8b0380020ca600863516c1304677]
 
 Please watch the [CHI SQUARE Video](https://www.youtube.com/watch?v=eLAFK_XovnE&index=57&list=PLDEF0B9CBD27AD37E).
 

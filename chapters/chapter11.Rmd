@@ -6,7 +6,7 @@ output: html_document
 ---
 
 # Chapter 11
-## Analysis of Variance $C \rightarrow Q$
+## Analysis of Variance $C \rightarrow Q$^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b8ad280020ca60166a71faa2caf60]
 
 Please watch the [Analysis of Variance video](https://www.youtube.com/watch?v=XRKrSJAwGUo&list=PLDEF0B9CBD27AD37E&index=56).
 

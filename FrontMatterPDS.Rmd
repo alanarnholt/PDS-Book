@@ -63,4 +63,11 @@ knitr::opts_chunk$set(fig.align = "center", comment = NA, fig.show = 'as.is',  f
 ```{r, label = "chapter15", child = "./chapters/chapter15.Rmd", eval = TRUE, message = FALSE}
 ```
 
+```{r, label = "chapter16", child = "./chapters/chapter16.Rmd", eval = TRUE, message = FALSE}
+```
 
+```{r, label = "chapter17", child = "./chapters/chapter17.Rmd", eval = TRUE, message = FALSE}
+```
+
+```{r, label = "chapter18", child = "./chapters/chapter18.Rmd", eval = TRUE, message = FALSE}
+```

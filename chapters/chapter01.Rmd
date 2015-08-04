@@ -26,7 +26,8 @@ of data management and analytic tasks in the pursuit of answers to questions of 
 
 **GitHub Repository:** To provide reliable backup of your work, you will use a private GitHub repository. While you will have read/write access to your own repository, you will also have read access to all public repositories in the organization (Course). Aside from providing a centralized way to share files, GitHub is meant to function as a resource in support of collaboration. Put simply, our hope is that you work together!
 
-### An Introduction to Statistics
+### An Introduction to Statistics^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b846480020ca6018dda7ea62a2528]
+
 ![producingdata](./graphics/producingdata.jpg)
 
 Statistics plays a significant role across the physical and social sciences and is arguably the most salient point of intersection between diverse disciplines given that researchers constantly communicate information on varied topics through the common language of statistics. In a nutshell, what statistics is all about is converting data into useful information. Statistics is therefore a process where we are:

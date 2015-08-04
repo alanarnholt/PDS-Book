@@ -60,3 +60,41 @@ mod3 <- aov(DailyCigsSmoked ~ TobaccoDependence + MajorDepression, data = nesarc
 summary(mod3)
 mod4 <- aov(DailyCigsSmoked ~ TobaccoDependence*MajorDepression, data = nesarc)
 summary(mod4)
+###################
+library(grid)
+library(PDS)
+library(ggplot2)
+mod.lm <- lm(Distance ~ Age, data = signdist)
+summary(mod.lm)
+predict(mod.lm, newdata = data.frame(Age = 60))
+#############################################################
+PV <- predict(mod.lm, newdata = data.frame(Age = 60))
+PV
+ggplot(data = signdist, aes(x = Age, y = Distance)) + 
+   geom_point(color = "purple") +
+   theme_bw() + 
+   labs(x = "Drivers Age (years)", y = "Sign Legibility Distance (feet)") + 
+   geom_smooth(method = "lm", se = FALSE) + 
+   geom_line(data = data.frame(Age = c(60, 60), 
+                               Distance = c(280, PV)), 
+             arrow = arrow(type = "closed", angle = 15), color = "red") + 
+  geom_line(data = data.frame(Age = c(60, 19), Distance = c(PV, PV)),
+            arrow = arrow(type = "closed", angle = 15, ends = "first"), color = "red")
+
+### Else
+library(ggplot2)
+ggplot(data = nesarc[(!is.na(nesarc$TobaccoDependence) & 
+                        !is.na(nesarc$DCScat)), ], 
+       aes(x = DCScat, fill = TobaccoDependence)) + 
+  geom_bar(position = "fill") +
+  theme_bw() +
+  labs(x= "Daily Smoking Frequency", y = "Fraction") +
+  guides(fill = guide_legend(reverse = TRUE)) +
+  facet_grid(MajorDepression ~ .)
+#####
+
+# Models
+mod.aov <- aov(DailyCigsSmoked ~ TobaccoDependence + MajorDepression + TobaccoDependence:MajorDepression, data = nesarc)
+summary(mod.aov)
+mod2.aov <- aov(DailyCigsSmoked ~ MajorDepression, data = nesarc)
+summary(mod2.aov)
