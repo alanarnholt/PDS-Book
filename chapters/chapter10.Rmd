@@ -36,7 +36,7 @@ The first hypothesis (aka null hypothesis) basically says nothing special is goi
 I chose the NESARC, a representative sample of 43,093 non-institutionalized adults in the U.S. As I am interested in evaluating these hypotheses only among individuals who are smokers and who are younger (rather than older) adults, I subset the NESARC data to individuals that are 1) current daily smokers (i.e. smoked in the past year `CHECK321 ==1`, smoked over 100 cigarettes `S3AQ1A ==1`, typically smoked every day `S3AQ3B1 == 1`) are 2) between the ages 18 and 25. This sample ($n=1320$) showed the following:
 
 ```{r}
-# See Chapter 9 for the creation of nesarc
+# See Chapter 7 for the creation of nesarc
 summary(nesarc)
 tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), mean, na.rm = TRUE)
 tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), sd, na.rm = TRUE)

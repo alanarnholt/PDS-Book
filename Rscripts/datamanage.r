@@ -19,9 +19,9 @@ nesarc <- tbl_df(NESARC) %>%
   select(Ethnicity, Age, MajorDepression, TobaccoDependence, DailyCigsSmoked, Sex)
 nesarc <- data.frame(nesarc, NumberNicotineSymptoms = DF2$NumberNicotineSymptoms)
 nesarc <- tbl_df(nesarc)
-nesarc$DCScat <- cut(nesarc$DailyCigsSmoked, breaks = c(0, 5, 10, 15, 20, 98), include.lowest = FALSE)
 # Code 99 properly
 nesarc$DailyCigsSmoked[nesarc$DailyCigsSmoked == 99] <- NA
+nesarc$DCScat <- cut(nesarc$DailyCigsSmoked, breaks = c(0, 5, 10, 15, 20, 98), include.lowest = FALSE)
 # Label stuff
 nesarc$Ethnicity <- factor(nesarc$Ethnicity, 
                            labels = c("Caucasian", "African American", 
@@ -60,6 +60,25 @@ mod3 <- aov(DailyCigsSmoked ~ TobaccoDependence + MajorDepression, data = nesarc
 summary(mod3)
 mod4 <- aov(DailyCigsSmoked ~ TobaccoDependence*MajorDepression, data = nesarc)
 summary(mod4)
+#######################
+?interaction.plot
+tapply(nesarc$DailyCigsSmoked, list(nesarc$TobaccoDependence, nesarc$MajorDepression), 
+       mean, na.rm = TRUE)
+# Need to write function t ignore NA values
+mean.rm.na <- function(x){mean(x, na.rm=TRUE)}
+# Ok....note lines do not cross....but not the most beautiful graph
+interaction.plot(nesarc$MajorDepression, nesarc$TobaccoDependence, 
+                 nesarc$DailyCigsSmoked, fun = mean.rm.na)
+###
+ggplot(data = nesarc, aes(x = MajorDepression, y = DailyCigsSmoked, shape = TobaccoDependence,
+                            group = TobaccoDependence, linetype = TobaccoDependence)) +
+  stat_summary(fun.y = mean, na.rm = TRUE, geom = "point") +
+  stat_summary(fun.y = mean, na.rm = TRUE, geom = "line") +
+  labs(y = "Mean Daily Cigarettes Smoked", x = "") + 
+  guides(fill = guide_legend(reverse = TRUE)) + 
+  theme_bw()
+###
+
 ###################
 library(grid)
 library(PDS)

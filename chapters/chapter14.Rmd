@@ -16,15 +16,57 @@ I have hypotheses about the association between smoking quantity and nicotine de
 
 To test this, I can run two ANOVA tests, one examining the association between nicotine dependence (categorical) and level of smoking (quantitative) for those with depression and one examining the association between nicotine dependence (categorical) and level of smoking (quantitative) for those without depression.  
 
-The results show a significant association between smoking and nicotine dependence such that the greater the smoking, the higher the rate of nicotine dependence among those individuals with and without depression. In this example, we would say that depression does not moderate the relationship between smoking and nicotine dependence. In other words, the relationship between smoking and nicotine dependence is consistent for those with and without depression.
+```{r}
+mod1 <- aov(DailyCigsSmoked ~ TobaccoDependence, 
+            data = nesarc[nesarc$MajorDepression == "Yes Depression", ])
+summary(mod1)
+mod2 <- aov(DailyCigsSmoked ~ TobaccoDependence, 
+            data = nesarc[nesarc$MajorDepression == "No Depression", ])
+summary(mod2)
+mod3 <- aov(DailyCigsSmoked ~ TobaccoDependence*MajorDepression, data = nesarc)
+summary(mod3)
+```
 
-**Alan show R code/graphs here**
+The results show a significant association between smoking and nicotine dependence such that the greater the smoking, the higher the rate of nicotine dependence among those individuals with and without depression. In this example, we would say that depression does not moderate the relationship between smoking and nicotine dependence. In other words, the relationship between smoking and nicotine dependence is consistent for those with and without depression.  The interaction between `TobaccoDependence` and `MajorDerpression` is not significant (p-value = $`r summary(mod3)[[1]][3, 5]`$).
+
+```{r, fig.width = 8}
+tapply(nesarc$DailyCigsSmoked, list(nesarc$TobaccoDependence, nesarc$MajorDepression), 
+       mean, na.rm = TRUE)
+# Graphing the interaction
+ggplot(data = nesarc, aes(x = MajorDepression, y = DailyCigsSmoked, 
+                          shape = TobaccoDependence, group = TobaccoDependence, 
+                          linetype = TobaccoDependence)) +
+  stat_summary(fun.y = mean, na.rm = TRUE, geom = "point") +
+  stat_summary(fun.y = mean, na.rm = TRUE, geom = "line") +
+  labs(y = "Mean Daily Cigarettes Smoked", x = "") + 
+  guides(fill = guide_legend(reverse = TRUE)) + 
+  theme_bw()
+```
+
 
 I have a similar question regarding alcohol dependence.  Specifically, I believe that the association between smoking quantity and nicotine dependence is different for individuals with and without alcohol dependence (the potential moderator).  For those individuals with alcohol dependence, I believe that smoking and nicotine dependence will not be associated (i.e there will be high rates nicotine dependence at low, moderate and high levels of smoking), while among those without alcohol dependence, smoking quantity will be significantly associated with the likelihood of experiencing nicotine dependence (i.e. the more one smokes, the more likely he/she is to be nicotine dependent). In other words, I am hypothesizing a non-significant association between smoking and nicotine dependence for individuals with alcohol dependence and a significant,positive association between smoking and nicotine dependence for individuals without alcohol dependence.  
 
 To test this, I run two ANOVA tests, one examining the association between smoking and nicotine dependence for those with alcohol dependence and one examining the association between smoking and nicotine dependence for those without alcohol dependence.
 
-**Alan show R code/graphs here**
+```{r, fig.width = 10}
+mod4 <- aov(DailyCigsSmoked ~ TobaccoDependence, 
+            data = nesarc[nesarc$AlcoholAD == "No Alcohol", ])
+summary(mod4)
+mod5 <- aov(DailyCigsSmoked ~ TobaccoDependence, 
+            data = nesarc[nesarc$AlcoholAD == "Alcohol Dependence", ])
+summary(mod5)
+mod6 <- aov(DailyCigsSmoked ~ TobaccoDependence*AlcoholAD, data = nesarc)
+summary(mod6)
+# Graphing the interaction
+ggplot(data = nesarc, aes(x = AlcoholAD, y = DailyCigsSmoked, 
+                          shape = TobaccoDependence, group = TobaccoDependence, 
+                          linetype = TobaccoDependence)) +
+  stat_summary(fun.y = mean, na.rm = TRUE, geom = "point") +
+  stat_summary(fun.y = mean, na.rm = TRUE, geom = "line") +
+  labs(y = "Mean Daily Cigarettes Smoked", x = "") + 
+  guides(fill = guide_legend(reverse = TRUE)) + 
+  theme_bw()
+```
 
 The results show that there is a significant association between smoking and nicotine dependence but, as I hypothesized, sized, only for those without alcohol dependence. That is, for those without alcohol dependence, nicotine dependence is positively associated with level of smoking. In contrast, for those with alcohol dependence, the association between smoking and nicotine dependence is non-significant (statistically similar rates of nicotine dependence at every level of smoking).  Because the relationship between the explanatory variable (smoking) and the response variable (nicotine dependence) is different based on the presence or absence of our third variable (alcohol dependence), we would say that alcohol dependence moderates the relationship between nicotine dependence and smoking.
 

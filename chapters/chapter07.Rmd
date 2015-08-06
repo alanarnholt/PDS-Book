@@ -108,11 +108,92 @@ library(dplyr)
 title_of_subsetted_data <- filter(title_of_data_set, "diabetes2" == 1)
 ```
 
-#### Alan-add code for creating composite variable HERE
+Three different approaches to subsetting data will be illustrated.  The first approach is to use the `dplyr` function `filter`; the second approach is to use indices; and the third approach is to use the function `subset`.  Consider creating a subset of the `NESARC` data set where a person indicates
 
-See the `PDS` vignette for additional examples.
+1. He/she has smoked over 100 cigarettes (`S3AQ1A == 1`)
+2. He/she has smoked in the past year (`CHECK321 == 1`)
+3. He/she has typically smoked every day over the last year (`S3AQ3B1 == 1`)
+4. He/she is less than or equal to 25 years old (`AGE <= 25`)
+
+
+The first approach uses the `filter` function with the `%>%` function.  Although it is not a requirement, the data frame `NESARC` is converted to a `data frame tbl` per the advice given in the `dplyr` vignette.
+
+```{r label = "SUB1"}
+library(PDS)
+library(dplyr)
+NESARCsub1 <- tbl_df(NESARC) %>%
+  filter(S3AQ1A == 1 & CHECK321 == 1 & S3AQ3B1 == 1 & AGE <= 25)
+dim(NESARCsub1)
+```
+
+The second approach uses standard indexing.
+
+```{r label = "SUB2"}
+NESARCsub2 <- NESARC[NESARC$S3AQ1A == 1 & NESARC$CHECK321 == 1 & 
+                       NESARC$S3AQ3B1 == 1 & NESARC$AGE <= 25, ]
+dim(NESARCsub2)
+```
+
+The third approach uses the `subset` function.
+```{r label = "SUB3"}
+NESARCsub3 <- subset(NESARC, subset = S3AQ1A == 1 & CHECK321 == 1 & 
+                       S3AQ3B1 == 1 & AGE <= 25)
+dim(NESARCsub3)
+```
+
 
 **NOTE:** Often, you will need to create groups or sub-samples from the data set for the purpose of making comparisons. It is important to be certain that the groups that you would like to compare are of adequate size and number. For example, if you were interested in comparing complications of depression in parents who had lost a child through miscarriage vs. parents who had lost a child in the first year of life, it would be important to have large enough groups of each. It would not be appropriate to attempt to compare 5000 observations in the miscarriage group to only 9 observations in the first year group.
+
+### Extended Example
+
+Use the data frame `NESARC` and create a new variable (`NumberNicotineSymptoms`) that is the sum of all of the nicotine dependence symptoms where a person indicates
+
+1. He/she has smoked over 100 cigarettes (`S3AQ1A == 1`)
+2. He/she has smoked in the past year (`CHECK321 == 1`)
+3. He/she has typically smoked every day over the last year (`S3AQ3B1 == 1`)
+4. He/she is less than or equal to 25 years old (`AGE <= 25`)
+
+
+The following code selects the 67 variables that deal with nicotine dependence using the `select` and `contains` functions from `dplyr`.
+The `ifelse` function is used in the `myfix` function to convert values of 2 and 9 to 0.
+
+```{r}
+library(PDS)
+library(dplyr)
+DF <- tbl_df(NESARC) %>%
+  filter(S3AQ1A ==1 & S3AQ3B1 == 1 & CHECK321 == 1 & AGE <= 25) %>% 
+  select(contains("S3AQ8"))
+myfix <- function(x){ifelse(x %in% c(2, 9), 0, ifelse(x == 1, 1, NA))}
+DF2 <- as.data.frame(apply(DF, 2, myfix))
+DF2$NumberNicotineSymptoms <- apply(DF2, 1, sum, na.rm = TRUE)
+nesarc <- tbl_df(NESARC) %>% 
+  filter(S3AQ1A ==1 & S3AQ3B1 == 1 & CHECK321 == 1 & AGE <= 25) %>% 
+  rename(Ethnicity = ETHRACE2A, Age = AGE, MajorDepression = MAJORDEPLIFE, 
+         Sex = SEX, TobaccoDependence = TAB12MDX, DailyCigsSmoked = S3AQ3C1,
+         AlcoholAD = ALCABDEPP12DX) %>% 
+  select(Ethnicity, Age, MajorDepression, TobaccoDependence, DailyCigsSmoked, Sex, AlcoholAD)
+nesarc <- data.frame(nesarc, NumberNicotineSymptoms = DF2$NumberNicotineSymptoms)
+nesarc <- tbl_df(nesarc)
+# Code 99 properly
+nesarc$DailyCigsSmoked[nesarc$DailyCigsSmoked == 99] <- NA
+# Create smoking categories
+nesarc$DCScat <- cut(nesarc$DailyCigsSmoked, breaks = c(0, 5, 10, 15, 20, 98), include.lowest = FALSE)
+# Label factors
+nesarc$Ethnicity <- factor(nesarc$Ethnicity, 
+                           labels = c("Caucasian", "African American", 
+                                      "Native American", "Asian", "Hispanic"))
+nesarc$TobaccoDependence <- factor(nesarc$TobaccoDependence, 
+                                   labels = c("No Nicotine Dependence", 
+                                              "Nicotine Dependence"))
+nesarc$Sex <- factor(nesarc$Sex, labels =c("Female", "Male"))
+nesarc$MajorDepression <- factor(nesarc$MajorDepression, 
+                                 labels =c("No Depression", "Yes Depression"))
+nesarc$AlcoholAD <- factor(nesarc$AlcoholAD, labels = c("No Alcohol", "Alcohol Abuse", "Alcohol Dependence", "Alcohol Abuse and Dependence"))
+#
+dim(nesarc)
+```
+
+See the `PDS` vignette for additional examples.
 
 #### Data Management Assignment
 
