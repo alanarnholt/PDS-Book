@@ -1,2 +1,7 @@
-# PDS-Book
-Light weight version of Passion Driven Statistics for use at Appalachian State University
+# *Passion Driven Statistics (Light Weight)*
+
+* Alan's version of Passion Driven Statistics (PDSLW) tweaked for use at Appalachian State University with GitHub and R.
+
+* A version (possibly dated) of PDSLW is viewable on [RPubs](https://rpubs.com/arnholt/97944).
+
+* The `R` package `PDS` is maintained in the [PDS](https://github.com/alanarnholt/PDS) repository. 
