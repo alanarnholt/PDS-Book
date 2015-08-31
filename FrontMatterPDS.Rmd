@@ -1,11 +1,13 @@
 ---
 title: "Passion Driven Statistics (Light Weight)"
 author: "Alan T. Arnholt modified from materials compiled by Lisa Dierker"
-date: "`r Sys.Date()`"
+date: '`r Sys.Date()`'
 output:
   html_document:
-    toc: true
+    toc: yes
     toc_depth: 4
+  pdf_document:
+    toc: yes
 ---
 
 
