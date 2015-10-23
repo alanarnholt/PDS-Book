@@ -6,7 +6,7 @@ output: pdf_document
 ---
 # Chapter 2
 
-### Data Sets and Code Books
+## Data Sets and Code Books
 
 Since we will not be producing data for this course, the first step of your project will be to choose a data set (from those made available) that offers the opportunity to conduct research on a general topic that will be of significant interest to you.
 
@@ -22,7 +22,7 @@ A full list will be presented in class. Here are a few examples:
 
 **[Outlook On Life Surveys (OOL)](http://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/35348?q=outlook+on+LIfe&amp;searchSource=find-analyze-home&amp;sortBy=)**
 
-### Data Sets and Code Books
+### Code Books
 
 Before accessing any data, you will be reviewing the available codebooks (sometimes called “data dictionaries”). Codebooks commonly offer complete information regarding the data set (e.g. general topics addressed, questions and/or measurements used, and in some cases the frequency of responses or values). Reviewing a code book is always the first step in research based on existing data since 1) code books can be used to generate research questions; and 2) data is generally useless and uninterpretable without it. 
 
@@ -31,7 +31,10 @@ The code book describes how the data are arranged in the computer file or files,
 ![excodebook](./graphics/excodebook.jpg)
 
 #### Selecting A Data Set
-At this point, you should review the available codebook for the data set that most interests you.
+At this point, you should review the available codebooks for the data set that most interests you.  The [PDS](https://github.com/alanarnholt/PDS)^[https://github.com/alanarnholt/PDS] R package has the codebooks and data sets for this course.
 
 #### Selecting A Data Set Assignment
 Select a data set that you will work with. Add the abbreviated title of that data set (i.e. AddHealth, NESARC, Mars Crater, IPEDS, or OOL) to the README file of your GitHub repository.
+
+
+-------------------------

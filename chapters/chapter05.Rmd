@@ -6,9 +6,9 @@ output: html_document
 ---
 
 # Chapter 5
-### Writing About Empirical Research
+## Writing About Empirical Research
 
-The goal of research is to disseminate your work and allow it to guide further study. As such, writing is an important and ongo- ing part of the research process.
+The goal of research is to disseminate your work and allow it to guide further study. As such, writing is an important and ongoing part of the research process.
 
 Successful empirical writing minimizes descriptive or complex language so methodologies, conclusions, and theories are accessible to readers from all areas of expertise. Although this sounds easy, it is difficult to write clearly and concisely especially when writing an empirical paper for the first time. What follows is information about how you should structure your paper, so you can focus on precise writing. We offer advice on how to write each section of a research proposal for an empirical paper; we discuss how to use evidence and sources in empirical writing; finally, we present conventions for empirical writing.
 
@@ -18,21 +18,21 @@ An empirical paper has six sections: title and abstract, introduction, methodolo
 
 **Title**
 
-A title should summarize the main idea of your research question. It should be a concise statement of the main topic and should identify the actual variables under investigation and the relationship between them. An example of a good title is “The association between weather patterns and caterpillar reproduction”. A title should be fully explanatory when standing alone. You should avoid words that serve no useful purpose. For example, the words “method” and “results” do not normally appear in a title, nor should such redundancies as “A Study of” or “An Experimental Investigation of” begin a title. Also, do not use causal language, for example, “the impact of”, “the effect of”, etc. Fi- nally, avoid using abbreviations in a title.
+A title should summarize the main idea of your research question. It should be a concise statement of the main topic and should identify the actual variables under investigation and the relationship between them. An example of a good title is “The association between weather patterns and caterpillar reproduction”. A title should be fully explanatory when standing alone. You should avoid words that serve no useful purpose. For example, the words “method” and “results” do not normally appear in a title, nor should such redundancies as “A Study of” or “An Experimental Investigation of” begin a title. Also, do not use causal language, for example, “the impact of”, “the effect of”, etc. Finally, avoid using abbreviations in a title.
 
 *Model Title: The Association between Nicotine Dependence and Major Depression at Different Levels of Smoking Exposure*
 
 **Introduction**
 
-The introduction describes the question you intend to investi- gate and how your research relates to other work in the field. It comprises opening statements and a literature review.
+The introduction describes the question you intend to investigate and how your research relates to other work in the field. It comprises opening statements and a literature review.
 
-*Opening Statements.* Opening statements introduce your topic and rationale for study but are accessible to both non- specialists and specialists. Successful opening statements gradually introduce your topic with examples and explicit, if nontechnical, definitions of crucial terms. Avoid introducing the formal theory if one motivates your research and jargon specific to your topic; doing so makes your introduction seem forbidding to non-specialists and intellectually masturbatory to specialists. However, oversimplifying your opening state- ments will make your introduction seem condescending to non-specialists and boring to specialists.
+*Opening Statements.* Opening statements introduce your topic and rationale for study but are accessible to both non-specialists and specialists. Successful opening statements gradually introduce your topic with examples and explicit, if nontechnical, definitions of crucial terms. Avoid introducing the formal theory if one motivates your research and jargon specific to your topic; doing so makes your introduction seem forbidding to non-specialists and intellectually masturbatory to specialists. However, oversimplifying your opening statements will make your introduction seem condescending to non-specialists and boring to specialists.
 
-*Literature Review.* The literature review summarizes the state of the field you investigate. Each statement in the literature re- view should build to the justification of your own research by identifying a hole in existing scholarship. Emphasize major findings and key conclusions rather than citing tangentially related works. Assume your reader is basically knowledgeable about your topic rather than writing an exhaustive review. The following is a successful section of a literature review:
+*Literature Review.* The literature review summarizes the state of the field you investigate. Each statement in the literature review should build to the justification of your own research by identifying a hole in existing scholarship. Emphasize major findings and key conclusions rather than citing tangentially related works. Assume your reader is basically knowledgeable about your topic rather than writing an exhaustive review. The following is a successful section of a literature review:
 
-*Through to the mid-1990s, most research suggested that academic censorship reduced college students’ respect for authority. However, results were inconsistent. In a landmark two-year case study of college student social dynamics, Jones (1996) found that college students’ respect for authority declined significantly after censorship was imposed. However, Jones relied exclusively on objective measures rather than self-reported measures of respect for authority.*
+*Through to the mid-1990s, most research suggested that academic censorship reduced college students’ respect for authority. However, results were inconsistent. In a landmark two-year case study of college student social dynamics, Jones (1996) found that college students’ respect for authority declined significantly after censorship was imposed. Jones relied exclusively on objective measures rather than self-reported measures of respect for authority.*
 
-Observe that the first two sentences identify trends in the literature, the third sentence emphasizes major findings, andthe fourth sentence suggests gaps in the literature that the present study will fill. Moreover, this literature review is successful because it summarizes findings and can be understood by specialists and non-specialists alike. Strive for this level of precision in your literature review.
+Observe that the first two sentences identify trends in the literature, the third sentence emphasizes major findings, and the fourth sentence suggests gaps in the literature that the present study will fill. Moreover, this literature review is successful because it summarizes findings and can be understood by specialists and non-specialists alike. Strive for this level of precision in your literature review.
 
 **Important: The main evidence used in an empirical paper is data. Opinions and paraphrased statements, even if they corroborate your claim, are not evidence unless accompanied by empirical results.**
 
@@ -40,7 +40,7 @@ The main sources used in an empirical paper are **primary sources** such as jour
 
 **It is important to note that the literature review is an argument that sets the stage for your research question. It is not an exhaustive review of research details.**
 
-*Research Questions.* Your introduction should build to and con- clude with the research questions or study objectives that you will address.
+*Research Questions.* Your introduction should build to and conclude with the research questions or study objectives that you will address.
 
 *Model Introduction: One of the most potent risk factors consistently implicated in both the etiology of smoking behavior as well as the subsequent development of nicotine dependence is major depression. Evidence for this association comes from longitudinal investigations in which depression has been shown to increase risk of later smoking (Breslau, Peterson, Schultz, Chilcoat, & Andreski, 1998; Dierker, Avenevoli, Merikangas, Flaherty, & Stolar, 2001). This temporal ordering suggests the possibility of a causal relationship. In fact, the vast majority of research to date has focused on the role of major depression in increasing the probability and amount of smoking (Dierker, Avenevoli, Goldberg, & Glantz, 2004; Rohde, Kahler, Lewinsohn, & Brown, 2004; Rohde, Lewinsohn, Brown, Gau, & Kahler, 2003).*
 
@@ -54,7 +54,7 @@ The main sources used in an empirical paper are **primary sources** such as jour
 
 The methods section describes how the research was conducted. It comprises discussions of your sample, measures, and procedures.
 
-*Sample.* Identify who or what was studied (people, animals, etc.). Identify the level of analysis studied (individual, group, or aggregate). Describe observations vividly so your reader can distinguish them clearly. If you group observations, use meaningful names (“Low-Income Women”) rather than abbreviations (“PPM100”) or labels (“Control Group”). The following is successful section of a sample description:
+*Sample.* Identify who or what was studied (people, animals, etc.). Identify the level of analysis studied (individual, group, or aggregate). Describe observations vividly so your reader can distinguish them clearly. If you group observations, use meaningful names (`Low-Income Women`) rather than abbreviations (`PPM100`) or labels (`Control Group`). The following is successful section of a sample description:
 
 The sample of 1,203 pregnant women was drawn from two public prenatal clinics in Texas and Maryland. The ethnic composition was African American ($n = 414, 34.4$%), Hispanic, primarily Mexican American ($n = 412, 34.2$%), and White ($n = 377, 31.3$%). Most women were between the ages of 20 and 29 years; 30% were teenagers. All were urban residents, and most (94%) had incomes below the poverty level as defined using each state’s criteria for Women, Infants, and Children (WIC) eligibility.
 
@@ -64,7 +64,7 @@ This sample description is successful because it identifies both the observation
 
 Random sampling was used to recruit participants for this study. Surveyors went to considerable lengths to secure a high completion rate, including up to four call-backs, letters, and in some cases monetary incentives. Trained research assistants conducted face-to-face interviews with all study participants.
 
-This procedures description is successful because it describes how the sample was collected (a random survey), which observations were discarded (surveys incomplete after callbacks, letters, and incentives), and how data were collected (during interviews). Conclude your methodology section with a summary of your proce- dure and its overall purpose.
+This procedures description is successful because it describes how the sample was collected (a random survey), which observations were discarded (surveys incomplete after callbacks, letters, and incentives), and how data were collected (during interviews). Conclude your methodology section with a summary of your procedure and its overall purpose.
 
 *Measures.* Describe the questions or measures of your participants/observations and relate these to the type of data you collected (quantitative or categorical). The following is a successful section of a measures discussion:
 
@@ -88,7 +88,7 @@ This measures discussion is successful because it indicates how attitudes were m
 
 **Predicted Results or Implications**
 
-￼It is important that this section includes real implications linked to possible results. Often writers use this section to merely state their research question. This is an important section of a research proposal and sometimes best written after you've had a few days to step away from your paper and allow yourself to put your ques- tion (and possible answers) into perspective.
+￼It is important that this section includes real implications linked to possible results. Often writers use this section to merely state their research question. This is an important section of a research proposal and sometimes best written after you've had a few days to step away from your paper and allow yourself to put your question (and possible answers) into perspective.
 
 *Model Implications:*
 
@@ -96,7 +96,7 @@ This measures discussion is successful because it indicates how attitudes were m
 
 **References**
 
-Reference citations document statements made in your paper. All citations in the research plan should appear in the reference list, and all references should be cited in text. Begin your references section on a new page. Use Zotero software to generate the bibliog- raphy and insert in-text citations.
+Reference citations document statements made in your paper. All citations in the research plan should appear in the reference list, and all references should be cited in text. Begin your references section on a new page. Use Zotero software to generate the bibliography and insert in-text citations.
 
 *Model References:*
 
@@ -139,4 +139,7 @@ Stanton, W. R., Lowe, J. B., & Silva, P. A. (1995). Antecedents of vulnerability
 The Writing Program at Appalachian State University offers a variety of excellent services. Tutors in the Writing Workshop can assist students at any stage of the writing process. Students seeking extra assistance are encouraged to apply for a Writing Mentor. Details about the Writing Program are available at: <http://writingcenter.appstate.edu/>
 
 #### Research Plan Assignment
-You will spend the next three weeks writing your research plan. This plan should include the following: Title, Author’s name, Introduction, Method, Implications, and References. The paper should be 4 to 5 pages double-spaced (including a page for references).  In preparation for writing the introduction section, you should have found and read at least 25 primary source articles, although only those that help provide important background and allow you to make an argument in support of your proposed research should be cited.  This assignment will be graded A-F and will act as the basis for your final poster. Your paper should be submitted through <http://www.crowdgrader.org> AND pushed to your private repository. More detailed directions can be found on the course repository.
+
+You will spend the next three weeks writing your research plan. This plan should include the following: Title, Author’s name (this will be blank for CrowdGrader submissions to ensure double blind reviewing), Introduction, Method, Implications, and References. The paper should be 4 to 5 pages double-spaced (including a page for references).  In preparation for writing the introduction section, you should have found and read at least 25 primary source articles, although only those that help provide important background and allow you to make an argument in support of your proposed research should be cited.  This assignment will be graded A-F and will act as the basis for your final poster. Your paper should be submitted through <http://www.crowdgrader.org> AND pushed to your private repository. More detailed directions can be found on the course repository.
+
+--------------------------
