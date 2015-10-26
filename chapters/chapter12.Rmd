@@ -198,16 +198,16 @@ In other words, we will make $\binom{5}{2}=10$ comparisons (all possible compari
 NT <- xtabs(~ TobaccoDependence + DCScat, data = nesarc)
 NT
 chisq.test(NT, correct = FALSE)
-chisq.test(NT[,1:2], correct = FALSE)
-chisq.test(NT[,1:3], correct = FALSE)
-chisq.test(NT[,1:4], correct = FALSE)
-chisq.test(NT[,1:5], correct = FALSE)
-chisq.test(NT[,2:3], correct = FALSE)
-chisq.test(NT[,2:4], correct = FALSE)
-chisq.test(NT[,2:5], correct = FALSE)
-chisq.test(NT[,3:4], correct = FALSE)
-chisq.test(NT[,3:5], correct = FALSE)
-chisq.test(NT[,4:5], correct = FALSE)
+chisq.test(NT[, c(1, 2)], correct = FALSE)
+chisq.test(NT[, c(1, 3)], correct = FALSE)
+chisq.test(NT[, c(1, 4)], correct = FALSE)
+chisq.test(NT[, c(1, 5)], correct = FALSE)
+chisq.test(NT[, c(2, 3)], correct = FALSE)
+chisq.test(NT[, c(2, 4)], correct = FALSE)
+chisq.test(NT[, c(2, 5)], correct = FALSE)
+chisq.test(NT[, c(3, 4)], correct = FALSE)
+chisq.test(NT[, c(3, 5)], correct = FALSE)
+chisq.test(NT[, c(4, 5)], correct = FALSE)
 ```
 
 #### Chi Square Asssignment
@@ -217,7 +217,7 @@ Post syntax to your private GitHub repository used to run a Chi-Square Test  alo
 **Example of how to write results for Chi-Square tests:**
 
 ```{r, echo = FALSE}
-T2 <- xtabs(~TobaccoDependence + MajorDepression,data = nesarc)
+T2 <- xtabs(~TobaccoDependence + MajorDepression, data = nesarc)
 PA <- prop.table(T2, 1)
 RES <- chisq.test(T2, correct = FALSE)
 ```
@@ -248,16 +248,16 @@ ggplot(data = nesarc[(!is.na(nesarc$TobaccoDependence) &
   guides(fill = guide_legend(reverse = TRUE))
 chisq.test(T3, correct = FALSE)
 # Post hoc tests
-chisq.test(T3[,1:2], correct = FALSE)
-chisq.test(T3[,1:3], correct = FALSE)
-chisq.test(T3[,1:4], correct = FALSE)
-chisq.test(T3[,1:5], correct = FALSE)
-chisq.test(T3[,2:3], correct = FALSE)
-chisq.test(T3[,2:4], correct = FALSE)
-chisq.test(T3[,2:5], correct = FALSE)
-chisq.test(T3[,3:4], correct = FALSE)
-chisq.test(T3[,3:5], correct = FALSE)
-chisq.test(T3[,4:5], correct = FALSE)
+chisq.test(T3[, c(1, 2)], correct = FALSE)
+chisq.test(T3[, c(1, 3)], correct = FALSE)
+chisq.test(T3[, c(1, 4)], correct = FALSE)
+chisq.test(T3[, c(1, 5)], correct = FALSE)
+chisq.test(T3[, c(2, 3)], correct = FALSE)
+chisq.test(T3[, c(2, 4)], correct = FALSE)
+chisq.test(T3[, c(2, 5)], correct = FALSE)
+chisq.test(T3[, c(3, 4)], correct = FALSE)
+chisq.test(T3[, c(3, 5)], correct = FALSE)
+chisq.test(T3[, c(4, 5)], correct = FALSE)
 ```
 
 -------------------------
