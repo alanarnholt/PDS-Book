@@ -1,7 +1,7 @@
 ---
 title: "Passion Driven Statistics (Light Weight)"
 author: "Alan T. Arnholt modified from materials compiled by Lisa Dierker"
-date: '`r Sys.Date()`'
+date: '`r Sys.time()`'
 output:
   html_document:
     highlight: zenburn
