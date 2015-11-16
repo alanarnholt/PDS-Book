@@ -8,6 +8,8 @@ output: html_document
 # Chapter 10
 ## Hypothesis Testing
 
+Please watch the [Chapter 10 Video](http://passiondrivenstatistics.com/2015/07/15/chapter-10/).
+
 Thus far, we have focused on descriptive statistics. Through our examination of frequency distributions, graphical representations of our variables, and calculations of center and spread, the goal has been to describe and summarize data. Now you will be introduced to inferential statistics. In addition to describing data, inferential statistics allow us to directly test our hypothesis by evaluating (based on a sample) our research question with the goal of generalizing the results to the larger population from which the sample was drawn.
 
 Hypothesis testing is one of the most important inferential tools of application of statistics to real life problems. It is used when we need to make decisions concerning populations on the basis of only sample information. A variety of statistical tests are used to arrive at these decisions (e.g. Analysis of Variance, Chi-Square Test of Independence, etc.). Steps involved in hypothesis testing include specifying the null ($H_0$) and alternate ($H_a$ or $H_1$) hypotheses; choosing a sample; assessing the evidence; and making conclusions.
@@ -16,7 +18,6 @@ Hypothesis testing is one of the most important inferential tools of application
 
 The purpose of this section is to build your understanding about how statistical hypothesis testing works.
 
-Please watch the [INFERENCE video](https://www.youtube.com/watch?v=OtpMhiwvdu8&list=PLDEF0B9CBD27AD37E&index=47).
 
 **Example:**
 

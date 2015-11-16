@@ -2,6 +2,6 @@ name: Publish Document
 account: rpubs
 server: rpubs.com
 bundleId:
-        https://api.rpubs.com/api/v1/document/97944/9afebf7320ec4f0f8bf05df8c0e58dd7
-url: http://rpubs.com/arnholt/97944
-when: 1445885403.01365
+        https://api.rpubs.com/api/v1/document/126376/c841d34c0a97425aa59a2ce528ae20b4
+url: http://rpubs.com/arnholt/126376
+when: 1447699029.7669
