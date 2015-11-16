@@ -8,6 +8,8 @@ output: html_document
 # Chapter 13
 ## Correlation Coefficient ($r$) $Q \rightarrow Q$
 
+Please watch the [Chapter 13 Video](http://passiondrivenstatistics.com/2015/10/05/chapter-13/).
+
 $Q \rightarrow Q$ is different in the sense that both variables (in particular the explanatory variable) are quantitative, and therefore, as you'll discover, this case will require a different kind of treatment and tools. Let's start with an example:
 
 **Example**

@@ -105,7 +105,7 @@ b
 
 * The **intercept** of the line is:
 
-$$a = `r MEAN[2]` `r b`\times `r MEAN[1]` = `r coef(summary(mod.lm))[1, 1]`$$
+$$a = `r MEAN[2]` + `r (-1)*b`\times `r MEAN[1]` = `r coef(summary(mod.lm))[1, 1]`$$
 
 and therefore the least squares regression line for this example is:
 
@@ -145,7 +145,7 @@ ggplot(data = signdist, aes(x = Age, y = Distance)) +
 
 Practically, what the figure tells us is that in order to find the predicted legibility distance for a 60-year-old, we plug Age = 60 into the regression line equation, to find that:
 
-Predicted distance = `r coef(summary(mod.lm))[1, 1]` + (`r coef(summary(mod.lm))[2, 1]` * 60) = `r PV`.
+Predicted distance = $`r coef(summary(mod.lm))[1, 1]` + (`r coef(summary(mod.lm))[2, 1]` \times 60) = `r PV`$.
 `r PV` feet is our best prediction for the maximum distance at which a sign is legible for a 60-year-old.
 
 
