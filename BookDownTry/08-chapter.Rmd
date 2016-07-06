@@ -40,7 +40,7 @@ We have explored the distribution of a categorical variable using a bar chart su
 
 To display data from one quantitative variable graphically, we typically use the histogram. 
 
-### Example^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b848b80020ca600e242e2129b8f6e]
+**Example^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b848b80020ca600e242e2129b8f6e]**
 
 Break the following range of values into intervals and count how many observations fall into each interval.
 

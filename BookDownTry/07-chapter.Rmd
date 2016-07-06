@@ -32,7 +32,7 @@ knitr::kable(DF2, align = c("c", "c", "c"), caption = "Body Image Distribution")
 
 Please watch the [Chapter 07 video](http://passiondrivenstatistics.com/2016/01/08/r-chapter-7/).
 
-### Data Management
+## Data Management
 
 During the class session, we will begin to work through how to make decisions about data management and how to put those decisions into action.
 
@@ -139,7 +139,7 @@ dim(NESARCsub3)
 
 **NOTE:** Often, you will need to create groups or sub-samples from the data set for the purpose of making comparisons. It is important to be certain that the groups that you would like to compare are of adequate size and number. For example, if you were interested in comparing complications of depression in parents who had lost a child through miscarriage vs. parents who had lost a child in the first year of life, it would be important to have large enough groups of each. It would not be appropriate to attempt to compare 5000 observations in the miscarriage group to only 9 observations in the first year group.
 
-### Extended Example
+**Extended Example**
 
 Use the data frame `NESARC` and create a new variable (`NumberNicotineSymptoms`) that is the sum of all of the nicotine dependence symptoms where a person indicates
 

@@ -37,7 +37,7 @@ At this point, we will be asking you to **“impose” a causal model** on your 
 When graphing your data, it is important that each graph provides clear and accurate summaries of the data that do not mislead. 
 
 
-### Bivariate Graphing
+## Bivariate Graphing
 
 (C $\rightarrow$ C) Prevalence of Nicotine Dependence (C) by Depression Status (C) (among current, daily, young adult smokers $\rightarrow$ values stored in `nesarc` created in chapter 7)
 
@@ -100,7 +100,7 @@ ggplot(data = Default, aes(x = balance, y = defaultN)) +
   labs(y = "Probability of Default")
 ```
 
-### Multivariate Graphing
+## Multivariate Graphing
 
 ```{r, fig.width = 8, fig.height = 4}
 ggplot(data = nesarc, aes(x = MajorDepression, fill = TobaccoDependence)) + 

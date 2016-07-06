@@ -3,7 +3,7 @@
 # Chapter 
 ## Confounding and Multivariate Models
 
-### Causation and Observational Studies^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b864280020ca6007237338314349d]
+**Causation and Observational Studies^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b864280020ca6007237338314349d]**
 
 Please watch the [Chapter 17 Video](http://passiondrivenstatistics.com/2015/04/21/chapter-17-continued-rough-edit/).
 
@@ -82,7 +82,7 @@ Since the difficulty arises because of the lurking variable's values being tied 
 Please watch [CONFOUNDING AND MULTIVARIATE MODELS
 video](https://www.youtube.com/watch?v=qzqjljfpFTU&list=PLDEF0B9CBD27AD37E&index=23) (25.38).
 
-### R syntax
+## R syntax
 
 ```{r, eval = FALSE}
 my.lm <-lm(QuantitativeResponse ~ Explanatory + ThirdVariable1 + ThirdVariable2, data = data_frame)

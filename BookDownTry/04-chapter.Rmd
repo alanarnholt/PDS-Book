@@ -16,7 +16,7 @@ It is important to identify and review primary sources either through your on-li
 
 Note that as you read the literature, there should be an exchange between your research question and what you are learning. **The literature review may cause you to add to the complexity of your research question, further focus that question, or even abandon the question for another.**
 
-### Literature Review
+## Literature Review
 During your literature review, you should:
 
 1. Identify primary source articles that address the association that you have decided to examine

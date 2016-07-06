@@ -113,7 +113,7 @@ ggplot(data = signdist, aes(x = Age, y = Distance)) +
 
 The form of the relationship seems to be **linear**. Notice how the points tend to be scattered about the line. Although, as we mentioned earlier, it is problematic to assess the strength without a numerical measure, the relationship appears to be **moderately strong**, as the data is fairly tightly scattered about the line. Finally, all the data points seem to "obey" the pattern—there **do not appear to be any outliers**.
 
-### The Correlation Coefficient—$r$
+### The Correlation Coefficient
 
 The numerical measure that assesses the strength of a linear relationship is called the correlation coefficient, and is denoted by $r$. We will:
 
