@@ -4,4 +4,4 @@
 
 Please report any mistakes/typos/errata, suggestions, or problems at <https://github.com/alanarnholt/PDS-Book/issues>. 
 
-_______________________
+The source code that creates this document resides at <https://github.com/alanarnholt/PDS-Book/>.

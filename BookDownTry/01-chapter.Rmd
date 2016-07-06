@@ -1,8 +1,8 @@
 
+
 # Chapter
 
-## An Introduction
-### Overview
+## Overview
 
 Please watch the [Course Introduction Video](http://passiondrivenstatistics.com/2015/05/20/chapter-01-course-introduction/).
 
@@ -10,7 +10,7 @@ This statistics course is presented in the service of a project of your choosing
 
 Our approach is “statistics in the service of questions.” As such, the research question that you choose (from data sets made available to you) is of paramount importance to your learning experience. **It must interest you enough that you will be willing to spend many hours thinking about it and analyzing data having to do with it.**
 
-### Resources
+## Resources
 
 This course is unlike any you have likely encountered in that you will be driving the content and direction of your own learning. In many ways we will be asking more from you than any other introductory course ever has. To support you in this challenge, there are a number of useful resources.
 
@@ -23,7 +23,7 @@ of data management and analytic tasks in the pursuit of answers to questions of 
 
 **GitHub Repository:** To provide reliable backup of your work, you will use a private GitHub repository. While you will have read/write access to your own repository, you will also have read access to all public repositories in the organization (Course). Aside from providing a centralized way to share files, GitHub is meant to function as a resource in support of collaboration. Put simply, our hope is that you work together!
 
-### An Introduction to Statistics^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b846480020ca6018dda7ea62a2528]
+## An Introduction to Statistics^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b846480020ca6018dda7ea62a2528]
 
 ![](./graphics/producingdata.jpg)
 

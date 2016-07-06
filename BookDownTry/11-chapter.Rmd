@@ -1,7 +1,8 @@
 
 
 # Chapter 
-## Analysis of Variance^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b8ad280020ca60166a71faa2caf60]
+
+**Analysis of Variance^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b8ad280020ca60166a71faa2caf60]**
 
 Please watch the [Chapter 11 video](http://passiondrivenstatistics.com/2016/05/11/r-chapter-11/).
 
@@ -42,7 +43,7 @@ A college dean believes that students with different majors may experience diffe
 
 The figure highlights that examining the relationship between major ($X$) and frustration level ($Y$) amounts to comparing the mean frustration levels ($\mu_1, \mu_2,\mu_3,\mu_4$) among the four majors defined by $X$.
 
-### The ANOVA F-Test
+## The ANOVA F-Test
 
 Now that we understand in what kind of situations ANOVA is used, we are ready to learn how it works.
 
@@ -72,7 +73,7 @@ $H_1: \mu_i \neq \mu_j$ for some $i,j$
 
 Note that there are many ways for $\mu_1, \mu_2,\mu_3,\mu_4$ not to be all equal, and $\mu_1 \neq \mu_2 \neq \mu_3 \neq \mu_4$ is just one of them. Another way could be $\mu_1 = \mu_2 = \mu_3 \neq \mu_4$ or $\mu_1 = \mu_2 \neq \mu_3 \neq \mu_4$.  The alternative of the ANOVA F-test simply states that not all of the means are equal and is not specific about the way in which they are different.
 
-### The Idea Behind the ANOVA F-Test
+## The Idea Behind the ANOVA F-Test
 
 Let's think about how we would go about testing whether the population means $\mu_1, \mu_2,\mu_3,\mu_4$ are equal. It seems as if the best we could do is to calculate their point estimates—the sample mean in each of our 4 samples (denote them by $\bar{x}_1,\bar{x}_2,\bar{x}_3,\bar{x}_4)$,
 
@@ -184,18 +185,18 @@ RES
 
 Note that the F-statistic is `r RES[[1]][1, 4]`, which is very large, indicating that the data provide evidence against $H_0$ (we can also see that the p-value is so small ($`r RES[[1]][1, 5]`$) that it is essentially 0, which supports that conclusion as well).
 
-### Finding the P-Value
+## Finding the P-Value
 
 The p-value of the ANOVA F-test is the probability of getting an F statistic as large as we got (or even larger) had $H_0: \mu_1 = \mu_2 = \cdots = \mu_k$ been true. In other words, it tells us how surprising it is to find data like those observed, assuming that there is no difference among the population means $\mu_1, \mu_2, \ldots, \mu_k$. As we already noticed before, the p-value in our example is so small that it is essentially 0, telling us that it would be next to impossible to get data like those observed had the mean frustration level of the four majors been the same (as the null hypothesis claims).
 
-### Making Conclusions in Context
+## Making Conclusions in Context
 
 As usual, we base our conclusion on the p-value. A small p-value tells us that our data contain evidence against $H_0$. More specifically, a small p-value tells us that the differences between the sample means are statistically significant (unlikely to have happened by chance), and therefore we reject $H_0$.  If the p-value is not small, the data do not provide enough evidence to reject $H_0$, and so we continue to believe that it may be true. A significance level (cut-off probability) of 0.05 can help
 determine what is considered a small p-value.
 
 In our example, the p-value is extremely small (close to 0) indicating that our data provide extremely strong evidence to reject $H_0$. We conclude that the frustration level means of the four majors are not all the same, or, in other words, that majors do have an effect on students' academic frustration levels at the school where the test was conducted.
 
-### Post Hoc Tests
+## Post Hoc Tests
 
 When testing the relationship between your explanatory ($X$) and response variable ($Y$) in the context of ANOVA, your categorical explanatory variable ($X$) may have more than two levels.  
 

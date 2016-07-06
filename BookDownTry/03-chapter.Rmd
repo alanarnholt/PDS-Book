@@ -1,9 +1,8 @@
 
 
 # Chapter 
-## Data Architecture^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b846d80020ca60084af88b54dce2b]
 
-**What do we really mean by data?**
+**Data Architecture^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b846d80020ca60084af88b54dce2b]---What do we really mean by data?**
 
 Data are pieces of information about individuals or observations organized into variables. By an *individual* or *observation*, we mean a particular person or object. By a *variable*, we mean a particular characteristic of the individual or observation.
 

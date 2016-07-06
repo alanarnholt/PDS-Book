@@ -1,7 +1,7 @@
 
 # Chapter
 
-## Data Sets and Code Books
+## Data Sets
 
 Please watch the [Chapter 02 video](http://passiondrivenstatistics.com/2015/06/02/chapter-2-draft-version/).
 

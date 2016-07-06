@@ -1,8 +1,8 @@
 
 
 # Chapter 
-## Sampling and Designing Studies
 
+## Sampling and Designing Studies
 
 Suppose you want to determine the musical preferences of all students at your university, based on a sample of students. Here are some examples of the many possible ways to pursue this problem.^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b868a80020ca600eda22f1586f085]
 
@@ -86,7 +86,7 @@ In this case, stage 1 was a cluster sample of 8 colleges and stage 2 was a strat
 
 Multistage sampling can have more than 2 stages. For example, to obtain a random sample of physicians in the United States, you choose 10 states at random (stage 1, cluster). From each state you choose at random 8 hospitals (stage 2, cluster). Finally, from each hospital, you choose 5 physicians from each sub-specialty (stage 3, stratified).
 
-### Designing Studies
+## Designing Studies
 
 Obviously, sampling is not done for its own sake. After this first stage in the data production process is completed, we come to the second stage, that of gaining information about the variables of interest from the sampled individuals. In this module we'll discuss three study designs; each design enables you to determine the values of the variables in a different way. You can:
 
@@ -98,7 +98,7 @@ Obviously, sampling is not done for its own sake. After this first stage in the 
 
 The type of design used, and the details of the design, are crucial, since they will determine what kind of conclusions we may draw from the results. In particular, when studying relationships in the Exploratory Data Analysis unit, we stressed that an association between two variables does not guarantee that a causal relationship exists. In this module, we will explore how the details of a study design play a crucial role in determining our ability to establish evidence of causation.
 
-### Identifying Study Design
+## Identifying Study Design
 
 Because each type of study design has its own advantages and trouble spots, it is important to begin by determining what type of study we are dealing with. The following example helps to illustrate how we can distinguish among the three basic types of design mentioned in the introduction—observational studies, sample surveys, and experiments.
 
@@ -129,7 +129,7 @@ Notice that in Example 2, the values of the variables of interest (TV watching a
 
 While some studies are designed to gather information about a single variable, many studies attempt to draw conclusions about the relationship between two variables. In particular, researchers often would like to produce evidence that one variable actually causes changes in the other. For example, the research question addressed in the previous example sought to establish evidence that watching TV could cause an increase in snacking. Such studies may be especially useful and interesting, but they are also especially vulnerable to flaws that could invalidate the conclusion of causation. In several of the examples in this module we will see that although evidence of an association between two variables may be quite clear, the question of whether one variable is actually causing changes in the other may be too murky to be entirely resolved. In general, with a well-designed experiment we have a better chance of establishing causation than with an observational study. However, experiments are also subject to certain pitfalls, and there are many situations in which an experiment is not an option. A well-designed observational study may still provide fairly convincing evidence of causation under the right circumstances.
 
-### Experiments vs. Observational Studies
+## Experiments vs. Observational Studies
 
 Before assessing the effectiveness of observational studies and experiments for producing evidence of a causal relationship between two variables, we will illustrate the essential differences between these two designs.
 

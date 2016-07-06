@@ -1,7 +1,8 @@
 
 
 # Chapter 
-## Correlation Coefficient 
+
+**Correlation Coefficient** 
 
 
 Please watch the [Chapter 13 Video](http://passiondrivenstatistics.com/2015/10/05/chapter-13/).
@@ -44,7 +45,7 @@ ggplot(data = signdist, aes(x = Age, y = Distance)) +
 
 It is important to mention again that when creating a scatterplot, the explanatory variable should always be plotted on the horizontal $X$-axis, and the response variable should be plotted on the vertical $Y$-axis. If in a specific example we do not have a clear distinction between explanatory and response variables, each of the variables can be plotted on either axis.
 
-### Interpreting the scatterplot
+## Interpreting the scatterplot
 
 How do we explore the relationship between two quantitative variables using the scatterplot? What should we look at, or pay attention to?
 
@@ -113,7 +114,7 @@ ggplot(data = signdist, aes(x = Age, y = Distance)) +
 
 The form of the relationship seems to be **linear**. Notice how the points tend to be scattered about the line. Although, as we mentioned earlier, it is problematic to assess the strength without a numerical measure, the relationship appears to be **moderately strong**, as the data is fairly tightly scattered about the line. Finally, all the data points seem to "obey" the pattern—there **do not appear to be any outliers**.
 
-### The Correlation Coefficient
+## The Correlation Coefficient
 
 The numerical measure that assesses the strength of a linear relationship is called the correlation coefficient, and is denoted by $r$. We will:
 

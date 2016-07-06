@@ -1,7 +1,8 @@
 
 
 # Chapter 
-## Working with Data
+
+**Working with Data**
 
 Now that you have a research question, it is time to look at the data. Raw data consist of long lists of numbers and/or labels that are not very informative. Exploratory Data Analysis (EDA) is how we make sense of the data by converting them from their raw form to a more informative one. In particular, EDA consists of:
 

@@ -1,6 +1,7 @@
 
 
 # Chapter 
+
 ## Data Management^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b847680020ca600310bf43153f582]
 
 Examining frequency distributions for each of your variables is the key to further guiding the decision making involved in quantitative research.
@@ -32,7 +33,7 @@ knitr::kable(DF2, align = c("c", "c", "c"), caption = "Body Image Distribution")
 
 Please watch the [Chapter 07 video](http://passiondrivenstatistics.com/2016/01/08/r-chapter-7/).
 
-## Data Management
+## Data Management with `R`
 
 During the class session, we will begin to work through how to make decisions about data management and how to put those decisions into action.
 

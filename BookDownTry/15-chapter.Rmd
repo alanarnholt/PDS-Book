@@ -1,7 +1,6 @@
 
 
 # Chapter 
-## Linear Regression
 
 **Linear Regression: Summarizing the Pattern of the Data with a Line^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b85ba80020ca600a81f9419678a69]**
 
