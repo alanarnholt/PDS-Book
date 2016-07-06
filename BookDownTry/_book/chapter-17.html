@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Passion Driven Statistics</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="Passion Driven Statistics">
+  <meta name="generator" content="bookdown 0.0.54 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Passion Driven Statistics" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+<meta name="author" content="Materials compiled by Lisa Dierker and modified for use with R and GitHub at Appalachian State University by Alan T. Arnholt">
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="chapter-16.html">
+
+
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="chapter.html"><a href="chapter.html"><i class="fa fa-check"></i><b>1</b> Chapter</a><ul>
+<li class="chapter" data-level="1.1" data-path="chapter.html"><a href="chapter.html#an-introduction"><i class="fa fa-check"></i><b>1.1</b> An Introduction</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="chapter.html"><a href="chapter.html#overview"><i class="fa fa-check"></i><b>1.1.1</b> Overview</a></li>
+<li class="chapter" data-level="1.1.2" data-path="chapter.html"><a href="chapter.html#resources"><i class="fa fa-check"></i><b>1.1.2</b> Resources</a></li>
+<li class="chapter" data-level="1.1.3" data-path="chapter.html"><a href="chapter.html#an-introduction-to-statistics"><i class="fa fa-check"></i><b>1.1.3</b> An Introduction to Statistics</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="chapter-1.html"><a href="chapter-1.html"><i class="fa fa-check"></i><b>2</b> Chapter</a><ul>
+<li class="chapter" data-level="2.1" data-path="chapter-1.html"><a href="chapter-1.html#data-sets-and-code-books"><i class="fa fa-check"></i><b>2.1</b> Data Sets and Code Books</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="chapter-1.html"><a href="chapter-1.html#code-books"><i class="fa fa-check"></i><b>2.1.1</b> Code Books</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="chapter-2.html"><a href="chapter-2.html"><i class="fa fa-check"></i><b>3</b> Chapter</a><ul>
+<li class="chapter" data-level="3.1" data-path="chapter-2.html"><a href="chapter-2.html#data-architecture"><i class="fa fa-check"></i><b>3.1</b> Data Architecture</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="chapter-2.html"><a href="chapter-2.html#example-medical-recordings"><i class="fa fa-check"></i><b>3.1.1</b> Example: Medical Recordings</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="chapter-3.html"><a href="chapter-3.html"><i class="fa fa-check"></i><b>4</b> Chapter</a><ul>
+<li class="chapter" data-level="4.1" data-path="chapter-3.html"><a href="chapter-3.html#conducting-a-literature-review"><i class="fa fa-check"></i><b>4.1</b> Conducting a Literature Review</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="chapter-3.html"><a href="chapter-3.html#literature-review"><i class="fa fa-check"></i><b>4.1.1</b> Literature Review</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="chapter-4.html"><a href="chapter-4.html"><i class="fa fa-check"></i><b>5</b> Chapter</a><ul>
+<li class="chapter" data-level="5.1" data-path="chapter-4.html"><a href="chapter-4.html#writing-about-empirical-research"><i class="fa fa-check"></i><b>5.1</b> Writing About Empirical Research</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="chapter-5.html"><a href="chapter-5.html"><i class="fa fa-check"></i><b>6</b> Chapter</a><ul>
+<li class="chapter" data-level="6.1" data-path="chapter-5.html"><a href="chapter-5.html#working-with-data"><i class="fa fa-check"></i><b>6.1</b> Working with Data</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="chapter-6.html"><a href="chapter-6.html"><i class="fa fa-check"></i><b>7</b> Chapter</a><ul>
+<li class="chapter" data-level="7.1" data-path="chapter-6.html"><a href="chapter-6.html#data-management"><i class="fa fa-check"></i><b>7.1</b> Data Management</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="chapter-6.html"><a href="chapter-6.html#data-management-1"><i class="fa fa-check"></i><b>7.1.1</b> Data Management</a></li>
+<li class="chapter" data-level="7.1.2" data-path="chapter-6.html"><a href="chapter-6.html#extended-example"><i class="fa fa-check"></i><b>7.1.2</b> Extended Example</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="chapter-7.html"><a href="chapter-7.html"><i class="fa fa-check"></i><b>8</b> Chapter</a><ul>
+<li class="chapter" data-level="8.1" data-path="chapter-7.html"><a href="chapter-7.html#graphing-one-variable-at-a-time"><i class="fa fa-check"></i><b>8.1</b> Graphing: One Variable at a Time</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="chapter-7.html"><a href="chapter-7.html#example"><i class="fa fa-check"></i><b>8.1.1</b> Example</a></li>
+<li class="chapter" data-level="8.1.2" data-path="chapter-7.html"><a href="chapter-7.html#symmetric-distributions"><i class="fa fa-check"></i><b>8.1.2</b> Symmetric Distributions</a></li>
+<li class="chapter" data-level="8.1.3" data-path="chapter-7.html"><a href="chapter-7.html#skewed-right-distributions"><i class="fa fa-check"></i><b>8.1.3</b> Skewed Right Distributions</a></li>
+<li class="chapter" data-level="8.1.4" data-path="chapter-7.html"><a href="chapter-7.html#skewed-left-distributions"><i class="fa fa-check"></i><b>8.1.4</b> Skewed Left Distributions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="chapter-8.html"><a href="chapter-8.html"><i class="fa fa-check"></i><b>9</b> Chapter</a><ul>
+<li class="chapter" data-level="9.1" data-path="chapter-8.html"><a href="chapter-8.html#graphing-relationships"><i class="fa fa-check"></i><b>9.1</b> Graphing Relationships</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="chapter-8.html"><a href="chapter-8.html#bivariate-graphing"><i class="fa fa-check"></i><b>9.1.1</b> Bivariate Graphing</a></li>
+<li class="chapter" data-level="9.1.2" data-path="chapter-8.html"><a href="chapter-8.html#multivariate-graphing"><i class="fa fa-check"></i><b>9.1.2</b> Multivariate Graphing</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="chapter-9.html"><a href="chapter-9.html"><i class="fa fa-check"></i><b>10</b> Chapter</a><ul>
+<li class="chapter" data-level="10.1" data-path="chapter-9.html"><a href="chapter-9.html#hypothesis-testing"><i class="fa fa-check"></i><b>10.1</b> Hypothesis Testing</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="chapter-10.html"><a href="chapter-10.html"><i class="fa fa-check"></i><b>11</b> Chapter</a><ul>
+<li class="chapter" data-level="11.1" data-path="chapter-10.html"><a href="chapter-10.html#analysis-of-variance"><i class="fa fa-check"></i><b>11.1</b> Analysis of Variance</a><ul>
+<li class="chapter" data-level="11.1.1" data-path="chapter-10.html"><a href="chapter-10.html#the-anova-f-test"><i class="fa fa-check"></i><b>11.1.1</b> The ANOVA F-Test</a></li>
+<li class="chapter" data-level="11.1.2" data-path="chapter-10.html"><a href="chapter-10.html#the-idea-behind-the-anova-f-test"><i class="fa fa-check"></i><b>11.1.2</b> The Idea Behind the ANOVA F-Test</a></li>
+<li class="chapter" data-level="11.1.3" data-path="chapter-10.html"><a href="chapter-10.html#finding-the-p-value"><i class="fa fa-check"></i><b>11.1.3</b> Finding the P-Value</a></li>
+<li class="chapter" data-level="11.1.4" data-path="chapter-10.html"><a href="chapter-10.html#making-conclusions-in-context"><i class="fa fa-check"></i><b>11.1.4</b> Making Conclusions in Context</a></li>
+<li class="chapter" data-level="11.1.5" data-path="chapter-10.html"><a href="chapter-10.html#post-hoc-tests"><i class="fa fa-check"></i><b>11.1.5</b> Post Hoc Tests</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="chapter-11.html"><a href="chapter-11.html"><i class="fa fa-check"></i><b>12</b> Chapter</a><ul>
+<li class="chapter" data-level="12.1" data-path="chapter-11.html"><a href="chapter-11.html#chi-square-test-of-independence"><i class="fa fa-check"></i><b>12.1</b> Chi-Square Test of Independence</a><ul>
+<li class="chapter" data-level="12.1.1" data-path="chapter-11.html"><a href="chapter-11.html#exploratory-analysis"><i class="fa fa-check"></i><b>12.1.1</b> Exploratory Analysis</a></li>
+<li class="chapter" data-level="12.1.2" data-path="chapter-11.html"><a href="chapter-11.html#the-chi-square-test-for-independence"><i class="fa fa-check"></i><b>12.1.2</b> The Chi-Square Test for Independence</a></li>
+<li class="chapter" data-level="12.1.3" data-path="chapter-11.html"><a href="chapter-11.html#the-idea-of-the-chi-square-test"><i class="fa fa-check"></i><b>12.1.3</b> The Idea of the Chi-Square Test</a></li>
+<li class="chapter" data-level="12.1.4" data-path="chapter-11.html"><a href="chapter-11.html#post-hoc-tests-1"><i class="fa fa-check"></i><b>12.1.4</b> Post Hoc Tests</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="chapter-12.html"><a href="chapter-12.html"><i class="fa fa-check"></i><b>13</b> Chapter</a><ul>
+<li class="chapter" data-level="13.1" data-path="chapter-12.html"><a href="chapter-12.html#correlation-coefficient"><i class="fa fa-check"></i><b>13.1</b> Correlation Coefficient</a><ul>
+<li class="chapter" data-level="13.1.1" data-path="chapter-12.html"><a href="chapter-12.html#interpreting-the-scatterplot"><i class="fa fa-check"></i><b>13.1.1</b> Interpreting the scatterplot</a></li>
+<li class="chapter" data-level="13.1.2" data-path="chapter-12.html"><a href="chapter-12.html#the-correlation-coefficientr"><i class="fa fa-check"></i><b>13.1.2</b> The Correlation Coefficient—<span class="math inline">\(r\)</span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="chapter-13.html"><a href="chapter-13.html"><i class="fa fa-check"></i><b>14</b> Chapter</a><ul>
+<li class="chapter" data-level="14.1" data-path="chapter-13.html"><a href="chapter-13.html#moderation"><i class="fa fa-check"></i><b>14.1</b> Moderation</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="chapter-14.html"><a href="chapter-14.html"><i class="fa fa-check"></i><b>15</b> Chapter</a><ul>
+<li class="chapter" data-level="15.1" data-path="chapter-14.html"><a href="chapter-14.html#linear-regression"><i class="fa fa-check"></i><b>15.1</b> Linear Regression</a><ul>
+<li class="chapter" data-level="15.1.1" data-path="chapter-14.html"><a href="chapter-14.html#linear-regression-summarizing-the-pattern-of-the-data-with-a-line"><i class="fa fa-check"></i><b>15.1.1</b> Linear Regression: Summarizing the Pattern of the Data with a Line</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="chapter-15.html"><a href="chapter-15.html"><i class="fa fa-check"></i><b>16</b> Chapter</a><ul>
+<li class="chapter" data-level="16.1" data-path="chapter-15.html"><a href="chapter-15.html#sampling-and-designing-studies"><i class="fa fa-check"></i><b>16.1</b> Sampling and Designing Studies</a><ul>
+<li class="chapter" data-level="16.1.1" data-path="chapter-15.html"><a href="chapter-15.html#designing-studies"><i class="fa fa-check"></i><b>16.1.1</b> Designing Studies</a></li>
+<li class="chapter" data-level="16.1.2" data-path="chapter-15.html"><a href="chapter-15.html#identifying-study-design"><i class="fa fa-check"></i><b>16.1.2</b> Identifying Study Design</a></li>
+<li class="chapter" data-level="16.1.3" data-path="chapter-15.html"><a href="chapter-15.html#experiments-vs.observational-studies"><i class="fa fa-check"></i><b>16.1.3</b> Experiments vs. Observational Studies</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="chapter-16.html"><a href="chapter-16.html"><i class="fa fa-check"></i><b>17</b> Chapter</a><ul>
+<li class="chapter" data-level="17.1" data-path="chapter-16.html"><a href="chapter-16.html#confounding-and-multivariate-models"><i class="fa fa-check"></i><b>17.1</b> Confounding and Multivariate Models</a><ul>
+<li class="chapter" data-level="17.1.1" data-path="chapter-16.html"><a href="chapter-16.html#causation-and-observational-studies"><i class="fa fa-check"></i><b>17.1.1</b> Causation and Observational Studies</a></li>
+<li class="chapter" data-level="17.1.2" data-path="chapter-16.html"><a href="chapter-16.html#r-syntax"><i class="fa fa-check"></i><b>17.1.2</b> R syntax</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="chapter-17.html"><a href="chapter-17.html"><i class="fa fa-check"></i><b>18</b> Chapter</a><ul>
+<li class="chapter" data-level="18.1" data-path="chapter-17.html"><a href="chapter-17.html#poster-presentation"><i class="fa fa-check"></i><b>18.1</b> Poster Presentation</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Passion Driven Statistics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="chapter-17" class="section level1">
+<h1><span class="header-section-number">18</span> Chapter</h1>
+<div id="poster-presentation" class="section level2">
+<h2><span class="header-section-number">18.1</span> Poster Presentation</h2>
+<p>Please watch <a href="https://www.youtube.com/watch?v=NjPWVbXdRuo&amp;list=PLDEF0B9CBD27AD37E&amp;index=48">PREPARING YOUR FINAL PROJECT</a> video.</p>
+<p>At the end of the semester, you will have the opportunity to present your research as a final project and presentation. What follows provides useful guidance for preparing each. These are only general guidelines. For detailed instructions on the poster and presentation, you will need to attend the scheduled in-class lecture.</p>
+<p><strong>Poster</strong></p>
+<p>The audience at a poster session is distractible and mobile. Your job in preparing your poster is to grab and keep their attention so that they will stay and take in your message. One study revealed that you have 11 seconds to grab a viewer’s attention. Whether they are engaged will depend both on the attractiveness of your presentation and on how daunting it appears at first glance. The most effective posters are easily digested. Sentences and paragraphs should be short, and type should be large. For viewers who want more information, the poster should provide an entry point to further discussion with the author about the project and the results.</p>
+<p><strong>Keys to a successful poster</strong></p>
+<ul>
+<li><p>Know who your audience is! As yours will be diverse (i.e. experts and non-experts), you will need to make a special effort to frame your question and results in an understandable and interesting way.</p></li>
+<li><p>Be brief! Distill it down…down… down… to the very essence of your project.</p></li>
+<li><p>Use figures and graphics where possible. Graphics are good attention-getters. But remember, the golden rule of figures (that they MUST be understandable without reference to accompanying text) applies doubly to posters.</p></li>
+<li><p>Layout is important! Because text is limited, layout is used to convey the logical structure of your argument. Use columns, boxes, arrows, bulleted lists, etc. to draw your viewer forward through your presentation. Be creative and make the viewing experience intellectually and esthetically satisfying.</p></li>
+</ul>
+<p><strong>Reasons why posters fail</strong></p>
+<ul>
+<li><p><strong>Too much text.</strong> Keep each text block to just a few sentences. Large font size will be readable from far away and will help to keep you from using too many words.</p></li>
+<li><p><strong>Unclear.</strong> If you leave out key elements, such as objectives, approach, detailed description of variables or conclusions, people who are not insiders on your subject will not understand what your goal was or why it is interesting. As one recent guest evaluator wrote: “students should be made aware of the technical language that they have grown accustomed to using and should learn to explain in detail the meaning of words such as proxy, gapminder, and other indicators such as poverty headcount ratio, since they are crucial to understanding their study. Not having them explained greatly impaired my understanding of their presentation.”</p></li>
+<li><p><strong>Poor figures.</strong> Some figures are real puzzles, with incomprehensible legends, secret codes, small lettering, cryptic captions, etc. Many spreadsheet and data programs do not produce “reader friendly” graphics (see figures on final page), so you will need to budget extra time to customize your figures so that they are self-explanatory.</p></li>
+<li><p><strong>Information overload.</strong> Most presenters try to do and say too much in one poster. Yes, your research may have yielded many subtle and intertwined results, BUT you will have to settle for one, two, or at most three take-home messages to convey on your poster.</p></li>
+<li><p><strong>Presenter not present.</strong> Remember, the poster is just half of the presentation – you are the other half! Be there, so that those viewers who do find your work interesting will be able to engage you in discussion. Remember, poster sessions are interactive - a truly successful poster is an opportunity for the presenter to gain new knowledge and ideas.</p></li>
+<li><p><strong>Find your message.</strong> Before you begin, try to formulate the essence of what you want to present in a single sentence. This exact sentence probably won’t appear on the poster itself, but it should be your guiding light in deciding what to include and where. Your title and conclusions should be derived directly from this sentence.</p></li>
+<li><p><strong>Title.</strong> Your poster should include a banner title in a large font (e.g. 90 pt.). Below this, put the author(s) name(s) and institutional affiliation(s) in a slightly smaller font.</p></li>
+<li><p><strong>Body text.</strong> Your body text should use a font readable at a distance of at least 4 feet (30 pt).</p></li>
+<li><p><strong>Introduction.</strong> Write a few sentences that identify the problem you address, what is currently known about it (watch out for getting long-winded here!), and your approach to Investigating it. Consider using a bulleted list rather than a text block.</p></li>
+<li><p><strong>Method.</strong> Sometimes, the Method section is included in a slightly smaller font so that those who only want the big picture can skip it.</p></li>
+<li><p><strong>Results.</strong> Select the most pertinent results that support your message. Remove everything that is not absolutely necessary: avoid clutter. Think about the most attractive way to present the data in figures. Avoid tables if at all possible. Each illustration should have a headline title providing a take-home message with a more detailed caption below.</p></li>
+<li><p><strong>Conclusion.</strong> Write the conclusion(s) in short, clear statements, preferably as a list.</p></li>
+<li><p><strong>Attention-getters.</strong> An attractive title is important, but it must be supplemented by attractive graphics. There is no reason why all of your illustrations need to be the same size. Consider enlarging one of these illustrations (or a flow diagram, model, etc. that is the focus of your message) and placing it centrally to attract viewers. You will still need to pay attention to logical flow, directing the viewer’s attention (once you’ve captured it) up to and through this central illustration to your conclusions.</p></li>
+<li><p><strong>Background.</strong> Do not use colored backgrounds or patterns as both are very distracting. Usually, plain white is best. Do use color in your figures in ways that enhance your message.</p></li>
+<li><p><strong>Get feedback!</strong> Ask instructors, TA’s, and/or friends to comment on a draft version. Give yourself a break and review everything with a critical eye. Listen if someone says it’s too complicated – most first-time presenters try to cram far too much into their posters.</p></li>
+</ul>
+<p><strong>Presentation</strong></p>
+<p>Reference: &lt;<a href="http://www.lifehack.org/articles/communication/18-tips-forkiller-" class="uri">http://www.lifehack.org/articles/communication/18-tips-forkiller-</a> presentations.html&gt; Becoming a competent, rather than just confident, speaker requires a lot of practice. But here are a few things you can consider to start sharpening your presentation skills:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Slow Down</strong> – Nervous and inexperienced speakers tend to talk way to fast. Consciously slow your speech down and add pauses for emphasis.</p></li>
+<li><p><strong>Eye Contact</strong> – Match eye contact with the person to whom you are presenting.</p></li>
+<li><p><strong>15 Word Summary</strong> – Can you summarize your idea in fifteen words? If not, rewrite it and try again. Speaking is often an inefficient medium for communicating statistical information, so know what the important fifteen words are so they can be repeated.</p></li>
+<li><p><strong>Don’t Read</strong> – This one is a no brainer, but nervous presenters want to get away with it. If you don’t know your presentation, that doesn’t just make you more distracting, it shows you don’t really understand your message, a huge blow to any confidence the audience has in you. If you need subtle cues or notes to feel comfortable, that’s ok, but don’t’ read.</p></li>
+<li><p><strong>Speeches are About Stories</strong> – Great speakers know how to use a story to create an emotional connection between ideas for the audience. Your research is a story, not just information.</p></li>
+<li><p><strong>Project Your Voice</strong> - Nothing is worse than a speaker you can’t hear. Projecting your voice doesn’t mean yelling, rather standing up straight and letting your voice resonate on the air in your lungs rather than in the throat to produce a clearer sound. The poster session will be noisy. You will need to adjust your voice accordingly.</p></li>
+<li><p><strong>Don’t Plan Gestures</strong> - Any gestures you use need to be an extension of your message and any emotions that message conveys. Planned gestures look false because they don’t match your other involuntary body cues. You are better off keeping your hands to your side.</p></li>
+<li><p><strong>“That’s a Good Question”</strong> – You can use statements like “that’s a really good question” or “I’m glad you asked me that” to buy yourself a few moments to organize your response. Will the other people in the audience know you are using these filler sentences to reorder your thoughts? Probably not. And even if they do, it still makes the presentation more smooth than if you answer were littered with fillers like “um” and “ah”.</p></li>
+<li><p><strong>Breathe In Not Out</strong> – Feeling the urge to use presentation killers like “um”, “ah”, or “you know”? Replace those with a pause taking a short breath in. The pause may seem a bit awkward, but the audience will barely notice it.</p></li>
+<li><p><strong>Get Practice</strong> – Use peers or join Toastmasters (here) to practice your speaking skills regularly in front of an audience. Not only is it a fun time, but it will make you more competent and confident when you need to approach the podium.</p></li>
+<li><p><strong>Don’t Apologize</strong> – Apologies are only useful if you’ve done something wrong. Don’t use them to excuse incompetence or humble yourself in front of an audience. Don’t apologize for your nervousness or a lack of preparation time. Most audience members can’t detect your anxiety, so don’t draw attention to it.</p></li>
+<li><p><strong>Do Apologize if You’re Wrong</strong> – One caveat to the above rule is that you should apologize if you are late or shown to be incorrect. You want to seem confident, but don’t be a jerk about it.</p></li>
+<li><p><strong>Put Yourself in the Audience</strong> - When writing your presentation, see it from the audience’s perspective. What might they not understand? What might seem boring?</p></li>
+<li><p><strong>Be Entertaining</strong> – Presentations should be entertaining and informative. I’m not saying you should be silly or immature. But unlike an e-mail or article, people expect some appeal to their emotions. Simply reciting dry facts without any passion will make people less likely to pay attention.</p></li>
+<li><p><strong>Have Fun</strong> - Sounds impossible? With a little practice you can inject your excitement for your work into your presentations. Enthusiasm is contagious.</p></li>
+</ol>
+<div class="figure">
+<img src="graphics/lisaposter.png" alt="" />
+
+</div>
+<p><strong>Poster Assignment</strong></p>
+<p>Submit the title of your poster. Refer to the earlier Writing Chapter for useful tips. (Note: The title that you submit will be used in the formal poster session program).</p>
+<hr />
+
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+<p>Please report any mistakes/typos/errata, suggestions, or problems at <a href="https://github.com/alanarnholt/PDS-Book/issues" class="uri">https://github.com/alanarnholt/PDS-Book/issues</a>.</p>
+<hr />
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b846480020ca6018dda7ea62a2528" class="uri">https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b846480020ca6018dda7ea62a2528</a><a href="chapter.html#fnref1">↩</a></p></li>
+<li id="fn2"><p><a href="https://github.com/alanarnholt/PDS" class="uri">https://github.com/alanarnholt/PDS</a><a href="chapter-1.html#fnref2">↩</a></p></li>
+<li id="fn3"><p><a href="https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b846d80020ca60084af88b54dce2b" class="uri">https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b846d80020ca60084af88b54dce2b</a><a href="chapter-2.html#fnref3">↩</a></p></li>
+<li id="fn4"><p><a href="https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b847680020ca600310bf43153f582" class="uri">https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b847680020ca600310bf43153f582</a><a href="chapter-6.html#fnref4">↩</a></p></li>
+<li id="fn5"><p><a href="https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b848b80020ca600e242e2129b8f6e" class="uri">https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b848b80020ca600e242e2129b8f6e</a><a href="chapter-7.html#fnref5">↩</a></p></li>
+<li id="fn6"><p><a href="https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b8ad280020ca60166a71faa2caf60" class="uri">https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b8ad280020ca60166a71faa2caf60</a><a href="chapter-10.html#fnref6">↩</a></p></li>
+<li id="fn7"><p><a href="https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b8b0380020ca600863516c1304677" class="uri">https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b8b0380020ca600863516c1304677</a><a href="chapter-11.html#fnref7">↩</a></p></li>
+<li id="fn8"><p><a href="https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b85a180020ca600863541d4c89219" class="uri">https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b85a180020ca600863541d4c89219</a><a href="chapter-12.html#fnref8">↩</a></p></li>
+<li id="fn9"><p><a href="https://en.wikipedia.org/wiki/Moderation_(statistics)" class="uri">https://en.wikipedia.org/wiki/Moderation_(statistics)</a><a href="chapter-13.html#fnref9">↩</a></p></li>
+<li id="fn10"><p><a href="https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b85ba80020ca600a81f9419678a69" class="uri">https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b85ba80020ca600a81f9419678a69</a><a href="chapter-14.html#fnref10">↩</a></p></li>
+<li id="fn11"><p><a href="https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b868a80020ca600eda22f1586f085" class="uri">https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b868a80020ca600eda22f1586f085</a><a href="chapter-15.html#fnref11">↩</a></p></li>
+<li id="fn12"><p><a href="https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b864280020ca6007237338314349d" class="uri">https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b864280020ca6007237338314349d</a><a href="chapter-16.html#fnref12">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="chapter-16.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+
+<script src="libs/gitbook-2.6.7/js/app.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+
+</body>
+
+</html>

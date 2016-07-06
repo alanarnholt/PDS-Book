@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Passion Driven Statistics</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="Passion Driven Statistics">
+  <meta name="generator" content="bookdown 0.0.54 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Passion Driven Statistics" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+<meta name="author" content="Materials compiled by Lisa Dierker and modified for use with R and GitHub at Appalachian State University by Alan T. Arnholt">
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="chapter-11.html">
+<link rel="next" href="chapter-13.html">
+
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="chapter.html"><a href="chapter.html"><i class="fa fa-check"></i><b>1</b> Chapter</a><ul>
+<li class="chapter" data-level="1.1" data-path="chapter.html"><a href="chapter.html#an-introduction"><i class="fa fa-check"></i><b>1.1</b> An Introduction</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="chapter.html"><a href="chapter.html#overview"><i class="fa fa-check"></i><b>1.1.1</b> Overview</a></li>
+<li class="chapter" data-level="1.1.2" data-path="chapter.html"><a href="chapter.html#resources"><i class="fa fa-check"></i><b>1.1.2</b> Resources</a></li>
+<li class="chapter" data-level="1.1.3" data-path="chapter.html"><a href="chapter.html#an-introduction-to-statistics"><i class="fa fa-check"></i><b>1.1.3</b> An Introduction to Statistics</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="chapter-1.html"><a href="chapter-1.html"><i class="fa fa-check"></i><b>2</b> Chapter</a><ul>
+<li class="chapter" data-level="2.1" data-path="chapter-1.html"><a href="chapter-1.html#data-sets-and-code-books"><i class="fa fa-check"></i><b>2.1</b> Data Sets and Code Books</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="chapter-1.html"><a href="chapter-1.html#code-books"><i class="fa fa-check"></i><b>2.1.1</b> Code Books</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="chapter-2.html"><a href="chapter-2.html"><i class="fa fa-check"></i><b>3</b> Chapter</a><ul>
+<li class="chapter" data-level="3.1" data-path="chapter-2.html"><a href="chapter-2.html#data-architecture"><i class="fa fa-check"></i><b>3.1</b> Data Architecture</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="chapter-2.html"><a href="chapter-2.html#example-medical-recordings"><i class="fa fa-check"></i><b>3.1.1</b> Example: Medical Recordings</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="chapter-3.html"><a href="chapter-3.html"><i class="fa fa-check"></i><b>4</b> Chapter</a><ul>
+<li class="chapter" data-level="4.1" data-path="chapter-3.html"><a href="chapter-3.html#conducting-a-literature-review"><i class="fa fa-check"></i><b>4.1</b> Conducting a Literature Review</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="chapter-3.html"><a href="chapter-3.html#literature-review"><i class="fa fa-check"></i><b>4.1.1</b> Literature Review</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="chapter-4.html"><a href="chapter-4.html"><i class="fa fa-check"></i><b>5</b> Chapter</a><ul>
+<li class="chapter" data-level="5.1" data-path="chapter-4.html"><a href="chapter-4.html#writing-about-empirical-research"><i class="fa fa-check"></i><b>5.1</b> Writing About Empirical Research</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="chapter-5.html"><a href="chapter-5.html"><i class="fa fa-check"></i><b>6</b> Chapter</a><ul>
+<li class="chapter" data-level="6.1" data-path="chapter-5.html"><a href="chapter-5.html#working-with-data"><i class="fa fa-check"></i><b>6.1</b> Working with Data</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="chapter-6.html"><a href="chapter-6.html"><i class="fa fa-check"></i><b>7</b> Chapter</a><ul>
+<li class="chapter" data-level="7.1" data-path="chapter-6.html"><a href="chapter-6.html#data-management"><i class="fa fa-check"></i><b>7.1</b> Data Management</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="chapter-6.html"><a href="chapter-6.html#data-management-1"><i class="fa fa-check"></i><b>7.1.1</b> Data Management</a></li>
+<li class="chapter" data-level="7.1.2" data-path="chapter-6.html"><a href="chapter-6.html#extended-example"><i class="fa fa-check"></i><b>7.1.2</b> Extended Example</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="chapter-7.html"><a href="chapter-7.html"><i class="fa fa-check"></i><b>8</b> Chapter</a><ul>
+<li class="chapter" data-level="8.1" data-path="chapter-7.html"><a href="chapter-7.html#graphing-one-variable-at-a-time"><i class="fa fa-check"></i><b>8.1</b> Graphing: One Variable at a Time</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="chapter-7.html"><a href="chapter-7.html#example"><i class="fa fa-check"></i><b>8.1.1</b> Example</a></li>
+<li class="chapter" data-level="8.1.2" data-path="chapter-7.html"><a href="chapter-7.html#symmetric-distributions"><i class="fa fa-check"></i><b>8.1.2</b> Symmetric Distributions</a></li>
+<li class="chapter" data-level="8.1.3" data-path="chapter-7.html"><a href="chapter-7.html#skewed-right-distributions"><i class="fa fa-check"></i><b>8.1.3</b> Skewed Right Distributions</a></li>
+<li class="chapter" data-level="8.1.4" data-path="chapter-7.html"><a href="chapter-7.html#skewed-left-distributions"><i class="fa fa-check"></i><b>8.1.4</b> Skewed Left Distributions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="chapter-8.html"><a href="chapter-8.html"><i class="fa fa-check"></i><b>9</b> Chapter</a><ul>
+<li class="chapter" data-level="9.1" data-path="chapter-8.html"><a href="chapter-8.html#graphing-relationships"><i class="fa fa-check"></i><b>9.1</b> Graphing Relationships</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="chapter-8.html"><a href="chapter-8.html#bivariate-graphing"><i class="fa fa-check"></i><b>9.1.1</b> Bivariate Graphing</a></li>
+<li class="chapter" data-level="9.1.2" data-path="chapter-8.html"><a href="chapter-8.html#multivariate-graphing"><i class="fa fa-check"></i><b>9.1.2</b> Multivariate Graphing</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="chapter-9.html"><a href="chapter-9.html"><i class="fa fa-check"></i><b>10</b> Chapter</a><ul>
+<li class="chapter" data-level="10.1" data-path="chapter-9.html"><a href="chapter-9.html#hypothesis-testing"><i class="fa fa-check"></i><b>10.1</b> Hypothesis Testing</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="chapter-10.html"><a href="chapter-10.html"><i class="fa fa-check"></i><b>11</b> Chapter</a><ul>
+<li class="chapter" data-level="11.1" data-path="chapter-10.html"><a href="chapter-10.html#analysis-of-variance"><i class="fa fa-check"></i><b>11.1</b> Analysis of Variance</a><ul>
+<li class="chapter" data-level="11.1.1" data-path="chapter-10.html"><a href="chapter-10.html#the-anova-f-test"><i class="fa fa-check"></i><b>11.1.1</b> The ANOVA F-Test</a></li>
+<li class="chapter" data-level="11.1.2" data-path="chapter-10.html"><a href="chapter-10.html#the-idea-behind-the-anova-f-test"><i class="fa fa-check"></i><b>11.1.2</b> The Idea Behind the ANOVA F-Test</a></li>
+<li class="chapter" data-level="11.1.3" data-path="chapter-10.html"><a href="chapter-10.html#finding-the-p-value"><i class="fa fa-check"></i><b>11.1.3</b> Finding the P-Value</a></li>
+<li class="chapter" data-level="11.1.4" data-path="chapter-10.html"><a href="chapter-10.html#making-conclusions-in-context"><i class="fa fa-check"></i><b>11.1.4</b> Making Conclusions in Context</a></li>
+<li class="chapter" data-level="11.1.5" data-path="chapter-10.html"><a href="chapter-10.html#post-hoc-tests"><i class="fa fa-check"></i><b>11.1.5</b> Post Hoc Tests</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="chapter-11.html"><a href="chapter-11.html"><i class="fa fa-check"></i><b>12</b> Chapter</a><ul>
+<li class="chapter" data-level="12.1" data-path="chapter-11.html"><a href="chapter-11.html#chi-square-test-of-independence"><i class="fa fa-check"></i><b>12.1</b> Chi-Square Test of Independence</a><ul>
+<li class="chapter" data-level="12.1.1" data-path="chapter-11.html"><a href="chapter-11.html#exploratory-analysis"><i class="fa fa-check"></i><b>12.1.1</b> Exploratory Analysis</a></li>
+<li class="chapter" data-level="12.1.2" data-path="chapter-11.html"><a href="chapter-11.html#the-chi-square-test-for-independence"><i class="fa fa-check"></i><b>12.1.2</b> The Chi-Square Test for Independence</a></li>
+<li class="chapter" data-level="12.1.3" data-path="chapter-11.html"><a href="chapter-11.html#the-idea-of-the-chi-square-test"><i class="fa fa-check"></i><b>12.1.3</b> The Idea of the Chi-Square Test</a></li>
+<li class="chapter" data-level="12.1.4" data-path="chapter-11.html"><a href="chapter-11.html#post-hoc-tests-1"><i class="fa fa-check"></i><b>12.1.4</b> Post Hoc Tests</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="chapter-12.html"><a href="chapter-12.html"><i class="fa fa-check"></i><b>13</b> Chapter</a><ul>
+<li class="chapter" data-level="13.1" data-path="chapter-12.html"><a href="chapter-12.html#correlation-coefficient"><i class="fa fa-check"></i><b>13.1</b> Correlation Coefficient</a><ul>
+<li class="chapter" data-level="13.1.1" data-path="chapter-12.html"><a href="chapter-12.html#interpreting-the-scatterplot"><i class="fa fa-check"></i><b>13.1.1</b> Interpreting the scatterplot</a></li>
+<li class="chapter" data-level="13.1.2" data-path="chapter-12.html"><a href="chapter-12.html#the-correlation-coefficientr"><i class="fa fa-check"></i><b>13.1.2</b> The Correlation Coefficient—<span class="math inline">\(r\)</span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="chapter-13.html"><a href="chapter-13.html"><i class="fa fa-check"></i><b>14</b> Chapter</a><ul>
+<li class="chapter" data-level="14.1" data-path="chapter-13.html"><a href="chapter-13.html#moderation"><i class="fa fa-check"></i><b>14.1</b> Moderation</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="chapter-14.html"><a href="chapter-14.html"><i class="fa fa-check"></i><b>15</b> Chapter</a><ul>
+<li class="chapter" data-level="15.1" data-path="chapter-14.html"><a href="chapter-14.html#linear-regression"><i class="fa fa-check"></i><b>15.1</b> Linear Regression</a><ul>
+<li class="chapter" data-level="15.1.1" data-path="chapter-14.html"><a href="chapter-14.html#linear-regression-summarizing-the-pattern-of-the-data-with-a-line"><i class="fa fa-check"></i><b>15.1.1</b> Linear Regression: Summarizing the Pattern of the Data with a Line</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="chapter-15.html"><a href="chapter-15.html"><i class="fa fa-check"></i><b>16</b> Chapter</a><ul>
+<li class="chapter" data-level="16.1" data-path="chapter-15.html"><a href="chapter-15.html#sampling-and-designing-studies"><i class="fa fa-check"></i><b>16.1</b> Sampling and Designing Studies</a><ul>
+<li class="chapter" data-level="16.1.1" data-path="chapter-15.html"><a href="chapter-15.html#designing-studies"><i class="fa fa-check"></i><b>16.1.1</b> Designing Studies</a></li>
+<li class="chapter" data-level="16.1.2" data-path="chapter-15.html"><a href="chapter-15.html#identifying-study-design"><i class="fa fa-check"></i><b>16.1.2</b> Identifying Study Design</a></li>
+<li class="chapter" data-level="16.1.3" data-path="chapter-15.html"><a href="chapter-15.html#experiments-vs.observational-studies"><i class="fa fa-check"></i><b>16.1.3</b> Experiments vs. Observational Studies</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="chapter-16.html"><a href="chapter-16.html"><i class="fa fa-check"></i><b>17</b> Chapter</a><ul>
+<li class="chapter" data-level="17.1" data-path="chapter-16.html"><a href="chapter-16.html#confounding-and-multivariate-models"><i class="fa fa-check"></i><b>17.1</b> Confounding and Multivariate Models</a><ul>
+<li class="chapter" data-level="17.1.1" data-path="chapter-16.html"><a href="chapter-16.html#causation-and-observational-studies"><i class="fa fa-check"></i><b>17.1.1</b> Causation and Observational Studies</a></li>
+<li class="chapter" data-level="17.1.2" data-path="chapter-16.html"><a href="chapter-16.html#r-syntax"><i class="fa fa-check"></i><b>17.1.2</b> R syntax</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="chapter-17.html"><a href="chapter-17.html"><i class="fa fa-check"></i><b>18</b> Chapter</a><ul>
+<li class="chapter" data-level="18.1" data-path="chapter-17.html"><a href="chapter-17.html#poster-presentation"><i class="fa fa-check"></i><b>18.1</b> Poster Presentation</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Passion Driven Statistics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="chapter-12" class="section level1">
+<h1><span class="header-section-number">13</span> Chapter</h1>
+<div id="correlation-coefficient" class="section level2">
+<h2><span class="header-section-number">13.1</span> Correlation Coefficient</h2>
+<p>Please watch the <a href="http://passiondrivenstatistics.com/2015/10/05/chapter-13/">Chapter 13 Video</a>.</p>
+<p><span class="math inline">\(Q \rightarrow Q\)</span> is different in the sense that both variables (in particular the explanatory variable) are quantitative, and therefore, as you’ll discover, this case will require a different kind of treatment and tools. Let’s start with an example:</p>
+<p><strong>Example</strong></p>
+<p><strong>Highway Signs</strong><a href="chapter-17.html#fn8" class="footnoteRef" id="fnref8"><sup>8</sup></a></p>
+<p>A Pennsylvania research firm conducted a study in which 30 drivers (of ages 18 to 82 years old) were sampled, and for each one, the maximum distance (in feet) at which he/she could read a newly designed sign was determined. The goal of this study was to explore the relationship between a driver’s age and the maximum distance at which signs were legible, and then use the study’s findings to improve safety for older drivers. (Reference: Utts and Heckard, Mind on Statistics (2002). Originally source: Data collected by Last Resource, Inc, Bellfonte, PA.)</p>
+<p>Since the purpose of this study is to explore the effect of age on maximum legibility distance,</p>
+<ul>
+<li><p>the explanatory variable is Age,</p></li>
+<li><p>and the response variable is Distance.</p></li>
+</ul>
+<p>Here is what the first six rows of raw data look like:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Age</th>
+<th align="right">Distance</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">18</td>
+<td align="right">510</td>
+</tr>
+<tr class="even">
+<td align="right">20</td>
+<td align="right">590</td>
+</tr>
+<tr class="odd">
+<td align="right">22</td>
+<td align="right">560</td>
+</tr>
+<tr class="even">
+<td align="right">23</td>
+<td align="right">510</td>
+</tr>
+<tr class="odd">
+<td align="right">23</td>
+<td align="right">460</td>
+</tr>
+<tr class="even">
+<td align="right">25</td>
+<td align="right">490</td>
+</tr>
+</tbody>
+</table>
+<p>Note that the data structure is such that for each individual (in this case driver 1….driver 30) we have a pair of values (in this case representing the driver’s age and distance). We can therefore think about these data as 30 pairs of values: (18, 510), (32, 410), (55, 420), … , (82, 360).</p>
+<p>The first step in exploring the relationship between driver age and sign legibility distance is to create an appropriate and informative graphical display. The appropriate graphical display for examining the relationship between two quantitative variables is the scatterplot. Here is how a scatterplot is constructed for our example:</p>
+<p>To create a scatterplot, each pair of values is plotted, so that the value of the explanatory variable (<span class="math inline">\(X\)</span>) is plotted on the horizontal axis, and the value of the response variable (<span class="math inline">\(Y\)</span>) is plotted on the vertical axis. In other words, each individual (driver, in our example) appears on the scatterplot as a single point whose <span class="math inline">\(X\)</span>-coordinate is the value of the explanatory variable for that individual, and whose <span class="math inline">\(Y\)</span>-coordinate is the value of the response variable. Here is an illustration:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ggplot2)
+<span class="kw">ggplot</span>(<span class="dt">data =</span> signdist, <span class="kw">aes</span>(<span class="dt">x =</span> Age, <span class="dt">y =</span> Distance)) +<span class="st"> </span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color =</span> <span class="st">&quot;purple&quot;</span>) +
+<span class="st">  </span><span class="kw">theme_bw</span>()</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-59-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><strong>Comment</strong></p>
+<p>It is important to mention again that when creating a scatterplot, the explanatory variable should always be plotted on the horizontal <span class="math inline">\(X\)</span>-axis, and the response variable should be plotted on the vertical <span class="math inline">\(Y\)</span>-axis. If in a specific example we do not have a clear distinction between explanatory and response variables, each of the variables can be plotted on either axis.</p>
+<div id="interpreting-the-scatterplot" class="section level3">
+<h3><span class="header-section-number">13.1.1</span> Interpreting the scatterplot</h3>
+<p>How do we explore the relationship between two quantitative variables using the scatterplot? What should we look at, or pay attention to?</p>
+<p>Recall that when we described the distribution of a single quantitative variable with a histogram, we described the overall pattern of the distribution (shape, center, spread) and any deviations from that pattern (outliers). We do the same thing with the scatterplot. The following figure summarizes this point:</p>
+<div class="figure">
+<img src="graphics/scatterplot5.gif" alt="" />
+
+</div>
+<p>As the figure explains, when describing the overall pattern of the relationship we look at its direction, form and strength.</p>
+<ul>
+<li>The <strong>direction</strong> of the relationship can be positive, negative, or neither:</li>
+</ul>
+<p><img src="graphics/scatterplot6.gif" alt="" /> <img src="graphics/scatterplot7.gif" alt="" /> <img src="graphics/scatterplot8.gif" alt="" /></p>
+<p>A <strong>positive (or increasing) relationship</strong> means that an increase in one of the variables is associated with an increase in the other.</p>
+<p>A <strong>negative (or decreasing) relationship</strong> means that an increase in one of the variables is associated with a decrease in the other.</p>
+<p>Not all relationships can be classified as either positive or negative.</p>
+<p>The <strong>form</strong> of the relationship is its general shape. When identifying the form, we try to find the simplest way to describe the shape of the scatterplot. There are many possible forms. Here are a couple that are quite common:</p>
+<p>Relationships with a <strong>linear</strong> form are most simply described as points scattered about a line:</p>
+<div class="figure">
+<img src="graphics/scatterplot9.gif" alt="" />
+
+</div>
+<p>Relationships with a <strong>curvilinear</strong> form are most simply described as points dispersed around the same curved line:</p>
+<div class="figure">
+<img src="graphics/scatterplot10.gif" alt="" />
+
+</div>
+<p>There are many other possible forms for the relationship between two quantitative variables, but linear and curvilinear forms are quite common and easy to identify. Another form-related pattern that we should be aware of is clusters in the data:</p>
+<div class="figure">
+<img src="graphics/scatterplot11.gif" alt="" />
+
+</div>
+<ul>
+<li>The strength of the relationship is determined by how closely the data follow the form of the relationship. Let’s look, for example, at the following two scatterplots displaying positive, linear relationships:</li>
+</ul>
+<p><img src="graphics/scatterplot12.gif" alt="" /> <img src="graphics/scatterplot13.gif" alt="" /></p>
+<p>The strength of the relationship is determined by how closely the data points follow the form. We can see that in the top scatterplot the data points follow the linear pattern quite closely. This is an example of a strong relationship. In the bottom scatterplot, the points also follow the linear pattern, but much less closely, and therefore we can say that the relationship is weaker. In general, though, assessing the strength of a relationship just by looking at the scatterplot is quite problematic, and we need a numerical measure to help us with that. We will discuss that later in this section.</p>
+<p>Data points that deviate from the pattern of the relationship are called outliers. We will see several examples of outliers during this section. Two outliers are illustrated in the scatterplot below:</p>
+<div class="figure">
+<img src="graphics/scatterplot14.gif" alt="" />
+
+</div>
+<p>Let’s go back now to our example, and use the scatterplot to examine the relationship between the age of the driver and the maximum sign legibility distance. Here is the scatterplot:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ggplot2)
+<span class="kw">ggplot</span>(<span class="dt">data =</span> signdist, <span class="kw">aes</span>(<span class="dt">x =</span> Age, <span class="dt">y =</span> Distance)) +<span class="st"> </span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color =</span> <span class="st">&quot;purple&quot;</span>) +
+<span class="st">  </span><span class="kw">theme_bw</span>() +<span class="st"> </span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Drivers Age (years)&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Sign Legibility Distance (feet)&quot;</span>)</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-60-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>The direction of the relationship is negative, which makes sense in context, since as you get older your eyesight weakens, and in particular older drivers tend to be able to read signs only at lesser distances. An arrow drawn over the scatterplot illustrates the negative direction of this relationship:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> signdist, <span class="kw">aes</span>(<span class="dt">x =</span> Age, <span class="dt">y =</span> Distance)) +<span class="st"> </span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color =</span> <span class="st">&quot;purple&quot;</span>) +
+<span class="st">  </span><span class="kw">theme_bw</span>() +<span class="st"> </span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Drivers Age (years)&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Sign Legibility Distance (feet)&quot;</span>) +
+<span class="st">  </span><span class="kw">stat_smooth</span>(<span class="dt">method =</span> lm)</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-61-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>The form of the relationship seems to be <strong>linear</strong>. Notice how the points tend to be scattered about the line. Although, as we mentioned earlier, it is problematic to assess the strength without a numerical measure, the relationship appears to be <strong>moderately strong</strong>, as the data is fairly tightly scattered about the line. Finally, all the data points seem to “obey” the pattern—there <strong>do not appear to be any outliers</strong>.</p>
+</div>
+<div id="the-correlation-coefficientr" class="section level3">
+<h3><span class="header-section-number">13.1.2</span> The Correlation Coefficient—<span class="math inline">\(r\)</span></h3>
+<p>The numerical measure that assesses the strength of a linear relationship is called the correlation coefficient, and is denoted by <span class="math inline">\(r\)</span>. We will:</p>
+<ul>
+<li>give a definition of the correlation <span class="math inline">\(r\)</span>,</li>
+<li>discuss the calculation of <span class="math inline">\(r\)</span>,</li>
+<li>explain how to interpret the value of <span class="math inline">\(r\)</span>, and</li>
+<li>talk about some of the properties of <span class="math inline">\(r\)</span>.</li>
+</ul>
+<p><strong>Definition:</strong> The <strong>correlation coefficient (<span class="math inline">\(r\)</span>)</strong> is a numerical measure that measures the strength and direction of a linear relationship between two quantitative variables.</p>
+<p><strong>Calculation:</strong> <span class="math inline">\(r\)</span> is calculated using the following formula: <span class="math inline">\(r = \frac{1}{n-1}\sum_{i=1}^n \left(\frac{x_i - \bar{x}}{s_x}\right)\left(\frac{y_i - \bar{y}}{s_y}\right)\)</span></p>
+<p>However, the calculation of the correlation (<span class="math inline">\(r\)</span>) is not the focus of this course. We will use a statistics package to calculate <span class="math inline">\(r\)</span> for us, and the <strong>emphasis</strong> of this course will be on the <strong>interpretation</strong> of its value.</p>
+<p><strong>Interpretation</strong></p>
+<p>Once we obtain the value of <span class="math inline">\(r\)</span>, its interpretation with respect to the strength of linear relationships is quite simple, as this walk-through will illustrate:</p>
+<div class="figure">
+<img src="graphics/linear17.gif" alt="" />
+
+</div>
+<p>In order to get a better sense for how the value of r relates to the strength of the linear relationship, take a look at <a href="http://www.seeingstatistics.com/seeing1999/reg/corr.html">this applet</a>.</p>
+<p>The slider bar at the bottom of the applet allows us to vary the value of the correlation coefficient (<span class="math inline">\(r\)</span>) between -1 and 1 in order to observe the effect on a scatterplot. (If the plot does not change on your browser when you move the slider, click along the bar instead to update the plot).</p>
+<p>Now that we understand the use of r as a numerical measure for assessing the direction and strength of linear relationships between quantitative variables, we will look at a few examples.</p>
+<p><strong>Example</strong></p>
+<p><strong>Highway Sign Visibility</strong></p>
+<p>Earlier, we used the scatterplot below to find a negative linear relationship between the age of a driver and the maximum distance at which a highway sign was legible. What about the strength of the relationship? It turns out that the correlation between the two variables is <span class="math inline">\(r = -0.8012447\)</span>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cor</span>(signdist$Age, signdist$Distance)</code></pre></div>
+<pre><code>[1] -0.8012447</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cor.test</span>(signdist$Age, signdist$Distance)</code></pre></div>
+<pre><code>
+    Pearson&#39;s product-moment correlation
+
+data:  signdist$Age and signdist$Distance
+t = -7.086, df = 28, p-value = 1.041e-07
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.9013320 -0.6199255
+sample estimates:
+       cor 
+-0.8012447 </code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> signdist, <span class="kw">aes</span>(<span class="dt">x =</span> Age, <span class="dt">y =</span> Distance)) +<span class="st"> </span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color =</span> <span class="st">&quot;purple&quot;</span>) +
+<span class="st">  </span><span class="kw">theme_bw</span>() +<span class="st"> </span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Drivers Age (years)&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Sign Legibility Distance (feet)&quot;</span>) +
+<span class="st">  </span><span class="kw">stat_smooth</span>(<span class="dt">method =</span> lm)</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-62-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Since <span class="math inline">\(r &lt; 0\)</span>, it confirms that the direction of the relationship is negative (although we really didn’t need <span class="math inline">\(r\)</span> to tell us that). Since <span class="math inline">\(r\)</span> is relatively close to -1, it suggests that the relationship is moderately strong. In context, the negative correlation confirms that the maximum distance at which a sign is legible generally decreases with age. Since the value of <span class="math inline">\(r\)</span> indicates that the linear relationship is moderately strong, but not perfect, we can expect the maximum distance to vary somewhat, even among drivers of the same age.</p>
+<p><strong>Example</strong></p>
+<p><strong>Statistics Courses</strong></p>
+<p>A statistics department is interested in tracking the progress of its students from entry until graduation. As part of the study, the department tabulates the performance of 10 students in an introductory course and in an upper-level course required for graduation. What is the relationship between the students’ course averages in the two courses? Here is the scatterplot for the data:</p>
+<div class="figure">
+<img src="graphics/linear4.gif" alt="" />
+
+</div>
+<p>The scatterplot suggests a relationship that is <strong>positive</strong> in direction, <strong>linear</strong> in form, and seems quite strong. The value of the correlation that we find between the two variables is <span class="math inline">\(r = 0.931\)</span>, which is very close to 1, and thus confirms that indeed the linear relationship is very strong.</p>
+<p><strong>Pearson Correlation</strong></p>
+<p>A correlation coefficient assesses the degree of linear relationship between two variables. It ranges from <span class="math inline">\(+1\)</span> to <span class="math inline">\(-1\)</span>. A correlation of <span class="math inline">\(+1\)</span> means that there is a perfect, positive, linear relationship between the two variables. A correlation of <span class="math inline">\(-1\)</span> means there is a perfect, negative linear relationship between the two variables. In both cases, knowing the value of one variable, you can perfectly predict the value of the second.</p>
+<p><strong>Pearson Correlation Assignment</strong></p>
+<p>Post syntax to your private GitHub repo used to generate a correlation coefficient along with corresponding output and a few sentences of interpretation.</p>
+<p><strong>Note:</strong> When we square <span class="math inline">\(r\)</span>, it tells us what proportion of the variability in one variable is described by variation in the second variable (aka <span class="math inline">\(R^2\)</span> or Coefficient of Determination).</p>
+<p><strong>Example of how to write results for correlation coefficient:</strong> Among daily, young adult smokers (my sample), the correlation between number of cigarettes smoked per day (quantitative) and number of nicotine dependence symptoms experienced in the past year (quantitative) was 0.2593625 (p &lt; 0.0001), suggesting that only 6.73% (i.e. 0.2593625 squared) of the variance in number of current nicotine dependence symptoms can be explained by number of cigarettes smoked per day.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> nesarc, <span class="kw">aes</span>(<span class="dt">x =</span> DailyCigsSmoked, <span class="dt">y =</span> NumberNicotineSymptoms)) +
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color =</span> <span class="st">&quot;lightblue&quot;</span>) +<span class="st"> </span>
+<span class="st">  </span><span class="kw">theme_bw</span>() +<span class="st"> </span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Number of cigarettes smoked daily&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Number of nicotine dependence symptoms&quot;</span>)</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-63-1.png" width="672" style="display: block; margin: auto;" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cor.test</span>(nesarc$DailyCigsSmoked, nesarc$NumberNicotineSymptoms)</code></pre></div>
+<pre><code>
+    Pearson&#39;s product-moment correlation
+
+data:  nesarc$DailyCigsSmoked and nesarc$NumberNicotineSymptoms
+t = 9.7311, df = 1313, p-value &lt; 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.2082242 0.3090866
+sample estimates:
+      cor 
+0.2593625 </code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">r &lt;-<span class="st"> </span><span class="kw">cor</span>(nesarc$DailyCigsSmoked, nesarc$NumberNicotineSymptoms, <span class="dt">use =</span> <span class="st">&quot;complete.obs&quot;</span>)
+r</code></pre></div>
+<pre><code>[1] 0.2593625</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">r^<span class="dv">2</span></code></pre></div>
+<pre><code>[1] 0.0672689</code></pre>
+<hr />
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="chapter-11.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="chapter-13.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
+<script src="libs/gitbook-2.6.7/js/app.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+
+</body>
+
+</html>

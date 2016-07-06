@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Passion Driven Statistics</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="Passion Driven Statistics">
+  <meta name="generator" content="bookdown 0.0.54 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Passion Driven Statistics" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+<meta name="author" content="Materials compiled by Lisa Dierker and modified for use with R and GitHub at Appalachian State University by Alan T. Arnholt">
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="chapter-10.html">
+<link rel="next" href="chapter-12.html">
+
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="chapter.html"><a href="chapter.html"><i class="fa fa-check"></i><b>1</b> Chapter</a><ul>
+<li class="chapter" data-level="1.1" data-path="chapter.html"><a href="chapter.html#an-introduction"><i class="fa fa-check"></i><b>1.1</b> An Introduction</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="chapter.html"><a href="chapter.html#overview"><i class="fa fa-check"></i><b>1.1.1</b> Overview</a></li>
+<li class="chapter" data-level="1.1.2" data-path="chapter.html"><a href="chapter.html#resources"><i class="fa fa-check"></i><b>1.1.2</b> Resources</a></li>
+<li class="chapter" data-level="1.1.3" data-path="chapter.html"><a href="chapter.html#an-introduction-to-statistics"><i class="fa fa-check"></i><b>1.1.3</b> An Introduction to Statistics</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="chapter-1.html"><a href="chapter-1.html"><i class="fa fa-check"></i><b>2</b> Chapter</a><ul>
+<li class="chapter" data-level="2.1" data-path="chapter-1.html"><a href="chapter-1.html#data-sets-and-code-books"><i class="fa fa-check"></i><b>2.1</b> Data Sets and Code Books</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="chapter-1.html"><a href="chapter-1.html#code-books"><i class="fa fa-check"></i><b>2.1.1</b> Code Books</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="chapter-2.html"><a href="chapter-2.html"><i class="fa fa-check"></i><b>3</b> Chapter</a><ul>
+<li class="chapter" data-level="3.1" data-path="chapter-2.html"><a href="chapter-2.html#data-architecture"><i class="fa fa-check"></i><b>3.1</b> Data Architecture</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="chapter-2.html"><a href="chapter-2.html#example-medical-recordings"><i class="fa fa-check"></i><b>3.1.1</b> Example: Medical Recordings</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="chapter-3.html"><a href="chapter-3.html"><i class="fa fa-check"></i><b>4</b> Chapter</a><ul>
+<li class="chapter" data-level="4.1" data-path="chapter-3.html"><a href="chapter-3.html#conducting-a-literature-review"><i class="fa fa-check"></i><b>4.1</b> Conducting a Literature Review</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="chapter-3.html"><a href="chapter-3.html#literature-review"><i class="fa fa-check"></i><b>4.1.1</b> Literature Review</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="chapter-4.html"><a href="chapter-4.html"><i class="fa fa-check"></i><b>5</b> Chapter</a><ul>
+<li class="chapter" data-level="5.1" data-path="chapter-4.html"><a href="chapter-4.html#writing-about-empirical-research"><i class="fa fa-check"></i><b>5.1</b> Writing About Empirical Research</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="chapter-5.html"><a href="chapter-5.html"><i class="fa fa-check"></i><b>6</b> Chapter</a><ul>
+<li class="chapter" data-level="6.1" data-path="chapter-5.html"><a href="chapter-5.html#working-with-data"><i class="fa fa-check"></i><b>6.1</b> Working with Data</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="chapter-6.html"><a href="chapter-6.html"><i class="fa fa-check"></i><b>7</b> Chapter</a><ul>
+<li class="chapter" data-level="7.1" data-path="chapter-6.html"><a href="chapter-6.html#data-management"><i class="fa fa-check"></i><b>7.1</b> Data Management</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="chapter-6.html"><a href="chapter-6.html#data-management-1"><i class="fa fa-check"></i><b>7.1.1</b> Data Management</a></li>
+<li class="chapter" data-level="7.1.2" data-path="chapter-6.html"><a href="chapter-6.html#extended-example"><i class="fa fa-check"></i><b>7.1.2</b> Extended Example</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="chapter-7.html"><a href="chapter-7.html"><i class="fa fa-check"></i><b>8</b> Chapter</a><ul>
+<li class="chapter" data-level="8.1" data-path="chapter-7.html"><a href="chapter-7.html#graphing-one-variable-at-a-time"><i class="fa fa-check"></i><b>8.1</b> Graphing: One Variable at a Time</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="chapter-7.html"><a href="chapter-7.html#example"><i class="fa fa-check"></i><b>8.1.1</b> Example</a></li>
+<li class="chapter" data-level="8.1.2" data-path="chapter-7.html"><a href="chapter-7.html#symmetric-distributions"><i class="fa fa-check"></i><b>8.1.2</b> Symmetric Distributions</a></li>
+<li class="chapter" data-level="8.1.3" data-path="chapter-7.html"><a href="chapter-7.html#skewed-right-distributions"><i class="fa fa-check"></i><b>8.1.3</b> Skewed Right Distributions</a></li>
+<li class="chapter" data-level="8.1.4" data-path="chapter-7.html"><a href="chapter-7.html#skewed-left-distributions"><i class="fa fa-check"></i><b>8.1.4</b> Skewed Left Distributions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="chapter-8.html"><a href="chapter-8.html"><i class="fa fa-check"></i><b>9</b> Chapter</a><ul>
+<li class="chapter" data-level="9.1" data-path="chapter-8.html"><a href="chapter-8.html#graphing-relationships"><i class="fa fa-check"></i><b>9.1</b> Graphing Relationships</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="chapter-8.html"><a href="chapter-8.html#bivariate-graphing"><i class="fa fa-check"></i><b>9.1.1</b> Bivariate Graphing</a></li>
+<li class="chapter" data-level="9.1.2" data-path="chapter-8.html"><a href="chapter-8.html#multivariate-graphing"><i class="fa fa-check"></i><b>9.1.2</b> Multivariate Graphing</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="chapter-9.html"><a href="chapter-9.html"><i class="fa fa-check"></i><b>10</b> Chapter</a><ul>
+<li class="chapter" data-level="10.1" data-path="chapter-9.html"><a href="chapter-9.html#hypothesis-testing"><i class="fa fa-check"></i><b>10.1</b> Hypothesis Testing</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="chapter-10.html"><a href="chapter-10.html"><i class="fa fa-check"></i><b>11</b> Chapter</a><ul>
+<li class="chapter" data-level="11.1" data-path="chapter-10.html"><a href="chapter-10.html#analysis-of-variance"><i class="fa fa-check"></i><b>11.1</b> Analysis of Variance</a><ul>
+<li class="chapter" data-level="11.1.1" data-path="chapter-10.html"><a href="chapter-10.html#the-anova-f-test"><i class="fa fa-check"></i><b>11.1.1</b> The ANOVA F-Test</a></li>
+<li class="chapter" data-level="11.1.2" data-path="chapter-10.html"><a href="chapter-10.html#the-idea-behind-the-anova-f-test"><i class="fa fa-check"></i><b>11.1.2</b> The Idea Behind the ANOVA F-Test</a></li>
+<li class="chapter" data-level="11.1.3" data-path="chapter-10.html"><a href="chapter-10.html#finding-the-p-value"><i class="fa fa-check"></i><b>11.1.3</b> Finding the P-Value</a></li>
+<li class="chapter" data-level="11.1.4" data-path="chapter-10.html"><a href="chapter-10.html#making-conclusions-in-context"><i class="fa fa-check"></i><b>11.1.4</b> Making Conclusions in Context</a></li>
+<li class="chapter" data-level="11.1.5" data-path="chapter-10.html"><a href="chapter-10.html#post-hoc-tests"><i class="fa fa-check"></i><b>11.1.5</b> Post Hoc Tests</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="chapter-11.html"><a href="chapter-11.html"><i class="fa fa-check"></i><b>12</b> Chapter</a><ul>
+<li class="chapter" data-level="12.1" data-path="chapter-11.html"><a href="chapter-11.html#chi-square-test-of-independence"><i class="fa fa-check"></i><b>12.1</b> Chi-Square Test of Independence</a><ul>
+<li class="chapter" data-level="12.1.1" data-path="chapter-11.html"><a href="chapter-11.html#exploratory-analysis"><i class="fa fa-check"></i><b>12.1.1</b> Exploratory Analysis</a></li>
+<li class="chapter" data-level="12.1.2" data-path="chapter-11.html"><a href="chapter-11.html#the-chi-square-test-for-independence"><i class="fa fa-check"></i><b>12.1.2</b> The Chi-Square Test for Independence</a></li>
+<li class="chapter" data-level="12.1.3" data-path="chapter-11.html"><a href="chapter-11.html#the-idea-of-the-chi-square-test"><i class="fa fa-check"></i><b>12.1.3</b> The Idea of the Chi-Square Test</a></li>
+<li class="chapter" data-level="12.1.4" data-path="chapter-11.html"><a href="chapter-11.html#post-hoc-tests-1"><i class="fa fa-check"></i><b>12.1.4</b> Post Hoc Tests</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="chapter-12.html"><a href="chapter-12.html"><i class="fa fa-check"></i><b>13</b> Chapter</a><ul>
+<li class="chapter" data-level="13.1" data-path="chapter-12.html"><a href="chapter-12.html#correlation-coefficient"><i class="fa fa-check"></i><b>13.1</b> Correlation Coefficient</a><ul>
+<li class="chapter" data-level="13.1.1" data-path="chapter-12.html"><a href="chapter-12.html#interpreting-the-scatterplot"><i class="fa fa-check"></i><b>13.1.1</b> Interpreting the scatterplot</a></li>
+<li class="chapter" data-level="13.1.2" data-path="chapter-12.html"><a href="chapter-12.html#the-correlation-coefficientr"><i class="fa fa-check"></i><b>13.1.2</b> The Correlation Coefficient—<span class="math inline">\(r\)</span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="chapter-13.html"><a href="chapter-13.html"><i class="fa fa-check"></i><b>14</b> Chapter</a><ul>
+<li class="chapter" data-level="14.1" data-path="chapter-13.html"><a href="chapter-13.html#moderation"><i class="fa fa-check"></i><b>14.1</b> Moderation</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="chapter-14.html"><a href="chapter-14.html"><i class="fa fa-check"></i><b>15</b> Chapter</a><ul>
+<li class="chapter" data-level="15.1" data-path="chapter-14.html"><a href="chapter-14.html#linear-regression"><i class="fa fa-check"></i><b>15.1</b> Linear Regression</a><ul>
+<li class="chapter" data-level="15.1.1" data-path="chapter-14.html"><a href="chapter-14.html#linear-regression-summarizing-the-pattern-of-the-data-with-a-line"><i class="fa fa-check"></i><b>15.1.1</b> Linear Regression: Summarizing the Pattern of the Data with a Line</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="chapter-15.html"><a href="chapter-15.html"><i class="fa fa-check"></i><b>16</b> Chapter</a><ul>
+<li class="chapter" data-level="16.1" data-path="chapter-15.html"><a href="chapter-15.html#sampling-and-designing-studies"><i class="fa fa-check"></i><b>16.1</b> Sampling and Designing Studies</a><ul>
+<li class="chapter" data-level="16.1.1" data-path="chapter-15.html"><a href="chapter-15.html#designing-studies"><i class="fa fa-check"></i><b>16.1.1</b> Designing Studies</a></li>
+<li class="chapter" data-level="16.1.2" data-path="chapter-15.html"><a href="chapter-15.html#identifying-study-design"><i class="fa fa-check"></i><b>16.1.2</b> Identifying Study Design</a></li>
+<li class="chapter" data-level="16.1.3" data-path="chapter-15.html"><a href="chapter-15.html#experiments-vs.observational-studies"><i class="fa fa-check"></i><b>16.1.3</b> Experiments vs. Observational Studies</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="chapter-16.html"><a href="chapter-16.html"><i class="fa fa-check"></i><b>17</b> Chapter</a><ul>
+<li class="chapter" data-level="17.1" data-path="chapter-16.html"><a href="chapter-16.html#confounding-and-multivariate-models"><i class="fa fa-check"></i><b>17.1</b> Confounding and Multivariate Models</a><ul>
+<li class="chapter" data-level="17.1.1" data-path="chapter-16.html"><a href="chapter-16.html#causation-and-observational-studies"><i class="fa fa-check"></i><b>17.1.1</b> Causation and Observational Studies</a></li>
+<li class="chapter" data-level="17.1.2" data-path="chapter-16.html"><a href="chapter-16.html#r-syntax"><i class="fa fa-check"></i><b>17.1.2</b> R syntax</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="chapter-17.html"><a href="chapter-17.html"><i class="fa fa-check"></i><b>18</b> Chapter</a><ul>
+<li class="chapter" data-level="18.1" data-path="chapter-17.html"><a href="chapter-17.html#poster-presentation"><i class="fa fa-check"></i><b>18.1</b> Poster Presentation</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Passion Driven Statistics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="chapter-11" class="section level1">
+<h1><span class="header-section-number">12</span> Chapter</h1>
+<div id="chi-square-test-of-independence" class="section level2">
+<h2><span class="header-section-number">12.1</span> Chi-Square Test of Independence<a href="chapter-17.html#fn7" class="footnoteRef" id="fnref7"><sup>7</sup></a></h2>
+<p>Please watch the <a href="http://passiondrivenstatistics.com/2016/06/29/r-chapter-12/">Chapter 12 video</a>.</p>
+<p>The last statistical test that we studied (ANOVA) involved the relationship between a categorical explanatory variable (<span class="math inline">\(X\)</span>) and a quantitative response variable (<span class="math inline">\(Y\)</span>). Next, we will consider inferences about the relationships between two categorical variables, corresponding to case <span class="math inline">\(C \rightarrow C\)</span>.</p>
+<p>In our graphing, we have already summarized the relationship between two categorical variables for a given data set, without trying to generalize beyond the sample data.</p>
+<p>Now we will perform statistical inference for two categorical variables, using the sample data to draw conclusions about whether or not we have evidence that the variables are related in the larger population from which the sample was drawn. In other words, we would like to assess whether the relationship between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> that we observed in the data is due to a real relationship between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> in the population, or if it is something that could have happened just by chance due to sampling variability.</p>
+<p>The statistical test that will answer this question is called the chi-square test of independence. Chi is a Greek letter that looks like this: <span class="math inline">\(\chi\)</span>, so the test is sometimes referred to as: The <span class="math inline">\(\chi^2\)</span> test of independence.</p>
+<p>Let’s start with an <strong>example</strong>.</p>
+<p>In the early 1970s, a young man challenged an Oklahoma state law that prohibited the sale of 3.2% beer to males under age 21 but allowed its sale to females in the same age group. The case (Craig v. Boren, 429 U.S. 190 [1976]) was ultimately heard by the U.S. Supreme Court.</p>
+<p>The main justification provided by Oklahoma for the law was traffic safety. One of the 3 main pieces of data presented to the Court was the result of a “random roadside survey” that recorded information on gender and whether or not the driver had been drinking alcohol in the previous two hours. There were a total of 619 drivers under 20 years of age included in the survey.</p>
+<p>The following two-way table summarizes the observed counts in the roadside survey:</p>
+<!-- html table generated in R 3.2.2 by xtable 1.8-2 package -->
+<!-- Wed Jul  6 05:35:08 2016 -->
+<table border="1">
+<caption align="top">
+Table showing drinking status during the last two hours and gender
+</caption>
+<tr>
+<th>
+</th>
+<th>
+No
+</th>
+<th>
+Yes
+</th>
+<th>
+Sum
+</th>
+</tr>
+<tr>
+<td align="right">
+Female
+</td>
+<td align="right">
+122.00
+</td>
+<td align="right">
+16.00
+</td>
+<td align="right">
+138.00
+</td>
+</tr>
+<tr>
+<td align="right">
+Male
+</td>
+<td align="right">
+404.00
+</td>
+<td align="right">
+77.00
+</td>
+<td align="right">
+481.00
+</td>
+</tr>
+<tr>
+<td align="right">
+Sum
+</td>
+<td align="right">
+526.00
+</td>
+<td align="right">
+93.00
+</td>
+<td align="right">
+619.00
+</td>
+</tr>
+</table>
+<p>The following code shows how to read the data into a matrix, then convert the matrix to a table, then to a data frame named <code>DF</code>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">MAT &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="dt">data =</span> <span class="kw">c</span>(<span class="dv">77</span>, <span class="dv">16</span>, <span class="dv">404</span>, <span class="dv">122</span>), <span class="dt">nrow =</span> <span class="dv">2</span>)
+<span class="kw">dimnames</span>(MAT) &lt;-<span class="st"> </span><span class="kw">list</span>(<span class="dt">Gender =</span> <span class="kw">c</span>(<span class="st">&quot;Male&quot;</span>,<span class="st">&quot;Female&quot;</span>), <span class="dt">DroveDrunk =</span> <span class="kw">c</span>(<span class="st">&quot;Yes&quot;</span>, <span class="st">&quot;No&quot;</span>))
+<span class="kw">library</span>(vcdExtra)
+TMAT &lt;-<span class="st"> </span><span class="kw">as.table</span>(MAT)
+DFTMAT &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(TMAT) <span class="co"># convert to data frame</span>
+DF &lt;-<span class="st"> </span>vcdExtra::<span class="kw">expand.dft</span>(DFTMAT)
+<span class="kw">xtabs</span>(~Gender +<span class="st"> </span>DroveDrunk, <span class="dt">data =</span> DF)</code></pre></div>
+<pre><code>        DroveDrunk
+Gender    No Yes
+  Female 122  16
+  Male   404  77</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">addmargins</span>(<span class="kw">xtabs</span>(~Gender +<span class="st"> </span>DroveDrunk, <span class="dt">data =</span> DF))</code></pre></div>
+<pre><code>        DroveDrunk
+Gender    No Yes Sum
+  Female 122  16 138
+  Male   404  77 481
+  Sum    526  93 619</code></pre>
+<p>Our task is to assess whether these results provide evidence of a significant (“real”) relationship between gender and drunk driving.</p>
+<p>The following figure summarizes this example:</p>
+<div class="figure">
+<img src="graphics/drunk.gif" alt="" />
+
+</div>
+<p>Note that as the figure stresses, since we are looking to see whether drunk driving is related to gender, our explanatory variable (<span class="math inline">\(X\)</span>) is gender, and the response variable (<span class="math inline">\(Y\)</span>) is drunk driving. Both variables are two-valued categorical variables, and therefore our two-way table of observed counts is 2-by-2. It should be mentioned that the chi-square procedure that we are going to introduce here is not limited to 2-by-2 situations, but can be applied to any r-by-c situation where r is the number of rows (corresponding to the number of values of one of the variables) and c is the number of columns (corresponding to the number of values of the other variable).</p>
+<p>Before we introduce the chi-square test, let’s conduct an exploratory data analysis (that is, look at the data to get an initial feel for it). By doing that, we will also get a better conceptual understanding of the role of the test.</p>
+<div id="exploratory-analysis" class="section level3">
+<h3><span class="header-section-number">12.1.1</span> Exploratory Analysis</h3>
+<p>Recall that the key to reporting appropriate summaries for a two-way table is deciding which of the two categorical variables plays the role of explanatory variable, and then calculating the conditional percentages — the percentages of the response variable for each value of the explanatory variable — separately. In this case, since the explanatory variable is gender, we would calculate the percentages of drivers who did (and did not) drink alcohol for males and females separately.</p>
+<p>Here is the table of conditional percentages:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">TA &lt;-<span class="st"> </span><span class="kw">xtabs</span>(~<span class="st"> </span>Gender +<span class="st"> </span>DroveDrunk, <span class="dt">data =</span> DF)
+<span class="kw">prop.table</span>(TA, <span class="dv">1</span>)</code></pre></div>
+<pre><code>        DroveDrunk
+Gender          No       Yes
+  Female 0.8840580 0.1159420
+  Male   0.8399168 0.1600832</code></pre>
+<p>For the 619 sampled drivers, a larger percentage of males were found to be drunk than females (16.0% vs. 11.6%). Our data, in other words, provide some evidence that drunk driving is related to gender; however, this in itself is not enough to conclude that such a relationship exists in the larger population of drivers under 20. We need to further investigate the data and decide between the following two points of view:</p>
+<ul>
+<li><p>The evidence provided by the roadside survey (16% vs 11.6%) is strong enough to conclude (beyond a reasonable doubt) that it must be due to a relationship between drunk driving and gender in the population of drivers under 20.</p></li>
+<li><p>The evidence provided by the roadside survey (16% vs. 11.6%) is not strong enough to make that conclusion, and could have happened just by chance, due to sampling variability, and not necessarily because a relationship exists in the population.</p></li>
+</ul>
+<p>Actually, these two opposing points of view constitute the null and alternative hypotheses of the chi-square test for independence, so now that we understand our example and what we still need to find out, let’s introduce the four-step process of this test.</p>
+</div>
+<div id="the-chi-square-test-for-independence" class="section level3">
+<h3><span class="header-section-number">12.1.2</span> The Chi-Square Test for Independence</h3>
+<p>The chi-square test for independence examines our observed data and tells us whether we have enough evidence to conclude beyond a reasonable doubt that two categorical variables are related. Much like the previous part on the ANOVA F-test, we are going to introduce the hypotheses (step 1), and then discuss the idea behind the test, which will naturally lead to the test statistic (step 2). Let’s start.</p>
+<p><strong>Step 1:</strong> Stating the hypotheses</p>
+<p>Unlike all the previous tests that we presented, the null and alternative hypotheses in the chi-square test are stated in words rather than in terms of population parameters. They are:</p>
+<p><span class="math inline">\(H_0:\)</span> There is no relationship between the two categorical variables. (They are independent.)</p>
+<p><span class="math inline">\(H_a:\)</span> There is a relationship between the two categorical variables. (They are not independent.)</p>
+<p><strong>EXAMPLE</strong></p>
+<p>In our example, the null and alternative hypotheses would then state:</p>
+<p><span class="math inline">\(H_0:\)</span> There is no relationship between gender and drunk driving.</p>
+<p><span class="math inline">\(H_a:\)</span> There is a relationship between gender and drunk driving.</p>
+<p>Or equivalently,</p>
+<p><span class="math inline">\(H_0:\)</span> Drunk driving and gender are independent</p>
+<p><span class="math inline">\(H_a:\)</span> Drunk driving and gender are not independent</p>
+<p>and hence the name “chi-square test for independence.”</p>
+</div>
+<div id="the-idea-of-the-chi-square-test" class="section level3">
+<h3><span class="header-section-number">12.1.3</span> The Idea of the Chi-Square Test</h3>
+<p>The idea behind the chi-square test, much like previous tests that we’ve introduced, is to measure how far the data are from what is claimed in the null hypothesis. The further the data are from the null hypothesis, the more evidence the data presents against it. We’ll use our data to develop this idea. Our data are represented by the observed counts:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">TA</code></pre></div>
+<pre><code>        DroveDrunk
+Gender    No Yes
+  Female 122  16
+  Male   404  77</code></pre>
+<p>How will we represent the null hypothesis?</p>
+<p>In the previous tests we introduced, the null hypothesis was represented by the null value. Here there is not really a null value, but rather a claim that the two categorical variables (drunk driving and gender, in this case) are independent.</p>
+<p>To represent the null hypothesis, we will calculate another set of counts — the counts that we would expect to see (instead of the observed ones) if drunk driving and gender were really independent (i.e., if <span class="math inline">\(H_0\)</span> were true). For example, we actually observed 77 males who drove drunk; if drunk driving and gender were indeed independent (if <span class="math inline">\(H_0\)</span> were true), how many male drunk drivers would we expect to see instead of 77? Similarly, we can ask the same kind of question about (and calculate) the other three cells in our table.</p>
+<p>In other words, we will have two sets of counts:</p>
+<ul>
+<li><p>the observed counts (the data)</p></li>
+<li><p>the expected counts (if <span class="math inline">\(H_0\)</span> were true)</p></li>
+</ul>
+<p>We will measure how far the observed counts are from the expected ones. Ultimately, we will base our decision on the size of the discrepancy between what we observed and what we would expect to observe if <span class="math inline">\(H_0\)</span> were true.</p>
+<p>How are the expected counts calculated? Once again, we are in need of probability results. Recall from the probability section that if events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent, then <span class="math inline">\(P(A \text{ and } B) = P(A) \times P(B)\)</span>. We use this rule for calculating expected counts, one cell at a time.</p>
+<p>Here again are the observed counts:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">TA</code></pre></div>
+<pre><code>        DroveDrunk
+Gender    No Yes
+  Female 122  16
+  Male   404  77</code></pre>
+<p>If driving drunk and gender were independent then:</p>
+<p><span class="math display">\[P(\text{drunk and male}) = P(\text{drunk}) \times P(\text{male})\]</span></p>
+<p>By dividing the counts in our table, we see that:</p>
+<p><span class="math inline">\(P(\text{Drunk}) = 93/619\)</span> and</p>
+<p><span class="math inline">\(P(\text{Male}) = 481/619\)</span>,</p>
+<p>and so,</p>
+<p><span class="math inline">\(P(\text{Drunk and Male}) = (93 / 619) (481 / 619)\)</span></p>
+<p>Therefore, since there are total of 619 drivers, <strong>if drunk driving and gender were independent</strong>, the count of drunk male drivers that I would <strong>expect</strong> to see is:</p>
+<p><span class="math inline">\(619\times P(\text{Drunk and Male})=619(93/619)(481/619)=93\times 481/619 = 72.266559\)</span></p>
+<p>Notice that this expression is the product of the column and row totals for that particular cell, divided by the overall table total:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(TA)$expected</code></pre></div>
+<pre><code>        DroveDrunk
+Gender         No      Yes
+  Female 117.2666 20.73344
+  Male   408.7334 72.26656</code></pre>
+<p>This will always be the case, and will help streamline our calculations:</p>
+<p><span class="math display">\[\text{Expected Count} = \frac{\text{Column Total} \times \text{Row Total} }{\text{Table Total}}\]</span></p>
+<p><strong>Step 3: Finding the p-value</strong></p>
+<p>The p-value for the chi-square test for independence is the probability of getting counts like those observed, assuming that the two variables are not related (which is what is claimed by the null hypothesis). The smaller the p-value, the more surprising it would be to get counts like we did, if the null hypothesis were true.</p>
+<p>Technically, the p-value is the probability of observing <span class="math inline">\(\chi^2\)</span> at least as large as the one observed. Using statistical software, we find that the p-value for this test is 0.2007975.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(TA, <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  TA
+X-squared = 1.6366, df = 1, p-value = 0.2008</code></pre>
+<p><strong>Step 4: Stating the conclusion in context</strong></p>
+<p>As usual, we use the magnitude of the p-value to draw our conclusions. A small p-value indicates that the evidence provided by the data is strong enough to reject Ho and conclude (beyond a reasonable doubt) that the two variables are related. In particular, if a significance level of .05 is used, we will reject Ho if the p-value is less than .05.</p>
+<p><strong>Example</strong></p>
+<p>A p-value of 0.2007975 is not small at all. There is no compelling statistical evidence to reject Ho, and so we will continue to assume it may be true. Gender and drunk driving may be independent, and so the data suggest that a law that forbids sale of 3.2% beer to males and permits it to females is unwarranted. In fact, the Supreme Court, by a 7-2 majority, struck down the Oklahoma law as discriminatory and unjustified. In the majority opinion Justice Brennan wrote (<a href="http://www.law.umkc.edu/faculty/projects/ftrials/conlaw/craig.html" class="uri">http://www.law.umkc.edu/faculty/projects/ftrials/conlaw/craig.html</a>):</p>
+<p><em>“Clearly, the protection of public health and safety represents an important function of state and local governments. However, appellees’ statistics in our view cannot support the conclusion that the gender-based distinction closely serves to achieve that objective and therefore the distinction cannot under [prior case law] withstand equal protection challenge.”</em></p>
+</div>
+<div id="post-hoc-tests-1" class="section level3">
+<h3><span class="header-section-number">12.1.4</span> Post Hoc Tests</h3>
+<p>For post hoc tests following a Chi-Square, we use what is referred to as the Bonferroni Adjustment. Like the post hoc tests used in the context of ANOVA, this adjustment is used to counteract the problem of Type I Error that occurs when multiple comparisons are made. Following a Chi-Square test that includes an explanatory variable with 3 or more groups, we need to subset to each possible paired comparison. When interpreting these paired comparisons, rather than setting the <span class="math inline">\(\alpha\)</span>-level (p-value) at 0.05, we divide 0.05 by the number of paired comparisons that we will be making. The result is our new <span class="math inline">\(\alpha\)</span>-level (p-value). For example, if we have a significant Chi-Square when examining the association between number of cigarettes smoked per day (a 5 level categorical explanatory variable: 1-5 cigarettes; 6 -10 cigarettes; 11–15 cigarettes; 16-20 cigarettes; and &gt;20) and nicotine dependence (a two level categorical response variable – yes vs. no), we will want to know which pairs of the 5 cigarette groups are different from one another with respect to rates of nicotine dependence.</p>
+<p>In other words, we will make <span class="math inline">\(\binom{5}{2}=10\)</span> comparisons (all possible comparisons). We will compare group 1 to 2; 1 to 3; 1 to 4; 1 to 5; 2 to 3; 2 to 4; 2 to 5; 3 to 4; 3 to 5; 4 to 5. When we evaluate the p-value for each of these post hoc chi-square tests, we will use 0.05/10 = 0.005 as our alpha. If the p-value is &lt; 0.005 then we will reject the null hypothesis. If it is &gt; 0.005, we will fail to reject the null hypothesis.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">NT &lt;-<span class="st"> </span><span class="kw">xtabs</span>(~<span class="st"> </span>TobaccoDependence +<span class="st"> </span>DCScat, <span class="dt">data =</span> nesarc)
+NT</code></pre></div>
+<pre><code>                        DCScat
+TobaccoDependence        (0,5] (5,10] (10,15] (15,20] (20,98]
+  No Nicotine Dependence   130    210      43     114      20
+  Nicotine Dependence      119    267      91     254      67</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(NT, <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  NT
+X-squared = 45.159, df = 4, p-value = 3.685e-09</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(NT[, <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>)], <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  NT[, c(1, 2)]
+X-squared = 4.4003, df = 1, p-value = 0.03593</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(NT[, <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">3</span>)], <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  NT[, c(1, 3)]
+X-squared = 14.238, df = 1, p-value = 0.000161</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(NT[, <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">4</span>)], <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  NT[, c(1, 4)]
+X-squared = 28, df = 1, p-value = 1.213e-07</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(NT[, <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">5</span>)], <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  NT[, c(1, 5)]
+X-squared = 22.275, df = 1, p-value = 2.362e-06</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(NT[, <span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">3</span>)], <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  NT[, c(2, 3)]
+X-squared = 6.1426, df = 1, p-value = 0.0132</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(NT[, <span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">4</span>)], <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  NT[, c(2, 4)]
+X-squared = 14.957, df = 1, p-value = 0.00011</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(NT[, <span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">5</span>)], <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  NT[, c(2, 5)]
+X-squared = 13.483, df = 1, p-value = 0.0002407</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(NT[, <span class="kw">c</span>(<span class="dv">3</span>, <span class="dv">4</span>)], <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  NT[, c(3, 4)]
+X-squared = 0.056441, df = 1, p-value = 0.8122</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(NT[, <span class="kw">c</span>(<span class="dv">3</span>, <span class="dv">5</span>)], <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  NT[, c(3, 5)]
+X-squared = 2.1439, df = 1, p-value = 0.1431</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(NT[, <span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">5</span>)], <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  NT[, c(4, 5)]
+X-squared = 2.1619, df = 1, p-value = 0.1415</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># OR</span>
+<span class="kw">library</span>(fifer)
+<span class="kw">chisq.post.hoc</span>(NT, <span class="dt">control =</span> <span class="st">&quot;bonferroni&quot;</span>, <span class="dt">popsInRows  =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>Adjusted p-values used the bonferroni method.</code></pre>
+<pre><code>            comparison  raw.p  adj.p
+1     (0,5] vs. (5,10] 0.0416 0.4159
+2    (0,5] vs. (10,15] 0.0002 0.0016
+3    (0,5] vs. (15,20] 0.0000 0.0000
+4    (0,5] vs. (20,98] 0.0000 0.0000
+5   (5,10] vs. (10,15] 0.0133 0.1328
+6   (5,10] vs. (15,20] 0.0001 0.0012
+7   (5,10] vs. (20,98] 0.0002 0.0021
+8  (10,15] vs. (15,20] 0.8282 1.0000
+9  (10,15] vs. (20,98] 0.1705 1.0000
+10 (15,20] vs. (20,98] 0.1522 1.0000</code></pre>
+<p><strong>Chi Square Asssignment</strong></p>
+<p>Post syntax to your private GitHub repository used to run a Chi-Square Test along with corresponding output and a few sentences of interpretation.</p>
+<p><strong>Example of how to write results for Chi-Square tests:</strong></p>
+<p>When examining the association between lifetime major depression (categorical response) and past year nicotine dependence (categorical explanatory), a chi-square test of independence revealed that among daily, young adults smokers (my sample), those with past year nicotine dependence were more likely to have experienced major depression in their lifetime (36.17%) compared to those without past year nicotine dependence (12.67%), <span class="math inline">\(\chi^2=\)</span> 88.6, 1 df, p &lt; 0.0001.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">T2 &lt;-<span class="st"> </span><span class="kw">xtabs</span>(~TobaccoDependence +<span class="st"> </span>MajorDepression, <span class="dt">data =</span> nesarc)
+<span class="kw">prop.table</span>(T2, <span class="dv">1</span>)</code></pre></div>
+<pre><code>                        MajorDepression
+TobaccoDependence        No Depression Yes Depression
+  No Nicotine Dependence     0.8733205      0.1266795
+  Nicotine Dependence        0.6382979      0.3617021</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(T2, <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  T2
+X-squared = 88.598, df = 1, p-value &lt; 2.2e-16</code></pre>
+<p><strong>Example of how to write post hoc Chi-Square results:</strong></p>
+<p>A Chi Square test of independence revealed that among daily, young adult smokers (my sample), number of cigarettes smoked per day (collapsed into 5 ordered categories) and past year nicotine dependence (binary categorical variable) were significantly associated, <span class="math inline">\(\chi^2\)</span> = 45.16, 4 df, p &lt; 0.0001. Post hoc comparisons of rates of nicotine dependence by pairs of cigarettes per day categories revealed that higher rates of nicotine dependence were seen among those smoking more cigarettes, up to 11 to 15 cigarettes per day. In comparison, prevalence of nicotine dependence was statistically similar among those groups smoking 10 to 15, 16 to 20, and &gt; 20 cigarettes per day.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">T3 &lt;-<span class="st"> </span><span class="kw">xtabs</span>(~TobaccoDependence +<span class="st"> </span>DCScat, <span class="dt">data =</span> nesarc)
+T3</code></pre></div>
+<pre><code>                        DCScat
+TobaccoDependence        (0,5] (5,10] (10,15] (15,20] (20,98]
+  No Nicotine Dependence   130    210      43     114      20
+  Nicotine Dependence      119    267      91     254      67</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">prop.table</span>(T3, <span class="dv">2</span>)</code></pre></div>
+<pre><code>                        DCScat
+TobaccoDependence            (0,5]    (5,10]   (10,15]   (15,20]   (20,98]
+  No Nicotine Dependence 0.5220884 0.4402516 0.3208955 0.3097826 0.2298851
+  Nicotine Dependence    0.4779116 0.5597484 0.6791045 0.6902174 0.7701149</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ggplot2)
+<span class="kw">ggplot</span>(<span class="dt">data =</span> nesarc[(!<span class="kw">is.na</span>(nesarc$TobaccoDependence) &amp;<span class="st"> </span>
+<span class="st">                        </span>!<span class="kw">is.na</span>(nesarc$DCScat)), ], 
+       <span class="kw">aes</span>(<span class="dt">x =</span> DCScat, <span class="dt">fill =</span> TobaccoDependence)) +<span class="st"> </span>
+<span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">position =</span> <span class="st">&quot;fill&quot;</span>) +
+<span class="st">  </span><span class="kw">theme_bw</span>() +
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x=</span> <span class="st">&quot;Daily Smoking Frequency&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Fraction&quot;</span>) +
+<span class="st">  </span><span class="kw">guides</span>(<span class="dt">fill =</span> <span class="kw">guide_legend</span>(<span class="dt">reverse =</span> <span class="ot">TRUE</span>))</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-57-1.png" width="960" style="display: block; margin: auto;" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(T3, <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  T3
+X-squared = 45.159, df = 4, p-value = 3.685e-09</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Post hoc tests</span>
+<span class="kw">chisq.test</span>(T3[, <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>)], <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  T3[, c(1, 2)]
+X-squared = 4.4003, df = 1, p-value = 0.03593</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(T3[, <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">3</span>)], <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  T3[, c(1, 3)]
+X-squared = 14.238, df = 1, p-value = 0.000161</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(T3[, <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">4</span>)], <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  T3[, c(1, 4)]
+X-squared = 28, df = 1, p-value = 1.213e-07</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(T3[, <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">5</span>)], <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  T3[, c(1, 5)]
+X-squared = 22.275, df = 1, p-value = 2.362e-06</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(T3[, <span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">3</span>)], <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  T3[, c(2, 3)]
+X-squared = 6.1426, df = 1, p-value = 0.0132</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(T3[, <span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">4</span>)], <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  T3[, c(2, 4)]
+X-squared = 14.957, df = 1, p-value = 0.00011</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(T3[, <span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">5</span>)], <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  T3[, c(2, 5)]
+X-squared = 13.483, df = 1, p-value = 0.0002407</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(T3[, <span class="kw">c</span>(<span class="dv">3</span>, <span class="dv">4</span>)], <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  T3[, c(3, 4)]
+X-squared = 0.056441, df = 1, p-value = 0.8122</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(T3[, <span class="kw">c</span>(<span class="dv">3</span>, <span class="dv">5</span>)], <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  T3[, c(3, 5)]
+X-squared = 2.1439, df = 1, p-value = 0.1431</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(T3[, <span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">5</span>)], <span class="dt">correct =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  T3[, c(4, 5)]
+X-squared = 2.1619, df = 1, p-value = 0.1415</code></pre>
+<hr />
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="chapter-10.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="chapter-12.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
+<script src="libs/gitbook-2.6.7/js/app.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Passion Driven Statistics</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="Passion Driven Statistics">
+  <meta name="generator" content="bookdown 0.0.54 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Passion Driven Statistics" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+<meta name="author" content="Materials compiled by Lisa Dierker and modified for use with R and GitHub at Appalachian State University by Alan T. Arnholt">
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="chapter.html">
+<link rel="next" href="chapter-2.html">
+
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="chapter.html"><a href="chapter.html"><i class="fa fa-check"></i><b>1</b> Chapter</a><ul>
+<li class="chapter" data-level="1.1" data-path="chapter.html"><a href="chapter.html#an-introduction"><i class="fa fa-check"></i><b>1.1</b> An Introduction</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="chapter.html"><a href="chapter.html#overview"><i class="fa fa-check"></i><b>1.1.1</b> Overview</a></li>
+<li class="chapter" data-level="1.1.2" data-path="chapter.html"><a href="chapter.html#resources"><i class="fa fa-check"></i><b>1.1.2</b> Resources</a></li>
+<li class="chapter" data-level="1.1.3" data-path="chapter.html"><a href="chapter.html#an-introduction-to-statistics"><i class="fa fa-check"></i><b>1.1.3</b> An Introduction to Statistics</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="chapter-1.html"><a href="chapter-1.html"><i class="fa fa-check"></i><b>2</b> Chapter</a><ul>
+<li class="chapter" data-level="2.1" data-path="chapter-1.html"><a href="chapter-1.html#data-sets-and-code-books"><i class="fa fa-check"></i><b>2.1</b> Data Sets and Code Books</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="chapter-1.html"><a href="chapter-1.html#code-books"><i class="fa fa-check"></i><b>2.1.1</b> Code Books</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="chapter-2.html"><a href="chapter-2.html"><i class="fa fa-check"></i><b>3</b> Chapter</a><ul>
+<li class="chapter" data-level="3.1" data-path="chapter-2.html"><a href="chapter-2.html#data-architecture"><i class="fa fa-check"></i><b>3.1</b> Data Architecture</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="chapter-2.html"><a href="chapter-2.html#example-medical-recordings"><i class="fa fa-check"></i><b>3.1.1</b> Example: Medical Recordings</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="chapter-3.html"><a href="chapter-3.html"><i class="fa fa-check"></i><b>4</b> Chapter</a><ul>
+<li class="chapter" data-level="4.1" data-path="chapter-3.html"><a href="chapter-3.html#conducting-a-literature-review"><i class="fa fa-check"></i><b>4.1</b> Conducting a Literature Review</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="chapter-3.html"><a href="chapter-3.html#literature-review"><i class="fa fa-check"></i><b>4.1.1</b> Literature Review</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="chapter-4.html"><a href="chapter-4.html"><i class="fa fa-check"></i><b>5</b> Chapter</a><ul>
+<li class="chapter" data-level="5.1" data-path="chapter-4.html"><a href="chapter-4.html#writing-about-empirical-research"><i class="fa fa-check"></i><b>5.1</b> Writing About Empirical Research</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="chapter-5.html"><a href="chapter-5.html"><i class="fa fa-check"></i><b>6</b> Chapter</a><ul>
+<li class="chapter" data-level="6.1" data-path="chapter-5.html"><a href="chapter-5.html#working-with-data"><i class="fa fa-check"></i><b>6.1</b> Working with Data</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="chapter-6.html"><a href="chapter-6.html"><i class="fa fa-check"></i><b>7</b> Chapter</a><ul>
+<li class="chapter" data-level="7.1" data-path="chapter-6.html"><a href="chapter-6.html#data-management"><i class="fa fa-check"></i><b>7.1</b> Data Management</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="chapter-6.html"><a href="chapter-6.html#data-management-1"><i class="fa fa-check"></i><b>7.1.1</b> Data Management</a></li>
+<li class="chapter" data-level="7.1.2" data-path="chapter-6.html"><a href="chapter-6.html#extended-example"><i class="fa fa-check"></i><b>7.1.2</b> Extended Example</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="chapter-7.html"><a href="chapter-7.html"><i class="fa fa-check"></i><b>8</b> Chapter</a><ul>
+<li class="chapter" data-level="8.1" data-path="chapter-7.html"><a href="chapter-7.html#graphing-one-variable-at-a-time"><i class="fa fa-check"></i><b>8.1</b> Graphing: One Variable at a Time</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="chapter-7.html"><a href="chapter-7.html#example"><i class="fa fa-check"></i><b>8.1.1</b> Example</a></li>
+<li class="chapter" data-level="8.1.2" data-path="chapter-7.html"><a href="chapter-7.html#symmetric-distributions"><i class="fa fa-check"></i><b>8.1.2</b> Symmetric Distributions</a></li>
+<li class="chapter" data-level="8.1.3" data-path="chapter-7.html"><a href="chapter-7.html#skewed-right-distributions"><i class="fa fa-check"></i><b>8.1.3</b> Skewed Right Distributions</a></li>
+<li class="chapter" data-level="8.1.4" data-path="chapter-7.html"><a href="chapter-7.html#skewed-left-distributions"><i class="fa fa-check"></i><b>8.1.4</b> Skewed Left Distributions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="chapter-8.html"><a href="chapter-8.html"><i class="fa fa-check"></i><b>9</b> Chapter</a><ul>
+<li class="chapter" data-level="9.1" data-path="chapter-8.html"><a href="chapter-8.html#graphing-relationships"><i class="fa fa-check"></i><b>9.1</b> Graphing Relationships</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="chapter-8.html"><a href="chapter-8.html#bivariate-graphing"><i class="fa fa-check"></i><b>9.1.1</b> Bivariate Graphing</a></li>
+<li class="chapter" data-level="9.1.2" data-path="chapter-8.html"><a href="chapter-8.html#multivariate-graphing"><i class="fa fa-check"></i><b>9.1.2</b> Multivariate Graphing</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="chapter-9.html"><a href="chapter-9.html"><i class="fa fa-check"></i><b>10</b> Chapter</a><ul>
+<li class="chapter" data-level="10.1" data-path="chapter-9.html"><a href="chapter-9.html#hypothesis-testing"><i class="fa fa-check"></i><b>10.1</b> Hypothesis Testing</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="chapter-10.html"><a href="chapter-10.html"><i class="fa fa-check"></i><b>11</b> Chapter</a><ul>
+<li class="chapter" data-level="11.1" data-path="chapter-10.html"><a href="chapter-10.html#analysis-of-variance"><i class="fa fa-check"></i><b>11.1</b> Analysis of Variance</a><ul>
+<li class="chapter" data-level="11.1.1" data-path="chapter-10.html"><a href="chapter-10.html#the-anova-f-test"><i class="fa fa-check"></i><b>11.1.1</b> The ANOVA F-Test</a></li>
+<li class="chapter" data-level="11.1.2" data-path="chapter-10.html"><a href="chapter-10.html#the-idea-behind-the-anova-f-test"><i class="fa fa-check"></i><b>11.1.2</b> The Idea Behind the ANOVA F-Test</a></li>
+<li class="chapter" data-level="11.1.3" data-path="chapter-10.html"><a href="chapter-10.html#finding-the-p-value"><i class="fa fa-check"></i><b>11.1.3</b> Finding the P-Value</a></li>
+<li class="chapter" data-level="11.1.4" data-path="chapter-10.html"><a href="chapter-10.html#making-conclusions-in-context"><i class="fa fa-check"></i><b>11.1.4</b> Making Conclusions in Context</a></li>
+<li class="chapter" data-level="11.1.5" data-path="chapter-10.html"><a href="chapter-10.html#post-hoc-tests"><i class="fa fa-check"></i><b>11.1.5</b> Post Hoc Tests</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="chapter-11.html"><a href="chapter-11.html"><i class="fa fa-check"></i><b>12</b> Chapter</a><ul>
+<li class="chapter" data-level="12.1" data-path="chapter-11.html"><a href="chapter-11.html#chi-square-test-of-independence"><i class="fa fa-check"></i><b>12.1</b> Chi-Square Test of Independence</a><ul>
+<li class="chapter" data-level="12.1.1" data-path="chapter-11.html"><a href="chapter-11.html#exploratory-analysis"><i class="fa fa-check"></i><b>12.1.1</b> Exploratory Analysis</a></li>
+<li class="chapter" data-level="12.1.2" data-path="chapter-11.html"><a href="chapter-11.html#the-chi-square-test-for-independence"><i class="fa fa-check"></i><b>12.1.2</b> The Chi-Square Test for Independence</a></li>
+<li class="chapter" data-level="12.1.3" data-path="chapter-11.html"><a href="chapter-11.html#the-idea-of-the-chi-square-test"><i class="fa fa-check"></i><b>12.1.3</b> The Idea of the Chi-Square Test</a></li>
+<li class="chapter" data-level="12.1.4" data-path="chapter-11.html"><a href="chapter-11.html#post-hoc-tests-1"><i class="fa fa-check"></i><b>12.1.4</b> Post Hoc Tests</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="chapter-12.html"><a href="chapter-12.html"><i class="fa fa-check"></i><b>13</b> Chapter</a><ul>
+<li class="chapter" data-level="13.1" data-path="chapter-12.html"><a href="chapter-12.html#correlation-coefficient"><i class="fa fa-check"></i><b>13.1</b> Correlation Coefficient</a><ul>
+<li class="chapter" data-level="13.1.1" data-path="chapter-12.html"><a href="chapter-12.html#interpreting-the-scatterplot"><i class="fa fa-check"></i><b>13.1.1</b> Interpreting the scatterplot</a></li>
+<li class="chapter" data-level="13.1.2" data-path="chapter-12.html"><a href="chapter-12.html#the-correlation-coefficientr"><i class="fa fa-check"></i><b>13.1.2</b> The Correlation Coefficient—<span class="math inline">\(r\)</span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="chapter-13.html"><a href="chapter-13.html"><i class="fa fa-check"></i><b>14</b> Chapter</a><ul>
+<li class="chapter" data-level="14.1" data-path="chapter-13.html"><a href="chapter-13.html#moderation"><i class="fa fa-check"></i><b>14.1</b> Moderation</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="chapter-14.html"><a href="chapter-14.html"><i class="fa fa-check"></i><b>15</b> Chapter</a><ul>
+<li class="chapter" data-level="15.1" data-path="chapter-14.html"><a href="chapter-14.html#linear-regression"><i class="fa fa-check"></i><b>15.1</b> Linear Regression</a><ul>
+<li class="chapter" data-level="15.1.1" data-path="chapter-14.html"><a href="chapter-14.html#linear-regression-summarizing-the-pattern-of-the-data-with-a-line"><i class="fa fa-check"></i><b>15.1.1</b> Linear Regression: Summarizing the Pattern of the Data with a Line</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="chapter-15.html"><a href="chapter-15.html"><i class="fa fa-check"></i><b>16</b> Chapter</a><ul>
+<li class="chapter" data-level="16.1" data-path="chapter-15.html"><a href="chapter-15.html#sampling-and-designing-studies"><i class="fa fa-check"></i><b>16.1</b> Sampling and Designing Studies</a><ul>
+<li class="chapter" data-level="16.1.1" data-path="chapter-15.html"><a href="chapter-15.html#designing-studies"><i class="fa fa-check"></i><b>16.1.1</b> Designing Studies</a></li>
+<li class="chapter" data-level="16.1.2" data-path="chapter-15.html"><a href="chapter-15.html#identifying-study-design"><i class="fa fa-check"></i><b>16.1.2</b> Identifying Study Design</a></li>
+<li class="chapter" data-level="16.1.3" data-path="chapter-15.html"><a href="chapter-15.html#experiments-vs.observational-studies"><i class="fa fa-check"></i><b>16.1.3</b> Experiments vs. Observational Studies</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="chapter-16.html"><a href="chapter-16.html"><i class="fa fa-check"></i><b>17</b> Chapter</a><ul>
+<li class="chapter" data-level="17.1" data-path="chapter-16.html"><a href="chapter-16.html#confounding-and-multivariate-models"><i class="fa fa-check"></i><b>17.1</b> Confounding and Multivariate Models</a><ul>
+<li class="chapter" data-level="17.1.1" data-path="chapter-16.html"><a href="chapter-16.html#causation-and-observational-studies"><i class="fa fa-check"></i><b>17.1.1</b> Causation and Observational Studies</a></li>
+<li class="chapter" data-level="17.1.2" data-path="chapter-16.html"><a href="chapter-16.html#r-syntax"><i class="fa fa-check"></i><b>17.1.2</b> R syntax</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="chapter-17.html"><a href="chapter-17.html"><i class="fa fa-check"></i><b>18</b> Chapter</a><ul>
+<li class="chapter" data-level="18.1" data-path="chapter-17.html"><a href="chapter-17.html#poster-presentation"><i class="fa fa-check"></i><b>18.1</b> Poster Presentation</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Passion Driven Statistics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="chapter-1" class="section level1">
+<h1><span class="header-section-number">2</span> Chapter</h1>
+<div id="data-sets-and-code-books" class="section level2">
+<h2><span class="header-section-number">2.1</span> Data Sets and Code Books</h2>
+<p>Please watch the <a href="http://passiondrivenstatistics.com/2015/06/02/chapter-2-draft-version/">Chapter 02 video</a>.</p>
+<p>Since we will not be producing data for this course, the first step of your project will be to choose a data set (from those made available) that offers the opportunity to conduct research on a general topic that will be of significant interest to you.</p>
+<p>A full list will be presented in class. Here are a few examples:</p>
+<p><strong><a href="http://www.cpc.unc.edu/projects/addhealth">The U.S. National Longitudinal Survey of Adolescent Health (AddHealth)</a></strong> is representative school-based survey of adolescents in grades 7-12 in the United States. (Wave I and Wave IV)</p>
+<p><strong><a href="http://pubs.niaaa.nih.gov/publications/AA70/AA70.htm">The U.S. National Epidemiological Survey on Alcohol and Related Conditions (NESARC)</a></strong> is a survey designed to determine the magnitude of alcohol use and psychiatric disorders in the U.S. population. It is a representative sample of the non-institutionalized population 18 years and older.</p>
+<p><strong>The Mars Craters Study</strong> (<a href="http://craters.sjrdesign.net" class="uri">http://craters.sjrdesign.net</a>) created by Stuart Robbins, presents a global database that includes over 300,000 Mars craters 1 km or larger. Heavily cratered terrain on Mars was created between 4.2 and 3.8 billion years ago during a period of heavy bombardment (i.e. impacts of asteroids, proto-planets, and comets). Mars craters allow inferences into the ancient climate of Mars, and they add a key data point for the understanding of impact physics.</p>
+<p><strong><a href="http://nces.ed.gov/ipeds/datacenter/DataFiles.aspx">Integrated Post-secondary Education Data System (IPEDS)</a></strong> is the primary source for data on colleges, universities, and technical and vocational postsecondary institutions in the United States.</p>
+<p><strong><a href="http://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/35348?q=outlook+on+LIfe&amp;searchSource=find-analyze-home&amp;sortBy=">Outlook On Life Surveys (OOL)</a></strong></p>
+<div id="code-books" class="section level3">
+<h3><span class="header-section-number">2.1.1</span> Code Books</h3>
+<p>Before accessing any data, you will be reviewing the available codebooks (sometimes called “data dictionaries”). Codebooks commonly offer complete information regarding the data set (e.g. general topics addressed, questions and/or measurements used, and in some cases the frequency of responses or values). Reviewing a code book is always the first step in research based on existing data since 1) code books can be used to generate research questions; and 2) data is generally useless and uninterpretable without it.</p>
+<p>The code book describes how the data are arranged in the computer file or files, what the various numbers and letters mean, and any special instructions on how to use the data properly. Like any other kind of book, some codebooks are better than others.</p>
+<div class="figure">
+<img src="graphics/excodebook.jpg" alt="" />
+
+</div>
+<p><strong>Selecting A Data Set</strong> At this point, you should review the available codebooks for the data set that most interests you. The <a href="https://github.com/alanarnholt/PDS">PDS</a><a href="chapter-17.html#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> R package has the codebooks and data sets for this course.</p>
+<p><strong>Selecting A Data Set Assignment</strong> Select a data set that you will work with. Add the abbreviated title of that data set (i.e. AddHealth, NESARC, Mars Crater, IPEDS, or OOL) to the README file of your GitHub repository.</p>
+<hr />
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="chapter.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="chapter-2.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
+<script src="libs/gitbook-2.6.7/js/app.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+
+</body>
+
+</html>

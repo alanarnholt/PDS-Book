@@ -1,7 +1,7 @@
 ---
-title: "Passion Driven Statistics (Light Weight)"
-author: "Alan T. Arnholt modified from materials compiled by Lisa Dierker"
-date: '`r Sys.time()`'
+title: "Passion Driven Statistics"
+author: "Materials compiled by Lisa Dierker and modified for use with R and GitHub at Appalachian State University by Alan T. Arnholt"
+date: 'Last compiled: `r format(Sys.time(), "%b %d, %Y")`'
 output:
   html_document:
     highlight: zenburn

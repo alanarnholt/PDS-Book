@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Passion Driven Statistics</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="Passion Driven Statistics">
+  <meta name="generator" content="bookdown 0.0.54 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Passion Driven Statistics" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+<meta name="author" content="Materials compiled by Lisa Dierker and modified for use with R and GitHub at Appalachian State University by Alan T. Arnholt">
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="chapter-9.html">
+<link rel="next" href="chapter-11.html">
+
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="chapter.html"><a href="chapter.html"><i class="fa fa-check"></i><b>1</b> Chapter</a><ul>
+<li class="chapter" data-level="1.1" data-path="chapter.html"><a href="chapter.html#an-introduction"><i class="fa fa-check"></i><b>1.1</b> An Introduction</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="chapter.html"><a href="chapter.html#overview"><i class="fa fa-check"></i><b>1.1.1</b> Overview</a></li>
+<li class="chapter" data-level="1.1.2" data-path="chapter.html"><a href="chapter.html#resources"><i class="fa fa-check"></i><b>1.1.2</b> Resources</a></li>
+<li class="chapter" data-level="1.1.3" data-path="chapter.html"><a href="chapter.html#an-introduction-to-statistics"><i class="fa fa-check"></i><b>1.1.3</b> An Introduction to Statistics</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="chapter-1.html"><a href="chapter-1.html"><i class="fa fa-check"></i><b>2</b> Chapter</a><ul>
+<li class="chapter" data-level="2.1" data-path="chapter-1.html"><a href="chapter-1.html#data-sets-and-code-books"><i class="fa fa-check"></i><b>2.1</b> Data Sets and Code Books</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="chapter-1.html"><a href="chapter-1.html#code-books"><i class="fa fa-check"></i><b>2.1.1</b> Code Books</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="chapter-2.html"><a href="chapter-2.html"><i class="fa fa-check"></i><b>3</b> Chapter</a><ul>
+<li class="chapter" data-level="3.1" data-path="chapter-2.html"><a href="chapter-2.html#data-architecture"><i class="fa fa-check"></i><b>3.1</b> Data Architecture</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="chapter-2.html"><a href="chapter-2.html#example-medical-recordings"><i class="fa fa-check"></i><b>3.1.1</b> Example: Medical Recordings</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="chapter-3.html"><a href="chapter-3.html"><i class="fa fa-check"></i><b>4</b> Chapter</a><ul>
+<li class="chapter" data-level="4.1" data-path="chapter-3.html"><a href="chapter-3.html#conducting-a-literature-review"><i class="fa fa-check"></i><b>4.1</b> Conducting a Literature Review</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="chapter-3.html"><a href="chapter-3.html#literature-review"><i class="fa fa-check"></i><b>4.1.1</b> Literature Review</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="chapter-4.html"><a href="chapter-4.html"><i class="fa fa-check"></i><b>5</b> Chapter</a><ul>
+<li class="chapter" data-level="5.1" data-path="chapter-4.html"><a href="chapter-4.html#writing-about-empirical-research"><i class="fa fa-check"></i><b>5.1</b> Writing About Empirical Research</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="chapter-5.html"><a href="chapter-5.html"><i class="fa fa-check"></i><b>6</b> Chapter</a><ul>
+<li class="chapter" data-level="6.1" data-path="chapter-5.html"><a href="chapter-5.html#working-with-data"><i class="fa fa-check"></i><b>6.1</b> Working with Data</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="chapter-6.html"><a href="chapter-6.html"><i class="fa fa-check"></i><b>7</b> Chapter</a><ul>
+<li class="chapter" data-level="7.1" data-path="chapter-6.html"><a href="chapter-6.html#data-management"><i class="fa fa-check"></i><b>7.1</b> Data Management</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="chapter-6.html"><a href="chapter-6.html#data-management-1"><i class="fa fa-check"></i><b>7.1.1</b> Data Management</a></li>
+<li class="chapter" data-level="7.1.2" data-path="chapter-6.html"><a href="chapter-6.html#extended-example"><i class="fa fa-check"></i><b>7.1.2</b> Extended Example</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="chapter-7.html"><a href="chapter-7.html"><i class="fa fa-check"></i><b>8</b> Chapter</a><ul>
+<li class="chapter" data-level="8.1" data-path="chapter-7.html"><a href="chapter-7.html#graphing-one-variable-at-a-time"><i class="fa fa-check"></i><b>8.1</b> Graphing: One Variable at a Time</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="chapter-7.html"><a href="chapter-7.html#example"><i class="fa fa-check"></i><b>8.1.1</b> Example</a></li>
+<li class="chapter" data-level="8.1.2" data-path="chapter-7.html"><a href="chapter-7.html#symmetric-distributions"><i class="fa fa-check"></i><b>8.1.2</b> Symmetric Distributions</a></li>
+<li class="chapter" data-level="8.1.3" data-path="chapter-7.html"><a href="chapter-7.html#skewed-right-distributions"><i class="fa fa-check"></i><b>8.1.3</b> Skewed Right Distributions</a></li>
+<li class="chapter" data-level="8.1.4" data-path="chapter-7.html"><a href="chapter-7.html#skewed-left-distributions"><i class="fa fa-check"></i><b>8.1.4</b> Skewed Left Distributions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="chapter-8.html"><a href="chapter-8.html"><i class="fa fa-check"></i><b>9</b> Chapter</a><ul>
+<li class="chapter" data-level="9.1" data-path="chapter-8.html"><a href="chapter-8.html#graphing-relationships"><i class="fa fa-check"></i><b>9.1</b> Graphing Relationships</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="chapter-8.html"><a href="chapter-8.html#bivariate-graphing"><i class="fa fa-check"></i><b>9.1.1</b> Bivariate Graphing</a></li>
+<li class="chapter" data-level="9.1.2" data-path="chapter-8.html"><a href="chapter-8.html#multivariate-graphing"><i class="fa fa-check"></i><b>9.1.2</b> Multivariate Graphing</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="chapter-9.html"><a href="chapter-9.html"><i class="fa fa-check"></i><b>10</b> Chapter</a><ul>
+<li class="chapter" data-level="10.1" data-path="chapter-9.html"><a href="chapter-9.html#hypothesis-testing"><i class="fa fa-check"></i><b>10.1</b> Hypothesis Testing</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="chapter-10.html"><a href="chapter-10.html"><i class="fa fa-check"></i><b>11</b> Chapter</a><ul>
+<li class="chapter" data-level="11.1" data-path="chapter-10.html"><a href="chapter-10.html#analysis-of-variance"><i class="fa fa-check"></i><b>11.1</b> Analysis of Variance</a><ul>
+<li class="chapter" data-level="11.1.1" data-path="chapter-10.html"><a href="chapter-10.html#the-anova-f-test"><i class="fa fa-check"></i><b>11.1.1</b> The ANOVA F-Test</a></li>
+<li class="chapter" data-level="11.1.2" data-path="chapter-10.html"><a href="chapter-10.html#the-idea-behind-the-anova-f-test"><i class="fa fa-check"></i><b>11.1.2</b> The Idea Behind the ANOVA F-Test</a></li>
+<li class="chapter" data-level="11.1.3" data-path="chapter-10.html"><a href="chapter-10.html#finding-the-p-value"><i class="fa fa-check"></i><b>11.1.3</b> Finding the P-Value</a></li>
+<li class="chapter" data-level="11.1.4" data-path="chapter-10.html"><a href="chapter-10.html#making-conclusions-in-context"><i class="fa fa-check"></i><b>11.1.4</b> Making Conclusions in Context</a></li>
+<li class="chapter" data-level="11.1.5" data-path="chapter-10.html"><a href="chapter-10.html#post-hoc-tests"><i class="fa fa-check"></i><b>11.1.5</b> Post Hoc Tests</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="chapter-11.html"><a href="chapter-11.html"><i class="fa fa-check"></i><b>12</b> Chapter</a><ul>
+<li class="chapter" data-level="12.1" data-path="chapter-11.html"><a href="chapter-11.html#chi-square-test-of-independence"><i class="fa fa-check"></i><b>12.1</b> Chi-Square Test of Independence</a><ul>
+<li class="chapter" data-level="12.1.1" data-path="chapter-11.html"><a href="chapter-11.html#exploratory-analysis"><i class="fa fa-check"></i><b>12.1.1</b> Exploratory Analysis</a></li>
+<li class="chapter" data-level="12.1.2" data-path="chapter-11.html"><a href="chapter-11.html#the-chi-square-test-for-independence"><i class="fa fa-check"></i><b>12.1.2</b> The Chi-Square Test for Independence</a></li>
+<li class="chapter" data-level="12.1.3" data-path="chapter-11.html"><a href="chapter-11.html#the-idea-of-the-chi-square-test"><i class="fa fa-check"></i><b>12.1.3</b> The Idea of the Chi-Square Test</a></li>
+<li class="chapter" data-level="12.1.4" data-path="chapter-11.html"><a href="chapter-11.html#post-hoc-tests-1"><i class="fa fa-check"></i><b>12.1.4</b> Post Hoc Tests</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="chapter-12.html"><a href="chapter-12.html"><i class="fa fa-check"></i><b>13</b> Chapter</a><ul>
+<li class="chapter" data-level="13.1" data-path="chapter-12.html"><a href="chapter-12.html#correlation-coefficient"><i class="fa fa-check"></i><b>13.1</b> Correlation Coefficient</a><ul>
+<li class="chapter" data-level="13.1.1" data-path="chapter-12.html"><a href="chapter-12.html#interpreting-the-scatterplot"><i class="fa fa-check"></i><b>13.1.1</b> Interpreting the scatterplot</a></li>
+<li class="chapter" data-level="13.1.2" data-path="chapter-12.html"><a href="chapter-12.html#the-correlation-coefficientr"><i class="fa fa-check"></i><b>13.1.2</b> The Correlation Coefficient—<span class="math inline">\(r\)</span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="chapter-13.html"><a href="chapter-13.html"><i class="fa fa-check"></i><b>14</b> Chapter</a><ul>
+<li class="chapter" data-level="14.1" data-path="chapter-13.html"><a href="chapter-13.html#moderation"><i class="fa fa-check"></i><b>14.1</b> Moderation</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="chapter-14.html"><a href="chapter-14.html"><i class="fa fa-check"></i><b>15</b> Chapter</a><ul>
+<li class="chapter" data-level="15.1" data-path="chapter-14.html"><a href="chapter-14.html#linear-regression"><i class="fa fa-check"></i><b>15.1</b> Linear Regression</a><ul>
+<li class="chapter" data-level="15.1.1" data-path="chapter-14.html"><a href="chapter-14.html#linear-regression-summarizing-the-pattern-of-the-data-with-a-line"><i class="fa fa-check"></i><b>15.1.1</b> Linear Regression: Summarizing the Pattern of the Data with a Line</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="chapter-15.html"><a href="chapter-15.html"><i class="fa fa-check"></i><b>16</b> Chapter</a><ul>
+<li class="chapter" data-level="16.1" data-path="chapter-15.html"><a href="chapter-15.html#sampling-and-designing-studies"><i class="fa fa-check"></i><b>16.1</b> Sampling and Designing Studies</a><ul>
+<li class="chapter" data-level="16.1.1" data-path="chapter-15.html"><a href="chapter-15.html#designing-studies"><i class="fa fa-check"></i><b>16.1.1</b> Designing Studies</a></li>
+<li class="chapter" data-level="16.1.2" data-path="chapter-15.html"><a href="chapter-15.html#identifying-study-design"><i class="fa fa-check"></i><b>16.1.2</b> Identifying Study Design</a></li>
+<li class="chapter" data-level="16.1.3" data-path="chapter-15.html"><a href="chapter-15.html#experiments-vs.observational-studies"><i class="fa fa-check"></i><b>16.1.3</b> Experiments vs. Observational Studies</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="chapter-16.html"><a href="chapter-16.html"><i class="fa fa-check"></i><b>17</b> Chapter</a><ul>
+<li class="chapter" data-level="17.1" data-path="chapter-16.html"><a href="chapter-16.html#confounding-and-multivariate-models"><i class="fa fa-check"></i><b>17.1</b> Confounding and Multivariate Models</a><ul>
+<li class="chapter" data-level="17.1.1" data-path="chapter-16.html"><a href="chapter-16.html#causation-and-observational-studies"><i class="fa fa-check"></i><b>17.1.1</b> Causation and Observational Studies</a></li>
+<li class="chapter" data-level="17.1.2" data-path="chapter-16.html"><a href="chapter-16.html#r-syntax"><i class="fa fa-check"></i><b>17.1.2</b> R syntax</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="chapter-17.html"><a href="chapter-17.html"><i class="fa fa-check"></i><b>18</b> Chapter</a><ul>
+<li class="chapter" data-level="18.1" data-path="chapter-17.html"><a href="chapter-17.html#poster-presentation"><i class="fa fa-check"></i><b>18.1</b> Poster Presentation</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Passion Driven Statistics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="chapter-10" class="section level1">
+<h1><span class="header-section-number">11</span> Chapter</h1>
+<div id="analysis-of-variance" class="section level2">
+<h2><span class="header-section-number">11.1</span> Analysis of Variance<a href="chapter-17.html#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a></h2>
+<p>Please watch the <a href="http://passiondrivenstatistics.com/2016/05/11/r-chapter-11/">Chapter 11 video</a>.</p>
+<p>In our description of hypothesis testing in the previous chapter, we started with case <span class="math inline">\(C \rightarrow Q\)</span>, where the explanatory variable/independent variable/predictor (<span class="math inline">\(X\)</span> = major depression) is categorical and the response variable/dependent variable/outcome (<span class="math inline">\(Y\)</span> = number of cigarettes smoked) is quantitative. Here is a similar example:</p>
+<p><strong>GPA and Year in College</strong></p>
+<p>Say that our variable of interest is the GPA of college students in the United States. Since GPA is quantitative, we do inference on <span class="math inline">\(\mu\)</span>, the (population) mean GPA among all U.S. college students. We are really interested in the relationship between GPA and college year:</p>
+<p><span class="math inline">\(X\)</span>: year in college (1 = freshmen, 2 = sophomore, 3 = junior, 4 = senior) and <span class="math inline">\(Y\)</span>: GPA</p>
+<p>In other words, we want to explore whether GPA is related to year in college. The way to think about this is that the population of U.S. college students is now broken into 4 sub-populations: freshmen, sophomores, juniors, and seniors. Within each of these four groups, we are interested in the GPA.</p>
+<p>The inference must therefore involve the 4 sub-population means:</p>
+<ul>
+<li><span class="math inline">\(\mu_1\)</span>: mean GPA among freshmen in the United States</li>
+<li><span class="math inline">\(\mu_2\)</span>: mean GPA among sophomores in the United States</li>
+<li><span class="math inline">\(\mu_3\)</span>: mean GPA among juniors in the United States</li>
+<li><span class="math inline">\(\mu_4\)</span>: mean GPA among seniors in the United States</li>
+</ul>
+<p>It makes sense that the inference about the relationship between year and GPA has to be based on some kind of comparison of these four means. If we infer that these four means are not all equal (i.e., that there are some differences in GPA across years in college) then that’s equivalent to saying GPA is related to year in college. Let’s summarize this example with a figure:</p>
+<div class="figure">
+<img src="graphics/anova1.jpg" alt="" />
+
+</div>
+<p>In general, then, making inferences about the relationship between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> in Case <span class="math inline">\(C\rightarrow Q\)</span> boils down to comparing the means of <span class="math inline">\(Y\)</span> in the sub-populations, which are created by the categories defined in <span class="math inline">\(X\)</span> (say <span class="math inline">\(k\)</span> categories). The following figure summarizes this:</p>
+<div class="figure">
+<img src="graphics/anova2.jpg" alt="" />
+
+</div>
+<p>The inferential method for comparing means is called Analysis of Variance (abbreviated as ANOVA), and the test associated with this method is called the ANOVA F-test. We will first present our leading example, and then introduce the ANOVA F-test by going through its 4 steps, illustrating each one using the example.</p>
+<p><em>Is “academic frustration” related to major?</em></p>
+<p>A college dean believes that students with different majors may experience different levels of academic frustration. Random samples of size 35 of Business, English, Mathematics, and Psychology majors are asked to rate their level of academic frustration on a scale of 1 (lowest) to 20 (highest).</p>
+<div class="figure">
+<img src="graphics/frustrate.jpg" alt="" />
+
+</div>
+<p>The figure highlights that examining the relationship between major (<span class="math inline">\(X\)</span>) and frustration level (<span class="math inline">\(Y\)</span>) amounts to comparing the mean frustration levels (<span class="math inline">\(\mu_1, \mu_2,\mu_3,\mu_4\)</span>) among the four majors defined by <span class="math inline">\(X\)</span>.</p>
+<div id="the-anova-f-test" class="section level3">
+<h3><span class="header-section-number">11.1.1</span> The ANOVA F-Test</h3>
+<p>Now that we understand in what kind of situations ANOVA is used, we are ready to learn how it works.</p>
+<p><strong>Stating the Hypotheses</strong></p>
+<p>The null hypothesis claims that there is no relationship between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>. Since the relationship is examined by comparing <span class="math inline">\(\mu_1, \mu_2,\ldots,\mu_k\)</span> (the means of <span class="math inline">\(Y\)</span> in the populations defined by the values of <span class="math inline">\(X\)</span>), no relationship would mean that all the means are equal. Therefore the null hypothesis of the F-testis: <span class="math inline">\(H_0: \mu_1 = \mu_2 = \cdots = \mu_k\)</span>.</p>
+<p>As we mentioned earlier, here we have just one alternative hypothesis, which claims that there is a relationship between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>. In terms of the means <span class="math inline">\(\mu_1, \mu_2,\ldots,\mu_k\)</span> it simply says the opposite of the alternative, that not all the means are equal, and we simply write: <span class="math inline">\(H_a:\)</span> not all the <span class="math inline">\(\mu\)</span>’s are equal.</p>
+<p>Recall our “Is academic frustration related to major?” example:</p>
+<div class="figure">
+<img src="graphics/anova3.jpg" alt="" />
+
+</div>
+<p><strong>Review: True or False</strong></p>
+<p>The hypothesis that are being test in our example are:</p>
+<p><span class="math inline">\(H_0: \mu_1 = \mu_2 = \mu_3 = \mu_4\)</span></p>
+<p><span class="math inline">\(H_1: \mu_1 \neq \mu_2 \neq \mu_3 \neq \mu_4\)</span></p>
+<p>The correct hypotheses for our example are:</p>
+<p><span class="math inline">\(H_0: \mu_1 = \mu_2 = \mu_3 = \mu_4\)</span></p>
+<p><span class="math inline">\(H_1: \mu_i \neq \mu_j\)</span> for some <span class="math inline">\(i,j\)</span></p>
+<p>Note that there are many ways for <span class="math inline">\(\mu_1, \mu_2,\mu_3,\mu_4\)</span> not to be all equal, and <span class="math inline">\(\mu_1 \neq \mu_2 \neq \mu_3 \neq \mu_4\)</span> is just one of them. Another way could be <span class="math inline">\(\mu_1 = \mu_2 = \mu_3 \neq \mu_4\)</span> or <span class="math inline">\(\mu_1 = \mu_2 \neq \mu_3 \neq \mu_4\)</span>. The alternative of the ANOVA F-test simply states that not all of the means are equal and is not specific about the way in which they are different.</p>
+</div>
+<div id="the-idea-behind-the-anova-f-test" class="section level3">
+<h3><span class="header-section-number">11.1.2</span> The Idea Behind the ANOVA F-Test</h3>
+<p>Let’s think about how we would go about testing whether the population means <span class="math inline">\(\mu_1, \mu_2,\mu_3,\mu_4\)</span> are equal. It seems as if the best we could do is to calculate their point estimates—the sample mean in each of our 4 samples (denote them by <span class="math inline">\(\bar{x}_1,\bar{x}_2,\bar{x}_3,\bar{x}_4)\)</span>,</p>
+<div class="figure">
+<img src="graphics/anova4.jpg" alt="" />
+
+</div>
+<p>and see how far apart these sample means are, or, in other words, measure the variation between the sample means. If we find that the four sample means are not all close together, we’ll say that we have evidence against <span class="math inline">\(H_0\)</span>, and otherwise, if they are close together, we’ll say that we do not have evidence against <span class="math inline">\(H_0\)</span>. This seems quite simple, but is this enough? Let’s see.</p>
+<p>It turns out that:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(PDS)
+MEANS &lt;-<span class="st"> </span><span class="kw">with</span>(<span class="dt">data =</span> frustration, 
+              <span class="kw">tapply</span>(Frustration.Score, Major, mean)
+)
+MEANS</code></pre></div>
+<pre><code>   Business     English Mathematics  Psychology 
+   7.314286   11.771429   13.200000   14.028571 </code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span>(<span class="kw">aov</span>(Frustration.Score ~<span class="st"> </span>Major, <span class="dt">data =</span> frustration))</code></pre></div>
+<pre><code>             Df Sum Sq Mean Sq F value Pr(&gt;F)    
+Major         3  939.9  313.28    46.6 &lt;2e-16 ***
+Residuals   136  914.3    6.72                   
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<ul>
+<li>The sample mean frustration score of the 35 business majors is: <span class="math inline">\(\bar{x}_1 = 7.3142857\)</span></li>
+<li>The sample mean frustration score of the 35 English majors is: <span class="math inline">\(\bar{x}_2 = 11.7714286\)</span></li>
+<li>The sample mean frustration score of the 35 mathematics majors is: <span class="math inline">\(\bar{x}_3 = 13.2\)</span></li>
+<li>The sample mean frustration score of the 35 psychology majors is: <span class="math inline">\(\bar{x}_4 = 14.0285714\)</span></li>
+</ul>
+<p>We present two possible scenarios for our example (different data). In both cases, we construct side-by-side box plots (showing the distribution of the data including the range, lowest and highest values, the mean, etc.) four groups of frustration levels that have the same variation among their means. Thus, Scenario #1 and Scenario #2 (the actual values from <code>frustration</code>) both show data for four groups with the sample means 7.3142857, 11.7714286, 13.2, and 14.0285714.</p>
+<p><img src="_main_files/figure-html/unnamed-chunk-40-1.png" width="672" style="display: block; margin: auto;" /><img src="_main_files/figure-html/unnamed-chunk-40-2.png" width="672" style="display: block; margin: auto;" /></p>
+<p><strong>Review 11.2 Multiple Choice</strong></p>
+<p>Look carefully at the graphs of both scenarios. For which of the two scenarios would you be willing to believe that samples have been taken from four groups which have the same population means?</p>
+<p>A. Scenario 1</p>
+<p>B. Scenario 2</p>
+<p>The important difference between the two scenarios is that the first represents data with a large amount of variation within each of the four groups; the second represents data with a small amount of variation within each of the four groups.</p>
+<p>Scenario 1, because of the large amount of spread within the groups, shows box plots with plenty of overlap. One could imagine the data arising from 4 random samples taken from 4 populations, all having the same mean of about 11 or 12. The first group of values may have been a bit on the low side, and the other three a bit on the high side, but such differences could conceivably have come about by chance. This would be the case if the null hypothesis, claiming equal population means, were true. Scenario 2, because of the small amount of spread within the groups, shows boxplots with very little overlap. It would be very hard to believe that we are sampling from four groups that have equal population means. This would be the case if the null hypothesis, claiming equal population means, were false.</p>
+<p>Thus, in the language of hypothesis tests, we would say that if the data were configured as they are in scenario 1, we would not reject the null hypothesis that population mean frustration levels were equal for the four majors. If the data were configured as they are in scenario 2, we would reject the null hypothesis, and we would conclude that mean frustration levels differ depending on major.</p>
+<p>Let’s summarize what we learned from this. The question we need to answer is: Are the differences among the sample means (<span class="math inline">\(\bar{x}\)</span>’s) due to true differences among the <span class="math inline">\(\mu\)</span>’s (alternative hypothesis), or merely due to sampling variability (null hypothesis)?</p>
+<p>In order to answer this question using our data, we obviously need to look at the variation among the sample means, but this alone is not enough. We need to look at the variation among the sample means relative to the variation within the groups. In other words, we need to look at the quantity:</p>
+<p><span class="math display">\[\frac{\text{VARIATION AMONG SAMPLE MEANS}}{\text{VARIATION WITHIN GROUPS}}\]</span></p>
+<p>which measures to what extent the difference among the sampled groups’ means dominates over the usual variation within sampled groups (which reflects differences in individuals that are typical in random samples).</p>
+<p>When the variation within groups is large (like in scenario 1), the variation (differences) among the sample means could become negligible and the data provide very little evidence against <span class="math inline">\(H_0\)</span>. When the variation within groups is small (like in scenario 2), the variation among the sample means dominates over it, and the data have stronger evidence against <span class="math inline">\(H_0\)</span>. Looking at this ratio of variations is the idea behind the comparison of means; hence the name analysis of variance (ANOVA).</p>
+<p><strong>Did I Get This?</strong></p>
+<p>Consider the following generic situation:</p>
+<div class="figure">
+<img src="graphics/anova5.jpg" alt="" />
+
+</div>
+<p>where we’re testing:</p>
+<p><span class="math inline">\(H_0: \mu_1 = \mu_2 = \mu_3\)</span> versus <span class="math inline">\(H_a:\mu_i \neq \mu_j\)</span> for some <span class="math inline">\(i,j\)</span> or not all <span class="math inline">\(\mu\)</span>’s are equal.</p>
+<p>The following are two possible scenarios of the data (note in both scenarios the sample means are 24.9386037, 30.0584293, and 35.285865).</p>
+<p><img src="_main_files/figure-html/unnamed-chunk-42-1.png" width="768" style="display: block; margin: auto;" /><img src="_main_files/figure-html/unnamed-chunk-42-2.png" width="768" style="display: block; margin: auto;" /></p>
+<p><strong>Consider the <code>frustration</code> Data Frame Again</strong></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> frustration, <span class="kw">aes</span>(<span class="dt">x =</span> Major, <span class="dt">y =</span> Frustration.Score)) +
+<span class="st">  </span><span class="kw">geom_boxplot</span>() +
+<span class="st">  </span><span class="kw">theme_bw</span>() +<span class="st"> </span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">y =</span> <span class="st">&quot;Frustration Score&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;Frustration Score by Major&quot;</span>)</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-43-1.png" width="672" style="display: block; margin: auto;" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">RES &lt;-<span class="st"> </span><span class="kw">summary</span>(<span class="kw">aov</span>(Frustration.Score ~<span class="st"> </span>Major, <span class="dt">data =</span> frustration))
+RES</code></pre></div>
+<pre><code>             Df Sum Sq Mean Sq F value Pr(&gt;F)    
+Major         3  939.9  313.28    46.6 &lt;2e-16 ***
+Residuals   136  914.3    6.72                   
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>Note that the F-statistic is 46.6008958, which is very large, indicating that the data provide evidence against <span class="math inline">\(H_0\)</span> (we can also see that the p-value is so small (<span class="math inline">\(8.8415737\times 10^{-21}\)</span>) that it is essentially 0, which supports that conclusion as well).</p>
+</div>
+<div id="finding-the-p-value" class="section level3">
+<h3><span class="header-section-number">11.1.3</span> Finding the P-Value</h3>
+<p>The p-value of the ANOVA F-test is the probability of getting an F statistic as large as we got (or even larger) had <span class="math inline">\(H_0: \mu_1 = \mu_2 = \cdots = \mu_k\)</span> been true. In other words, it tells us how surprising it is to find data like those observed, assuming that there is no difference among the population means <span class="math inline">\(\mu_1, \mu_2, \ldots, \mu_k\)</span>. As we already noticed before, the p-value in our example is so small that it is essentially 0, telling us that it would be next to impossible to get data like those observed had the mean frustration level of the four majors been the same (as the null hypothesis claims).</p>
+</div>
+<div id="making-conclusions-in-context" class="section level3">
+<h3><span class="header-section-number">11.1.4</span> Making Conclusions in Context</h3>
+<p>As usual, we base our conclusion on the p-value. A small p-value tells us that our data contain evidence against <span class="math inline">\(H_0\)</span>. More specifically, a small p-value tells us that the differences between the sample means are statistically significant (unlikely to have happened by chance), and therefore we reject <span class="math inline">\(H_0\)</span>. If the p-value is not small, the data do not provide enough evidence to reject <span class="math inline">\(H_0\)</span>, and so we continue to believe that it may be true. A significance level (cut-off probability) of 0.05 can help determine what is considered a small p-value.</p>
+<p>In our example, the p-value is extremely small (close to 0) indicating that our data provide extremely strong evidence to reject <span class="math inline">\(H_0\)</span>. We conclude that the frustration level means of the four majors are not all the same, or, in other words, that majors do have an effect on students’ academic frustration levels at the school where the test was conducted.</p>
+</div>
+<div id="post-hoc-tests" class="section level3">
+<h3><span class="header-section-number">11.1.5</span> Post Hoc Tests</h3>
+<p>When testing the relationship between your explanatory (<span class="math inline">\(X\)</span>) and response variable (<span class="math inline">\(Y\)</span>) in the context of ANOVA, your categorical explanatory variable (<span class="math inline">\(X\)</span>) may have more than two levels.</p>
+<p>For example, when we examine the differences in mean GPA (<span class="math inline">\(Y\)</span>) across different college years (<span class="math inline">\(X\)</span> = freshman, sophomore, junior and senior) or the differences in mean frustration level (<span class="math inline">\(Y\)</span>) by college major (<span class="math inline">\(X\)</span> = Business, English, Mathematics, Psychology), there is just one alternative hypothesis, which claims that there is a relationship between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>.</p>
+<p>When the null hypothesis is rejected, the conclusion is that not all the means are equal.</p>
+<p>Note that there are many ways for <span class="math inline">\(\mu_1, \mu_2, \mu_3, \mu_4\)</span> not to be all equal, and <span class="math inline">\(\mu_1 \neq \mu_2 \neq \mu_3 \neq \mu_4\)</span> is just one of them. Another way could be <span class="math inline">\(\mu_1 = \mu_2 = \mu_3 \neq \mu_4\)</span> or <span class="math inline">\(\mu_1 = \mu_2 \neq \mu_3 \neq \mu_4\)</span></p>
+<p>In the case where the explanatory variable (<span class="math inline">\(X\)</span>) represents more than two groups, a significant ANOVA F test does not tell us which groups are different from the others.</p>
+<p>To determine which groups are different from the others, we would need to perform post hoc tests. These tests, done after the ANOVA, are generally termed <strong>post hoc paired comparisons.</strong></p>
+<p>Post hoc paired comparisons (meaning “after the fact” or “afterdata collection”) must be conducted in a particular way in order to prevent excessive <strong>Type I error</strong>.</p>
+<p>Type I error occurs when you make an incorrect decision about the null hypothesis. Specifically, this type of error is made when your p-value makes you reject the null hypothesis (<span class="math inline">\(H_0\)</span>) when it is true. In other words, your p-value is sufficiently small for you to say that there is a real association, despite the fact that the differences you see are due to chance alone. The type I error rate equals your p-value and is denoted by the Greek letter <span class="math inline">\(\alpha\)</span> (alpha).</p>
+<p>Although a Type I Error rate of 0.05 is considered acceptable (i.e. it is acceptable that 5 times out of 100 you will reject the null hypothesis when it is true), higher Type I error rates are not considered acceptable. If you were to use the significance level of 0.05 across multiple paired comparisons (for example, three independent comparisons) with <span class="math inline">\(\alpha = 0 .05\)</span>, then the <span class="math inline">\(\alpha\)</span> rate across all three comparisons is <span class="math inline">\(1 - (1 - \alpha)^{\text{Number of comparisons}} = 1 - (1 - 0.05)^3 = 0.142625\)</span>. In other words, across the unprotected paired comparisons you will reject the null hypothesis when it is true roughly 14 times out of 100.</p>
+<p>The purpose of running protected post hoc tests is that they allow you to conduct multiple paired comparisons without inflating the Type I Error rate.</p>
+<p>For ANOVA, you can use one of several post hoc tests, each which control for Type I Error, while performing paired comparisons (Duncan Multiple Range test, Dunnett’s Multiple Comparison test, Newman-Keuls test, Scheffe’s test, Tukey’s HSD test, Fisher’s LSD test, Sidak).</p>
+<p><strong>Analysis of Variance</strong></p>
+<p>Analysis of variance assesses whether the means of two or more groups are statistically different from each other. This analysis is appropriate when you want to compare the means (quantitative variables) of <span class="math inline">\(k\)</span> groups (categorical variables) under certain assumptions (constant variance for all <span class="math inline">\(k\)</span> groups). The null hypothesis is that there is no difference in the mean of the quantitative variable across groups (categorical variable), while the alternative is that there is a difference.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">TukeyHSD</span>(<span class="kw">aov</span>(Frustration.Score ~<span class="st"> </span>Major, <span class="dt">data =</span> frustration))</code></pre></div>
+<pre><code>  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = Frustration.Score ~ Major, data = frustration)
+
+$Major
+                            diff        lwr      upr     p adj
+English-Business       4.4571429  2.8449899 6.069296 0.0000000
+Mathematics-Business   5.8857143  4.2735614 7.497867 0.0000000
+Psychology-Business    6.7142857  5.1021328 8.326439 0.0000000
+Mathematics-English    1.4285714 -0.1835815 3.040724 0.1019527
+Psychology-English     2.2571429  0.6449899 3.869296 0.0021515
+Psychology-Mathematics 0.8285714 -0.7835815 2.440724 0.5411978</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">opar &lt;-<span class="st"> </span><span class="kw">par</span>(<span class="dt">no.readonly =</span> <span class="ot">TRUE</span>)
+<span class="kw">par</span>(<span class="dt">mar =</span> <span class="kw">c</span>(<span class="fl">5.1</span>, <span class="fl">11.1</span>, <span class="fl">4.1</span>, <span class="fl">2.1</span>), <span class="dt">las =</span> <span class="dv">1</span>) <span class="co"># Enlarge left margin</span>
+<span class="kw">plot</span>(<span class="kw">TukeyHSD</span>(<span class="kw">aov</span>(Frustration.Score ~<span class="st"> </span>Major, <span class="dt">data =</span> frustration)))</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-44-1.png" width="768" style="display: block; margin: auto;" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(opar) <span class="co"># reset margins</span></code></pre></div>
+<p>Of the <span class="math inline">\(\binom{4}{2}=6\)</span> pairwise differences, Tukey’s HSD suggest that all except <code>Mathematics - English</code> and <code>Psychology - Mathematics</code> are significant.</p>
+<p><strong>Analysis of Variance Assignment</strong></p>
+<p>Post the syntax to your private GitHub repository used to run an ANOVA along with corresponding output and a few sentences of interpretation. You will need to analyze and interpret post hoc paired comparisons in instances where your original statistical test was significant, and you were examining more than two groups (i.e. more than two levels of a categorical, explanatory variable).</p>
+<p><strong>Example of how to write results for ANOVA:</strong></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">MEANS &lt;-<span class="st"> </span><span class="kw">tapply</span>(nesarc$DailyCigsSmoked, <span class="kw">list</span>(nesarc$TobaccoDependence), mean, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)
+MEANS</code></pre></div>
+<pre><code>No Nicotine Dependence    Nicotine Dependence 
+              11.41393               14.62782 </code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">SD &lt;-<span class="st"> </span><span class="kw">tapply</span>(nesarc$DailyCigsSmoked, <span class="kw">list</span>(nesarc$TobaccoDependence), sd, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)
+SD</code></pre></div>
+<pre><code>No Nicotine Dependence    Nicotine Dependence 
+              7.427612               9.152854 </code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">RES &lt;-<span class="st"> </span><span class="kw">summary</span>(<span class="kw">aov</span>(DailyCigsSmoked ~<span class="st"> </span>TobaccoDependence, <span class="dt">data =</span> nesarc))
+RES</code></pre></div>
+<pre><code>                    Df Sum Sq Mean Sq F value   Pr(&gt;F)    
+TobaccoDependence    1   3241    3241   44.68 3.42e-11 ***
+Residuals         1313  95236      73                     
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+5 observations deleted due to missingness</code></pre>
+<p>When examining the association between current number of cigarettes smoked (quantitative response) and past year nicotine dependence (categorical explanatory), an Analysis of Variance (ANOVA) revealed that among daily, young adult smokers (my sample), those with nicotine dependence reported smoking significantly more cigarettes per day (Mean = 14.6, s.d. <span class="math inline">\(\pm\)</span> 9.2) compared to those without nicotine dependence (Mean = 11.4, s.d. <span class="math inline">\(\pm\)</span> 7.4), F(1, 1313) = 44.7, p &lt; 0.0001.</p>
+<p><strong>Example of how to write post hoc ANOVA results:</strong></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">nesarc$DCScat &lt;-<span class="st"> </span><span class="kw">cut</span>(nesarc$DailyCigsSmoked, <span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">15</span>, <span class="dv">20</span>, <span class="dv">98</span>), <span class="dt">include.lowest =</span> <span class="ot">FALSE</span>)
+mod &lt;-<span class="st"> </span><span class="kw">aov</span>(NumberNicotineSymptoms ~<span class="st"> </span>DCScat, <span class="dt">data =</span> nesarc)
+RES &lt;-<span class="st"> </span><span class="kw">summary</span>(mod)
+RES</code></pre></div>
+<pre><code>              Df Sum Sq Mean Sq F value Pr(&gt;F)    
+DCScat         4  22049    5512   31.95 &lt;2e-16 ***
+Residuals   1310 225997     173                   
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+5 observations deleted due to missingness</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tapply</span>(nesarc$NumberNicotineSymptoms, nesarc$DCScat, mean)</code></pre></div>
+<pre><code>   (0,5]   (5,10]  (10,15]  (15,20]  (20,98] 
+13.37751 17.79874 22.90299 23.56522 26.04598 </code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">TukeyHSD</span>(mod)</code></pre></div>
+<pre><code>  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = NumberNicotineSymptoms ~ DCScat, data = nesarc)
+
+$DCScat
+                      diff       lwr       upr     p adj
+(5,10]-(0,5]     4.4212321  1.616191  7.226273 0.0001739
+(10,15]-(0,5]    9.5254750  5.681531 13.369419 0.0000000
+(15,20]-(0,5]   10.1877074  7.243633 13.131781 0.0000000
+(20,98]-(0,5]   12.6684670  8.200190 17.136744 0.0000000
+(10,15]-(5,10]   5.1042429  1.596411  8.612074 0.0007080
+(15,20]-(5,10]   5.7664753  3.277188  8.255762 0.0000000
+(20,98]-(5,10]   8.2472349  4.064595 12.429874 0.0000008
+(15,20]-(10,15]  0.6622323 -2.957740  4.282205 0.9873982
+(20,98]-(10,15]  3.1429919 -1.796859  8.082843 0.4109223
+(20,98]-(15,20]  2.4807596 -1.796365  6.757884 0.5077204</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">opar &lt;-<span class="st"> </span><span class="kw">par</span>(<span class="dt">no.readonly =</span> <span class="ot">TRUE</span>)
+<span class="kw">par</span>(<span class="dt">mar =</span> <span class="kw">c</span>(<span class="fl">5.1</span>, <span class="fl">8.1</span>, <span class="fl">4.1</span>, <span class="fl">2.1</span>), <span class="dt">las =</span> <span class="dv">1</span>) <span class="co"># Enlarge left margin</span>
+<span class="kw">plot</span>(<span class="kw">TukeyHSD</span>(mod))</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-46-1.png" width="768" style="display: block; margin: auto;" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(opar)</code></pre></div>
+<p>ANOVA revealed that among daily, young adult smokers (my sample), number of cigarettes smoked per day (collapsed into 5 ordered categories, which is the categorical explanatory variable) and number of nicotine dependence symptoms (quantitative response variable) were significantly associated, F (4, 1310) = 31.95, p &lt; 0.0001. Post hoc comparisons of mean number of nicotine dependence symptoms by pairs of cigarettes per day categories revealed that those individuals smoking more than 10 cigarettes per day (i.e. 11 to 15, 16 to 20 and &gt;20) reported significantly more nicotine dependence symptoms compared to those smoking 10 or fewer cigarettes per day (i.e. 1 to 5 and 6 to 10 cigarettes per day).</p>
+<hr />
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="chapter-9.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="chapter-11.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
+<script src="libs/gitbook-2.6.7/js/app.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+
+</body>
+
+</html>

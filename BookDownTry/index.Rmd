@@ -1,0 +1,14 @@
+---
+title: "Passion Driven Statistics"
+author: "Materials compiled by Lisa Dierker and modified for use with R and GitHub at Appalachian State University by Alan T. Arnholt"
+date: 'Last compiled: `r format(Sys.time(), "%b %d, %Y")`'
+rmd_files: ["index.Rmd", "copyright.Rmd"]
+knit: "bookdown::render_book"
+output:
+  bookdown::gitbook: default
+documentclass: book
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(comment = NA, fig.align = "center", comment = NA, warning = FALSE, message = FALSE)
+```
